@@ -1,0 +1,62 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+        
+    </head>
+    <body>
+        <h1>Menus Description</h1>
+        <hr/>
+        <p>
+            <b>Menu File</b>
+            This menu allows uploading and/or exporting the different files that are used by the program, e.g. projects and input or output files.
+            <div class="figure">
+                <image src="images/menufile.png"/>
+            </div>
+        </p>
+        <p>
+            <b>Menu Options</b>
+            This menu permits configuring the parameters used to evaluate the indices, fixing the amount of significant digits in the output files, and particularly the selection of the modification operator (Windex: weighted index) to be applied to the computed residue indices. After the application of this operator, the indices values are updated and the subsequent procedures (grouping and aggregation) make use of these new indices values instead of the original unmodified indicies. Note that the selected operator will be applied to all selected indices in the same manner. To evaluate different operators, a separate execution needs to be configured (rerun the GUI or save & execute multiple projects using the different operators in batch mode . In addition, the Option menu permits defining new indices and grouping criteria. 
+
+            <div class="figure">
+                <image src="images/menuoptions.png"/>
+            </div>
+        </p>
+        <p>
+            <b>Menu Functions</b>
+            In addition to protein descriptors, ProtDCal implements the calculation of empirical thermodynamic and kinetic functions: folding free energy (DGfold), configurational free energy (DGconf), hydrophobic effect (DGwat), H-bond deficit free energy (DGHBd), close-packing interactions (DGcpack), scoring function for structural decoys (DGscr), as well as the logarithm of the folding rate constant lnkf.  
+            
+            <div class="figure">
+                <image src="images/menufunction.png"/>
+            </div>
+        </p>
+        <p>
+            <b>Menu Analyze </b>
+           ProtDCal also has the capability of using its output files to plot the behavior of the indices summarized in a *_AA file, and additionally if the user is interested in comparing proteins it can generates a RMSD matrix among proteins using the set of descriptors generated for each protein as a n-dimensional vector defining the protein. Besides, the common RMSD between the alpha carbons, backbone, all atoms of each protein can be obtained. 
+            
+            <div class="figure">
+                <image src="images/menuanalyze.png"/>
+            </div>
+        </p>
+        <p>
+            <b>Menu Run: </b>
+           This menu provides the options for run calculations, single or multiproject.
+            
+            <div class="figure">
+                <image src="images/menurun.png"/>
+            </div>
+        </p>
+        <p>
+            <b>Menu Help: </b>
+           This menu provides the help docs for options, functions, contact us, citations, etc.
+            
+            <div class="figure">
+                <image src="images/menuhelp.png"/>
+            </div>
+        </p>
+        <div class="footer">
+            <hr/>
+            <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+        </div>
+    </body>
+</html>

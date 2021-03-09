@@ -1,0 +1,12 @@
+directory:
+Datasets/Fasta_Protein_Format
+indices:
+Gw(U),Gs(U),W(U),Mw,HP,IP,ECI,L1-9,DHf,Z1,Z2,Z3,ISA,Xi,Ap,Pa,Pb,Pt,
+groups:
+ALA,ARG,ASN,ASP,CYS,GLU,GLN,GLY,HIS,ILE,LEU,LYS,MET,PHE,PRO,SER,THR,TRP,TYR,VAL,RTR,BSR,AHR,ALR,NPR,ARM,PLR,PCR,NCR,UCR,UFR,PRT,
+invariants:
+N1,N2,N3,Ar,P2,P3,M,G,V,CV,Q3,S,RA,MN,K,Q1,MX,DE,Q2,I50,SI,MI,TI,
+parameters(t_cont,s_cont,A%,HydGroup,n,bins,K,SubG):
+4.0,8.0,5.0,9.4,3.0,50,5,3
+options(decimals,harmonicMeanType,geometricMeanType,windexID,datasetType,outputOrder):
+2,0,0,4,fasta,true

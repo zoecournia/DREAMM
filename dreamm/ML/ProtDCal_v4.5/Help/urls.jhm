@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<map version="2.0" >  
+    <!--Icons-->
+    <mapID target="bookopen"      url="pages/images/bookopen.png"/>	
+    <mapID target="bookclose"     url="pages/images/bookclose.png"/>
+    <mapID target="print"         url="pages/images/printer.png"/>
+    <mapID target="printsetup"    url="pages/images/printersetup.png"/>
+    <mapID target="next"     	  url="pages/images/next.png"/>
+    <mapID target="previuos"      url="pages/images/previous.png"/>
+    <mapID target="window"        url="pages/images/ICO.png"/>
+    <!--Info-->
+    <mapID target="GettingStarted"  url="pages/GettingStarted.html"/>
+    <mapID target="Workspace"       url="pages/Workspace.html"/>
+    <mapID target="BasicEnviroment" url="pages/BasicEnviroment.html"/>
+    <mapID target="Menu"            url="pages/Menu.html"/>
+    <mapID target="InputFiles"      url="pages/InputFiles.html"/>
+    <!--Output-->
+    <mapID target="OutputsFiles"     	url="pages/OutputFiles.html"/>
+    <mapID target="DESCRIPTOR"     		url="pages/OutputCalculation.html"/>
+    <mapID target="RMSDIDX"             url="pages/OutputRMSDIDX.html"/>
+    <mapID target="RMSDout"             url="pages/OutputRMSD.html"/>
+    <mapID target="Graphs"              url="pages/OutputPlot.html"/>
+    <!--Options-->
+    <mapID target="Parameters"      url="pages/Parameters.html"/>
+    <mapID target="OutputOrder"     url="pages/OutOrder.html"/>
+    <mapID target="Conversion"      url="pages/Conversion.html"/>
+    <mapID target="Repair"          url="pages/Repair.html"/>
+    <!--Projects-->
+    <mapID target="Loadingaprojects"      url="pages/Loadingaproject.html"/>
+    <mapID target="Project"     	      url="pages/Projects.html"/>
+    <!--Runs-->
+    <mapID target="SingleProject"    url="pages/RunSingleProject.html"/>
+    <mapID target="MultiProject"     url="pages/RunManyProjects.html"/>
+	<mapID target="CLI"              url="pages/CommandLine.html"/>
+	<mapID target="UserDecriptor"    url="pages/UserDescriptor.html"/>
+    <!--Graphic-->
+    <mapID target="Ploting" url="pages/PlotingMenu.html"/>
+    <!--RMSD-IDX-->
+    <mapID target="RMSD_idx" url="pages/RMSD(idx).html"/>
+    <!--RMSD-Ca-->
+    <mapID target="RMSD" url="pages/RMSD.html"/>
+    <!--Extension-->
+    <mapID target="properties"  url="pages/UserProperties.html"/>
+    <mapID target="groups"	url="pages/UserGroup.html"/>
+</map>  

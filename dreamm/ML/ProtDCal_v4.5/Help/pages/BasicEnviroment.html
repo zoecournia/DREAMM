@@ -1,0 +1,122 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+        
+    </head>
+    <body>
+        <div>
+            <h1>Basic Enviroment</h1><hr/>
+            <p/>
+            <p>When the application is executed the following interface is shown:</p>
+            <p/>     
+            <div class="figure">
+                <img src="images/mainscreen.png" style="alignment-adjust: central"/>			
+                <p id="piefoto">ProtDCal main window</p>
+            </div>
+        </div>
+
+        <div>	
+            <p>Table 1: Main screen details</p>
+            <table border="1">
+                <tr>
+                    <td></td> 
+                    <td>Name</td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>Menu</td>
+                    <td>Summary of commands for execution</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>Toolbar</td>
+                    <td>Frequently used commands.</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Panels</td>
+                    <td>The indices, groups and aggregation_operator implemented in ProtDCal.</td>
+                </tr>
+
+            </table>
+
+            <p> 
+                The panels below the toolbar represent the three of the hierarchical levels described above (Modification Operators are accessed via the Options menu). When you mouse over each element, a brief text description pops up explaining its functionality. Panels (indices, groups and aggregation operators) are subdivided, according to their nature, into several subpanels. 
+            </p>
+            <h2>Indices Panel</h2>
+            <p>
+                The panel of indices is divided into four subpanels (Thermodynamic Indices for Structures, Thermodynamic Indices for Sequences, Topographic Indices, and Properties-based Indices). 
+            </p>
+            <div class="figure">
+                <img src="images/indices.png"/>	
+                <p id="piefoto">Indices Panel</p>
+            </div>
+            <p>
+           In the Topographic Indices subpanel, there are several weighted indices (starting with the letter "w"), that can be calculated using one or several weights for inter-residue contacts. The following figure shows the window intended for selecting the properties to be used as weights for contacts. This window appears every time one of these weighted indices is selected, in such a way that different properties can be selected for different indices. Alternatively, if many indices will use the same weighting properties, one could first select all the topographic indices at once by clicking the button 'Topographic Indices of Folded Protein States', which launches the properties window once, and then the user may deselect the non-desired indices. These indices will be identified in the outputs as follows: <i> "index_name(weight)"</i>.
+            </p>
+            <p></p>
+            <div class="figure">
+                <img src="images/weight.png"/>	
+                <p id="piefoto">Weight Window</p>
+            </div>
+
+            <p>
+               Other indices can be computed using "TAE Aminoacid Descriptor..." and "Other Indices..." buttons located at the end of the panel. The first option, calculates Transferable Atom Equivalent (TAE) indices available in: <a>http://reccr.chem.rpi.edu/Software/Protein-Recon/TAE.doc.</a>. 
+            </p>
+
+            <p>
+				The second option computes defined properties <a href="Creatingnewindices.html">(see Creating new Properties)</a>using the "Define new indices" option located in the menu "Option/Manage Indices". This options display the following window: 
+            </p>
+            <p></p>
+            <div class="figure">
+                <img src="images/idx.png"/>	
+                <p id="piefoto">Select Indices Window</p>
+            </div>
+
+            <p>
+                In this window the (<img src="images/atras.png"/>), (ALL) and (<img src="images/delante.png"/>) buttons can select the indices previously defined.
+            </p>
+
+            <h2>Groups Panel</h2>
+            <div>
+                <p>
+				In the panel of groups there are three subpanels enclosing groups by residue ID, properties and topographic features. Also with the "Others groups..." button is possible to select groups previously defined by the user <a href="Creatingnewgroups.html">(see Define new groups)</a>.
+                </p>
+                <div class="figure">
+                    <img src="images/group panel.png"/>	
+                    <p id="piefoto">Groups Panel</p>
+                </div>
+            </div>
+            <h2>Aggregation_Operator Panel</h2>
+            <div>
+                <p/>
+                    The panel of aggregation operators is divided into four categories: distances, central tendency, dispersion and information theoretic metrics.
+					In the central tendencies subpanel, specifically for harmonic and geometric means, there are three implemented variants to evaluate these metrics in order to avoid possible in definitions associated with '0' values: 
+
+                    <ul>
+                        <li>IGNORE THE VALUES "0"
+                        </li>
+                            With this option all zero values are excluded only from the operations, but not in the analysis (i.e. the zero elements are counted to obtain the value N, that refers to the size of the sample). 
+                        
+                        <li>PRINT -9999
+                        </li>
+                            This option prints the value -9999 for missing values. In the case of the geometric mean, this occurs when the group size is zero, however, in the case of the harmonic mean, it occurs when any of the elements are zero.
+                       <li>DELETE THE VALUES "0" 
+                       </li>
+                           With this option all values zero are excluded and are not taken into account when dividing by N nor when evaluating the Nth-root. 
+                   </ul>
+               
+                <div class="figure">
+                    <img src="images/invariant.png"/>	
+                    <p id="piefoto">Aggregation_Operator Panel</p>
+                </div>
+
+                <div id="footer">
+                    <hr/>
+                    <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+                </div>
+            </div>
+    </body>
+</html>

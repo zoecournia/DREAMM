@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+    </head>
+    <body>
+        <div style="">
+            <h1>Weighted Fraction of Local Contancts (wFLC)</h1>
+            <hr/>
+        </div>
+
+        <div>	
+
+            <p> The fraction of local contact (FLC) is defined by
+            </p>
+
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/FLC.jpg"/>			
+                </div>
+            </div>
+
+            <p>Where <img src="../images/formula/flcij.png"/> if residues i and j are in contact (contacts are defined just with the spatial distance cutoff), and 0 otherwise. The weighted residue wise implementation of this index in ProtDCal is as follow:
+            </p>
+
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/wFLCi.jpg"/>			
+                </div>
+            </div>
+            <p>Where wij is a weighting factor equal to the product of any of the residue's properties listed as property based indices for each residue involved in the contact plus the topological distance between the pair of residues, additionally it can be fixed at 1 in the case that not weight it wants to be used. The original quantity can be obtained setting wij=1 and summing (using the aggregation_operator procedure N1, distance 1 of Minkosky) the residue values over all the residues.
+            </p>
+
+            <div>		
+                <p></p>
+                <hr/>
+                <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+            </div>
+        </div>
+    </body>
+</html>

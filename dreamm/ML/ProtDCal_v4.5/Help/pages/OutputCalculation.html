@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    </head>
+    <body>
+
+        <h1>Calculation of descriptors output</h1>
+        <hr/>
+
+        <p>
+            There are two output files, one to summarize the values of the descriptors for each residue this file is printed with the name: *_AA.txt, and another in which there are printed protein indices using groups and aggregation_operator, this file is named: *_Prot.txt. The structure of the first out (* _AA) in the second line contains the parameters used for calculations and the others lines starts with the structure " PDB CN RES NUM " followed by the indices that were calculated, the indicator PDB is the name of the protein, CN is the identifier of each chain of the protein, the indicator RES is the residue name and NUM is its number in the PDB file. After that each line contains the value for each index that were calculated.
+        </p>
+        <p/>
+        <div class="figure">
+            <img src="images/o1.png"/> 
+            <p id="piefoto">Output * _AA</p>
+        </div>
+
+        <p>
+            The second output shows the combination between indices, weighting operators, groups and aggregation_operator. The first line has the following structure: "PDB_Name" and then the combination of the form "index" _ "weighting operators"_"group" _ "aggregation_operator" or "group" _ "index" _ "weighting operators"_"aggregation_operator". 
+        </p>
+        <p></p>
+        <div class="figure">
+            <img src="images/o2.png"/> 
+            <p id="piefoto">Output * _Prot</p>
+        </div>
+
+        <div id="footer">
+            <hr/>
+            <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+        </div>
+
+    </body>
+</html>

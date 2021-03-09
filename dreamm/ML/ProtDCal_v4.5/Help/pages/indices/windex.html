@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+    </head>
+    <body>
+        <div style="">
+            <h1>Windex Algorithms</h1>
+            <hr/>
+        </div>
+
+        <div>	
+            <p> 
+                The Windex operator process the value of particular indices,
+                such procedure corresponds to a modification of an index value
+                for a given residue according to its environment or neighbors. 
+                After the application of this operator the indices are actualized and 
+                the rest of the procedures (groups and aggregation_operators) use the 
+                updated residue indices. In addition there are five operators:
+
+                <h2>AutoCorrelation</h2>
+                <img src="../images/formula/auto.png" />
+                <p>Where, <b>L?</b> are the index values of residues <b>i</b> and <b>j</b> and <b>k</b> is a topological distance cutoff 
+                </p>
+                <p/>
+                <h2>Gravitational</h2>
+                <img src="../images/formula/gravi.png" />
+                <p>Where, <b>L?</b> are the index values of residues <b>i</b> and <b>j</b> and <b>k</b> is a topological distance cutoff and n is the number of residues in the chain
+                </p>
+                <p/>
+                <h2>Kier Hall</h2>
+                <img src="../images/formula/kier.png" />
+                <p>Where, <b>A</b> is the number of segments, <b>n?</b> is the number of residues in a sub-segment, <b>m</b> is the maximum number of residue of a segment,  <b>Lj?</b> is the index value of the residue <b>j</b> in the segment <b>?</b>.
+                </p>
+                <p/></b>
+                <h2>ElectroTopological State</h2>
+                <img src="../images/formula/elect.png" />
+                <p>where, <b>Ii</b> is the intrinsic state (index) of the <b>ith</b> residue and <b>DIi</b> is the field effect on the <b>ith</b> residue calculated as perturbation of the <b>Ii</b> of <b>ith</b> residue by all other residues in the protein, <b>dij</b> is the topological distance between the <b>ith</b> and the <b>jth</b> residue, and <b>n</b> is the number of residues. 
+                </p>
+                <p/>
+                <h2>Ivanciuc-Balaban</h2>
+                <img src="../images/formula/ivan.png" />
+                <p>Where, the summation goes over all pairs of residues but only pairs of adjacent residues are accounted for by means of the elements <b>aij</b> of the adjacency matrix, and <b>n</b> is the number of residues. The exponent <b>2</b> dues to the use of the exponent <b>-1/2</b>. Here the factor (n-1) represents the numbers of virtual bonds among residues.
+                </p>                    
+
+            </p>
+
+            <div>		
+                <p></p>
+                <hr/>
+                <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+            </div>
+        </div>
+    </body>
+</html>

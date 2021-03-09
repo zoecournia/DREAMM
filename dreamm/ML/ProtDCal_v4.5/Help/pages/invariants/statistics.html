@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+    </head>
+    <body>
+        <h1>Variance V</h1>
+        <hr/>
+        <p> This aggregation_operator calculates the variance for all elements in the group.It is implemented as follow: </p>
+        <div class="figure">
+            <img src="../images/formula/variance.jpg"/>			
+        </div>
+        <p> Where:</p>
+        <table>
+            <td>Xi</td><td>is the index value for the ith amino acid.</td><tr/>
+            <td>X</td><td>is the mean of the indices values.</td><tr/>
+            <td>n</td><td>is the number of amino acid.</td><tr/>
+        </table>
+        <p></p>
+
+        <h1>Variability Coefficient CV</h1>
+        <hr/>
+        <p> This aggregation_operator calculates de variability coefficient for all elements in the group. </p>
+        <div class="figure">
+            <img src="../images/formula/cv.jpg"/>			
+        </div>
+        <p> Where:</p>
+        <table>
+            <td>s</td><td>is the variance for the group.</td><tr/>
+            <td>X</td><td>is the mean of the indices values.</td><tr/>
+        </table>
+        <p></p>
+
+        <h1>Standard Desviation DE</h1>
+        <hr/>
+        <p> This aggregation_operator calculate the standard desviation for the group.It is implemented as follow:		</p>
+        <div class="figure">
+            <img src="../images/formula/s.jpg"/>			
+        </div>
+        <p> Where:</p>
+        <table>
+            <td>Xi</td><td>is the index value for each amino acid.</td><tr/>
+            <td>X</td><td>is the mean of the indices values.</td><tr/>
+            <td>n</td><td>is the number of amino acid in the group.</td><tr/>
+        </table>
+        <p></p>
+
+        <h1>Kurtosis K</h1>
+        <hr/>
+        <p> Represents the area traced by the center of a rolling sphere over the residue surface, this index takes value cero when the amino acid is fully buried.		</p>
+        <div class="figure">
+            <img src="../images/formula/k.jpg"/>			
+        </div>
+        <p> Where:</p>
+        <table>
+            <td>Mj</td>
+            <td> 
+                <div class="figure">
+                    <img src="../images/formula/mj.png"/>			
+                </div></td><tr/>
+            <td>s4</td><td>is the standard deviation raised to the fourth power.</td><tr/>
+            <td>n</td><td>is the number of amino acid in the group.</td><tr/>
+        </table>
+        <p></p>
+
+        <h1>Skewness S</h1>
+        <hr/>
+        <p> Skewness (this term was first used by Pearson, 1895) measures the deviation of the distribution from symmetry. If the skewness is clearly different from 0, then that distribution is asymmetrical, while normal distributions are perfectly symmetrical.		</p>
+        <div class="figure">
+            <img src="../images/formula/skewness.jpg"/>			
+        </div>
+        <p> Where:</p>
+        <table>
+            <td>M3</td>
+            <td>
+                <div class="figure">
+                    <img src="../images/formula/m3.jpg"/>			
+                </div></td><tr/>
+            <td>s3</td><td>is the standard desviation (sigma) raised to the third power. The standard deviation (s) is the root of the variance (S).</td><tr/>
+            <td>n</td><td>is the number of amino acid in the group</td><tr/>
+        </table>
+        <p></p>
+
+        <h1>Range RA</h1>
+        <hr/>
+        <p> This aggregation_operator calculate the range value.It is implemented as follow:		</p>
+        <div class="figure">
+            <img src="../images/formula/range.jpg"/>			
+        </div>
+        <p> Where:</p>
+        <table>
+            <td>Xmax</td><td>is the maximum index value in the group.</td><tr/>
+            <td>Xmin</td><td>is the minimum index value in the group</td><tr/>
+        </table>
+        <p></p>
+
+        <h1>Minimum Value MN</h1>
+        <hr/>
+        <p> This aggregation_operator calculate the minimum index value contained in the group.</p>
+        <p></p>
+
+        <h1>Maximum Value MX</h1>
+        <hr/>
+        <p> This aggregation_operator calculate the maximum index value contained in the group.	</p>
+        <p></p>
+
+        <h1>Quartile Q1</h1>
+        <hr/>
+        <p> This aggregation_operator calculates the element located in the 25% of the sorted group. </p>
+        <p></p>
+
+        <h1>Quartile Q2</h1>
+        <hr/>
+        <p> This aggregation_operator calculates the element located in the 50% in the sorted group. </p>
+        <p></p>
+
+        <h1>Quartile Q3</h1>
+        <hr/>
+        <p> This aggregation_operator calculates the element located in the 75% in the sorted group. </p>
+        <p></p>
+
+        <h1> I50</h1>
+        <hr/>
+        <p> This aggregation_operator calculate the I50 value for the group. It is implemented as follow:		</p>
+
+        <div class="figure">
+            <img src="../images/formula/i50.png"/>			
+        </div>
+
+        <p> Where:</p>
+        <table>
+            <td>P75</td><td>is the quartile Q3.</td><tr/>
+            <td>P25</td><td>is the quartile Q1.</td><tr/>
+        </table>
+        <p></p>
+
+
+        <div id="footer">
+            <hr/>
+            <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+        </div>
+    </body>
+</html>

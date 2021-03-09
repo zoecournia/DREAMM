@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+    </head>
+    <body>
+        <h1>Mean Information Content MI</h1>
+        <hr/>
+        <p> This aggregation_operator calculate the mean information content for the group. It is implemented as follow:		</p>
+        <div class="figure">
+            <img src="../images/formula/mi.jpg"/>			
+        </div>
+
+        <p> Where: </p>
+        <table>
+            <td>Ng</td><td>is the number of indices values located in the same bin.</td><tr/>
+            <td>No</td><td>is the number of indices values in the group.</td><tr/>
+            <td>A</td><td>is the number of intervals.</td><tr/>
+        </table>
+        <p/>
+
+        <h1>Total Information Content TI</h1>
+        <hr/>	
+
+        <p> This aggregation_operator calculate the total information content for the group. It is implemented as follow:
+        </p>
+        <div class="figure">
+            <img src="../images/formula/ti.jpg"/>			
+        </div>
+        <p> Where:</p>
+        <table>
+            <td>Ng</td><td>is the number of indices values located in the same bin.</td><tr/>
+            <td>No</td><td>is the number of indices values in the group.</td><tr/>
+            <td>G</td><td>is the number of intervals.</td><tr/>
+        </table>
+        <p/>
+
+        <h1>Standarized Information Content SI</h1>
+        <hr/>
+        <p> This aggregation_operator calculate the standarized information content for the group. It is implemented as follow:
+        </p>
+        <div class="figure">
+            <img src="../images/formula/si.jpg"/>			
+        </div>
+        <p> Where:</p>
+        <table>
+            <td>IT</td><td>is the Total Information Content.</td><tr/>
+            <td>No</td><td>is the number of indices values in the group.</td><tr/>
+        </table>
+        <p/>
+
+        <div id="footer">
+            <hr/>
+            <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+        </div>
+    </body>
+</html>

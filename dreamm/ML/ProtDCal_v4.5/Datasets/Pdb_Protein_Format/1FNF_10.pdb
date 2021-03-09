@@ -1,0 +1,1016 @@
+HEADER    CELL ADHESION PROTEIN                   30-SEP-95   1FNF              
+TITLE     FRAGMENT OF HUMAN FIBRONECTIN ENCOMPASSING TYPE-III                   
+TITLE    2 REPEATS 7 THROUGH 10                                                 
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: FIBRONECTIN;                                               
+COMPND   3 CHAIN: NULL;                                                         
+COMPND   4 DOMAIN: 368 AMINO ACID FRAGMENT ENCOMPASSING TYPE-III                
+COMPND   5 REPEATS 7 THROUGH 10;                                                
+COMPND   6 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   
+SOURCE   3 ORGANISM_COMMON: HUMAN;                                              
+SOURCE   4 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
+SOURCE   5 EXPRESSION_SYSTEM_STRAIN: BL21 AND 834(DE4);                         
+SOURCE   6 EXPRESSION_SYSTEM_PLASMID: PET11B;                                   
+SOURCE   7 OTHER_DETAILS: T7 EXPRESSION SYSTEM OF W. STUDIER                    
+KEYWDS    RGD, EXTRACELLULAR MATRIX                                             
+EXPDTA    X-RAY DIFFRACTION                                                     
+AUTHOR    D.J.LEAHY,I.AUKHIL,H.P.ERICKSON                                       
+REVDAT   1   29-JAN-96 1FNF    0                                                
+JRNL        AUTH   D.J.LEAHY,I.AUKHIL,H.P.ERICKSON                              
+JRNL        TITL   2.0 ANGSTROMS CRYSTAL STRUCTURE OF A FOUR-DOMAIN             
+JRNL        TITL 2 SEGMENT OF HUMAN FIBRONECTIN ENCOMPASSING THE RGD            
+JRNL        TITL 3 LOOP AND SYNERGY REGION                                      
+JRNL        REF    TO BE PUBLISHED                                              
+JRNL        REFN                                                  0353          
+REMARK   1                                                                      
+REMARK   1 REFERENCE 1                                                          
+REMARK   1  AUTH   D.J.LEAHY,H.P.ERICKSON,I.AUKHIL,P.JOSHI,                     
+REMARK   1  AUTH 2 W.A.HENDRICKSON                                              
+REMARK   1  TITL   CRYSTALLIZATION OF A FRAGMENT OF HUMAN FIBRONECTIN:          
+REMARK   1  TITL 2 INTRODUCTION OF METHIONINE BY SITE-DIRECTED                  
+REMARK   1  TITL 3 MUTAGENESIS TO ALLOW PHASING VIA SELENOMETHIONINE            
+REMARK   1  REF    PROTEINS: STRUCT.,FUNCT.,     V.  19    48 1994              
+REMARK   1  REF  2 GENET.                                                       
+REMARK   1  REFN   ASTM PSFGEY  US ISSN 0887-3585                 0867          
+REMARK   2                                                                      
+REMARK   2 RESOLUTION. 2.0  ANGSTROMS.                                          
+REMARK   3                                                                      
+REMARK   3 REFINEMENT.                                                          
+REMARK   3   PROGRAM                    X-PLOR 3.1                              
+REMARK   3   AUTHORS                    BRUNGER                                 
+REMARK   3   R VALUE                    0.216                                   
+REMARK   3   FREE R VALUE               0.308                                   
+REMARK   3   FREE R VALUE TEST SET      5.0    %                                
+REMARK   3   MEAN B VALUE               37.7   ANGSTROMS**2                     
+REMARK   3   RMSD BOND DISTANCES        0.008  ANGSTROMS                        
+REMARK   3   RMSD BOND ANGLES           2.0    DEGREES                          
+REMARK   3   RMSD DIHEDRAL ANGLES       25.56  DEGREES                          
+REMARK   3   RMSD IMPROPER ANGLES       1.32   DEGREES                          
+REMARK   3                                                                      
+REMARK   3   NUMBER OF REFLECTIONS      21904                                   
+REMARK   3   RESOLUTION RANGE       6.0 - 2.0  ANGSTROMS                        
+REMARK   3   DATA CUTOFF                2.     SIGMA(F)                         
+REMARK   3                                                                      
+REMARK   3  DATA COLLECTION.                                                    
+REMARK   3   NUMBER OF UNIQUE REFLECTIONS      28425                            
+REMARK   3   RESOLUTION RANGE             30.0 - 2.0  ANGSTROMS                 
+REMARK   3   COMPLETENESS OF DATA              95.3   %                         
+REMARK   3                                                                      
+REMARK   3  NUMBER OF ATOMS USED IN REFINEMENT.                                 
+REMARK   3   NUMBER OF PROTEIN ATOMS                       2820                 
+REMARK   3   NUMBER OF NUCLEIC ACID ATOMS                     0                 
+REMARK   3   NUMBER OF HETEROGEN ATOMS                        0                 
+REMARK   3   NUMBER OF SOLVENT ATOMS                        259                 
+REMARK   4                                                                      
+REMARK   4 THE ELECTRON DENSITY FOR RESIDUES 1153 - 1159, 1182 - 1189,          
+REMARK   4 1204 - 1205, 1276 - 1277, AND 1312 - 1313 IS WEAK, AND THE           
+REMARK   4 MODEL IN THESE REGIONS IS LESS CERTAIN.                              
+REMARK   5                                                                      
+REMARK   5 THE FOLLOWING SOLVENT MOLECULES LIE FARTHER THAN EXPECTED            
+REMARK   5 FROM THE PROTEIN OR NUCLEIC ACID MOLECULE AND MAY BE                 
+REMARK   5 ASSOCIATED WITH A SYMMETRY RELATED MOLECULE (M=MODEL                 
+REMARK   5 NUMBER; RES=RESIDUE NAME; C=CHAIN IDENTIFIER; SSEQ=SEQUENCE          
+REMARK   5 NUMBER; I=INSERTION CODE):                                           
+REMARK   5                                                                      
+REMARK   5  M RES CSSEQI                                                        
+REMARK   5  0 HOH    819      DISTANCE =  5.32 ANGSTROMS                        
+REMARK   5  0 HOH    855      DISTANCE =  7.37 ANGSTROMS                        
+REMARK  18                                                                      
+REMARK  18 EXPERIMENTAL DETAILS.                                                
+REMARK  18  DATE OF DATA COLLECTION        : OCT-94                             
+REMARK  18  SOURCE                         : NSLS                               
+REMARK  18  BEAMLINE                       : X-4A                               
+REMARK  18  TEMPERATURE                    : 100 K                              
+REMARK  18  PH                             : 5.8                                
+REMARK  18  LAUE (Y/N)                     : N                                  
+REMARK  18  WAVELENGTH OR RANGE (A)        : 0.9871, 0.9793,                    
+REMARK  18                                   0.9790, 0.9686                     
+REMARK  18  DETECTOR MANUFACTURER          : FUJI                               
+REMARK  18  INTENSITY-INTEGRATION SOFTWARE : DENZO                              
+REMARK  18  MERGING R VALUE (INTENSITY)    : 0.043                              
+REMARK  18                                                                      
+REMARK  18 THE STRUCTURE WAS SOLVED BY MAD USING                                
+REMARK  18 SELENOMETHIONYL-SUBSTITUTED PROTEIN AND DATA COLLECTED AT 4          
+REMARK  18 WAVELENGTHS.  THE DATA USED FOR REFINEMENT WAS FROM NATIVE           
+REMARK  18 PROTEIN AND COLLECTED AT .9793 A.                                    
+DBREF  1FNF   1142  1509  SWS    P02751   FINC_HUMAN    1173   1540             
+SEQRES   1    368  PRO LEU SER PRO PRO THR ASN LEU HIS LEU GLU ALA ASN          
+SEQRES   2    368  PRO ASP THR GLY VAL LEU THR VAL SER TRP GLU ARG SER          
+SEQRES   3    368  THR THR PRO ASP ILE THR GLY TYR ARG ILE THR THR THR          
+SEQRES   4    368  PRO THR ASN GLY GLN GLN GLY ASN SER LEU GLU GLU VAL          
+SEQRES   5    368  VAL HIS ALA ASP GLN SER SER CYS THR PHE ASP ASN LEU          
+SEQRES   6    368  SER PRO GLY LEU GLU TYR ASN VAL SER VAL TYR THR VAL          
+SEQRES   7    368  LYS ASP ASP LYS GLU SER VAL PRO ILE SER ASP THR ILE          
+SEQRES   8    368  ILE PRO ALA VAL PRO PRO PRO THR ASP LEU ARG PHE THR          
+SEQRES   9    368  ASN ILE GLY PRO ASP THR MET ARG VAL THR TRP ALA PRO          
+SEQRES  10    368  PRO PRO SER ILE ASP LEU THR ASN PHE LEU VAL ARG TYR          
+SEQRES  11    368  SER PRO VAL LYS ASN GLU GLU ASP VAL ALA GLU LEU SER          
+SEQRES  12    368  ILE SER PRO SER ASP ASN ALA VAL VAL LEU THR ASN LEU          
+SEQRES  13    368  LEU PRO GLY THR GLU TYR VAL VAL SER VAL SER SER VAL          
+SEQRES  14    368  TYR GLU GLN HIS GLU SER THR PRO LEU ARG GLY ARG GLN          
+SEQRES  15    368  LYS THR GLY LEU ASP SER PRO THR GLY ILE ASP PHE SER          
+SEQRES  16    368  ASP ILE THR ALA ASN SER PHE THR VAL HIS TRP ILE ALA          
+SEQRES  17    368  PRO ARG ALA THR ILE THR GLY TYR ARG ILE ARG HIS HIS          
+SEQRES  18    368  PRO GLU HIS PHE SER GLY ARG PRO ARG GLU ASP ARG VAL          
+SEQRES  19    368  PRO HIS SER ARG ASN SER ILE THR LEU THR ASN LEU THR          
+SEQRES  20    368  PRO GLY THR GLU TYR VAL VAL SER ILE VAL ALA LEU ASN          
+SEQRES  21    368  GLY ARG GLU GLU SER PRO LEU LEU ILE GLY GLN GLN SER          
+SEQRES  22    368  THR VAL SER ASP VAL PRO ARG ASP LEU GLU VAL VAL ALA          
+SEQRES  23    368  ALA THR PRO THR SER LEU LEU ILE SER TRP ASP ALA PRO          
+SEQRES  24    368  ALA VAL THR VAL ARG TYR TYR ARG ILE THR TYR GLY GLU          
+SEQRES  25    368  THR GLY GLY ASN SER PRO VAL GLN GLU PHE THR VAL PRO          
+SEQRES  26    368  GLY SER LYS SER THR ALA THR ILE SER GLY LEU LYS PRO          
+SEQRES  27    368  GLY VAL ASP TYR THR ILE THR VAL TYR ALA VAL THR GLY          
+SEQRES  28    368  ARG GLY ASP SER PRO ALA SER SER LYS PRO ILE SER ILE          
+SEQRES  29    368  ASN TYR ARG THR                                              
+FORMUL   2  HOH   *259(H2 O1)                                                   
+SHEET    1   A 3 HIS  1150  ALA  1153  0                                        
+SHEET    2   A 3 LEU  1160  SER  1163 -1  N  SER  1163   O  HIS  1150           
+SHEET    3   A 3 SER  1200  THR  1202 -1  N  CYS  1201   O  VAL  1162           
+SHEET    1   B 4 LEU  1190  VAL  1194  0                                        
+SHEET    2   B 4 GLY  1174  PRO  1181 -1  N  THR  1179   O  LEU  1190           
+SHEET    3   B 4 GLU  1211  VAL  1219 -1  N  VAL  1219   O  GLY  1174           
+SHEET    4   B 4 ILE  1228  ILE  1233 -1  N  ILE  1232   O  TYR  1212           
+SHEET    1   C 3 ARG  1243  THR  1245  0                                        
+SHEET    2   C 3 MET  1252  THR  1255 -1  N  THR  1255   O  ARG  1243           
+SHEET    3   C 3 ALA  1291  LEU  1294 -1  N  LEU  1294   O  MET  1252           
+SHEET    1   D 4 LEU  1319  LYS  1324  0                                        
+SHEET    2   D 4 GLU  1302  VAL  1310 -1  N  VAL  1307   O  LEU  1319           
+SHEET    3   D 4 ASN  1266  PRO  1273 -1  N  SER  1272   O  VAL  1304           
+SHEET    4   D 4 ASN  1276  ILE  1285 -1  N  ILE  1285   O  PHE  1267           
+SHEET    1   E 3 ASP  1334  SER  1336  0                                        
+SHEET    2   E 3 SER  1342  HIS  1346 -1  N  HIS  1346   O  ASP  1334           
+SHEET    3   E 3 SER  1381  THR  1385 -1  N  LEU  1384   O  PHE  1343           
+SHEET    1   F 4 ARG  1371  PRO  1376  0                                        
+SHEET    2   F 4 GLY  1356  HIS  1362 -1  N  HIS  1361   O  ARG  1371           
+SHEET    3   F 4 GLU  1392  LEU  1400 -1  N  LEU  1400   O  GLY  1356           
+SHEET    4   F 4 LEU  1409  SER  1414 -1  N  GLN  1413   O  TYR  1393           
+SHEET    1   G 3 THR  1471  ILE  1474  0                                        
+SHEET    2   G 3 SER  1432  SER  1436 -1  N  ILE  1435   O  ALA  1472           
+SHEET    3   G 3 GLU  1424  THR  1429 -1  N  THR  1429   O  SER  1432           
+SHEET    1   H 4 GLN  1461  PRO  1466  0                                        
+SHEET    2   H 4 TYR  1446  GLU  1453 -1  N  TYR  1451   O  GLN  1461           
+SHEET    3   H 4 TYR  1483  VAL  1490 -1  N  VAL  1490   O  TYR  1446           
+SHEET    4   H 4 ILE  1503  TYR  1507 -1  N  TYR  1507   O  TYR  1483           
+CRYST1   64.050   60.670   58.440  90.00 103.00  90.00 P 21          2          
+ORIGX1      1.000000  0.000000  0.000000        0.00000                         
+ORIGX2      0.000000  1.000000  0.000000        0.00000                         
+ORIGX3      0.000000  0.000000  1.000000        0.00000                         
+SCALE1      0.015613  0.000000  0.003604        0.00000                         
+SCALE2      0.000000  0.016483  0.000000        0.00000                         
+SCALE3      0.000000  0.000000  0.017562        0.00000                         
+ATOM   2594  N   SER     1      17.051  15.731 -33.181  1.00 31.23      1FNF2759
+ATOM   2595  CA  SER     1      17.924  16.733 -33.776  1.00 27.13      1FNF2760
+ATOM   2596  C   SER     1      17.076  17.619 -34.689  1.00 25.68      1FNF2761
+ATOM   2597  O   SER     1      16.261  17.120 -35.472  1.00 27.72      1FNF2762
+ATOM   2598  CB  SER     1      19.023  16.067 -34.588  1.00 29.50      1FNF2763
+ATOM   2599  OG  SER     1      19.681  17.017 -35.403  1.00 36.12      1FNF2764
+ATOM   2600  H   SER     1      16.967  14.857 -33.603  1.00  0.00      1FNF2765
+ATOM   2601  HG  SER     1      20.516  16.583 -35.656  1.00  0.00      1FNF2766
+ATOM   2602  N   ASP     2      17.242  18.928 -34.560  1.00 29.23      1FNF2767
+ATOM   2603  CA  ASP     2      16.498  19.878 -35.382  1.00 30.89      1FNF2768
+ATOM   2604  C   ASP     2      17.311  20.337 -36.592  1.00 33.25      1FNF2769
+ATOM   2605  O   ASP     2      16.892  21.239 -37.323  1.00 34.40      1FNF2770
+ATOM   2606  CB  ASP     2      16.082  21.093 -34.553  1.00 24.70      1FNF2771
+ATOM   2607  CG  ASP     2      17.255  21.923 -34.080  1.00 19.68      1FNF2772
+ATOM   2608  OD1 ASP     2      18.416  21.472 -34.133  1.00 23.06      1FNF2773
+ATOM   2609  OD2 ASP     2      17.005  23.055 -33.629  1.00 27.20      1FNF2774
+ATOM   2610  H   ASP     2      17.887  19.300 -33.919  1.00  0.00      1FNF2775
+ATOM   2611  N   VAL     3      18.449  19.682 -36.817  1.00 28.90      1FNF2776
+ATOM   2612  CA  VAL     3      19.342  20.021 -37.919  1.00 26.62      1FNF2777
+ATOM   2613  C   VAL     3      19.003  19.279 -39.207  1.00 25.70      1FNF2778
+ATOM   2614  O   VAL     3      18.757  18.075 -39.190  1.00 22.40      1FNF2779
+ATOM   2615  CB  VAL     3      20.815  19.715 -37.545  1.00 25.87      1FNF2780
+ATOM   2616  CG1 VAL     3      21.760  20.227 -38.624  1.00 21.57      1FNF2781
+ATOM   2617  CG2 VAL     3      21.161  20.331 -36.202  1.00 28.23      1FNF2782
+ATOM   2618  H   VAL     3      18.692  18.970 -36.195  1.00  0.00      1FNF2783
+ATOM   2619  N   PRO     4      18.953  20.000 -40.343  1.00 29.64      1FNF2784
+ATOM   2620  CA  PRO     4      18.643  19.323 -41.606  1.00 28.42      1FNF2785
+ATOM   2621  C   PRO     4      19.744  18.304 -41.903  1.00 31.15      1FNF2786
+ATOM   2622  O   PRO     4      20.796  18.314 -41.259  1.00 32.88      1FNF2787
+ATOM   2623  CB  PRO     4      18.676  20.477 -42.623  1.00 27.58      1FNF2788
+ATOM   2624  CG  PRO     4      18.248  21.653 -41.805  1.00 22.94      1FNF2789
+ATOM   2625  CD  PRO     4      19.059  21.457 -40.546  1.00 18.91      1FNF2790
+ATOM   2626  N   ARG     5      19.512  17.423 -42.866  1.00 33.92      1FNF2791
+ATOM   2627  CA  ARG     5      20.522  16.443 -43.208  1.00 35.81      1FNF2792
+ATOM   2628  C   ARG     5      20.573  16.117 -44.692  1.00 34.64      1FNF2793
+ATOM   2629  O   ARG     5      19.729  16.569 -45.476  1.00 25.00      1FNF2794
+ATOM   2630  CB  ARG     5      20.342  15.174 -42.366  1.00 46.40      1FNF2795
+ATOM   2631  CG  ARG     5      18.959  14.566 -42.415  1.00 53.91      1FNF2796
+ATOM   2632  CD  ARG     5      18.585  13.982 -41.057  1.00 61.72      1FNF2797
+ATOM   2633  NE  ARG     5      18.066  14.992 -40.129  1.00 64.27      1FNF2798
+ATOM   2634  CZ  ARG     5      18.437  15.114 -38.855  1.00 62.82      1FNF2799
+ATOM   2635  NH1 ARG     5      19.343  14.290 -38.340  1.00 72.29      1FNF2800
+ATOM   2636  NH2 ARG     5      17.883  16.040 -38.082  1.00 50.83      1FNF2801
+ATOM   2637  H   ARG     5      18.663  17.414 -43.364  1.00  0.00      1FNF2802
+ATOM   2638  HE  ARG     5      17.387  15.592 -40.511  1.00  0.00      1FNF2803
+ATOM   2639 1HH1 ARG     5      19.760  13.579 -38.901  1.00  0.00      1FNF2804
+ATOM   2640 2HH1 ARG     5      19.684  14.415 -37.401  1.00  0.00      1FNF2805
+ATOM   2641 1HH2 ARG     5      17.205  16.664 -38.460  1.00  0.00      1FNF2806
+ATOM   2642 2HH2 ARG     5      18.129  16.166 -37.122  1.00  0.00      1FNF2807
+ATOM   2643  N   ASP     6      21.643  15.432 -45.070  1.00 34.94      1FNF2808
+ATOM   2644  CA  ASP     6      21.881  14.991 -46.434  1.00 40.48      1FNF2809
+ATOM   2645  C   ASP     6      21.721  16.093 -47.471  1.00 41.21      1FNF2810
+ATOM   2646  O   ASP     6      21.180  15.875 -48.566  1.00 39.27      1FNF2811
+ATOM   2647  CB  ASP     6      20.999  13.780 -46.759  1.00 43.83      1FNF2812
+ATOM   2648  CG  ASP     6      21.202  12.632 -45.779  1.00 48.95      1FNF2813
+ATOM   2649  OD1 ASP     6      22.349  12.434 -45.314  1.00 52.85      1FNF2814
+ATOM   2650  OD2 ASP     6      20.217  11.937 -45.456  1.00 56.12      1FNF2815
+ATOM   2651  H   ASP     6      22.282  15.200 -44.374  1.00  0.00      1FNF2816
+ATOM   2652  N   LEU     7      22.203  17.282 -47.118  1.00 41.83      1FNF2817
+ATOM   2653  CA  LEU     7      22.155  18.423 -48.024  1.00 38.95      1FNF2818
+ATOM   2654  C   LEU     7      23.078  18.067 -49.187  1.00 34.54      1FNF2819
+ATOM   2655  O   LEU     7      24.214  17.618 -48.974  1.00 27.42      1FNF2820
+ATOM   2656  CB  LEU     7      22.647  19.701 -47.323  1.00 34.72      1FNF2821
+ATOM   2657  CG  LEU     7      22.943  20.937 -48.193  1.00 36.22      1FNF2822
+ATOM   2658  CD1 LEU     7      21.719  21.378 -48.997  1.00 31.63      1FNF2823
+ATOM   2659  CD2 LEU     7      23.431  22.061 -47.308  1.00 36.69      1FNF2824
+ATOM   2660  H   LEU     7      22.657  17.364 -46.256  1.00  0.00      1FNF2825
+ATOM   2661  N   GLU     8      22.577  18.240 -50.405  1.00 36.46      1FNF2826
+ATOM   2662  CA  GLU     8      23.345  17.935 -51.597  1.00 28.65      1FNF2827
+ATOM   2663  C   GLU     8      22.842  18.688 -52.795  1.00 29.41      1FNF2828
+ATOM   2664  O   GLU     8      21.756  19.270 -52.760  1.00 27.74      1FNF2829
+ATOM   2665  CB  GLU     8      23.276  16.441 -51.898  1.00 34.09      1FNF2830
+ATOM   2666  CG  GLU     8      24.351  15.619 -51.205  1.00 44.42      1FNF2831
+ATOM   2667  CD  GLU     8      25.768  16.000 -51.616  1.00 48.71      1FNF2832
+ATOM   2668  OE1 GLU     8      25.958  16.777 -52.592  1.00 47.77      1FNF2833
+ATOM   2669  OE2 GLU     8      26.700  15.498 -50.952  1.00 59.94      1FNF2834
+ATOM   2670  H   GLU     8      21.668  18.565 -50.527  1.00  0.00      1FNF2835
+ATOM   2671  N   VAL     9      23.634  18.641 -53.865  1.00 36.99      1FNF2836
+ATOM   2672  CA  VAL     9      23.305  19.288 -55.135  1.00 36.45      1FNF2837
+ATOM   2673  C   VAL     9      22.677  18.254 -56.067  1.00 33.84      1FNF2838
+ATOM   2674  O   VAL     9      23.346  17.317 -56.501  1.00 35.12      1FNF2839
+ATOM   2675  CB  VAL     9      24.567  19.892 -55.803  1.00 36.59      1FNF2840
+ATOM   2676  CG1 VAL     9      24.240  20.377 -57.217  1.00 34.28      1FNF2841
+ATOM   2677  CG2 VAL     9      25.099  21.042 -54.960  1.00 34.77      1FNF2842
+ATOM   2678  H   VAL     9      24.466  18.118 -53.762  1.00  0.00      1FNF2843
+ATOM   2679  N   VAL    10      21.395  18.443 -56.372  1.00 39.57      1FNF2844
+ATOM   2680  CA  VAL    10      20.625  17.541 -57.230  1.00 37.61      1FNF2845
+ATOM   2681  C   VAL    10      20.783  17.807 -58.738  1.00 45.02      1FNF2846
+ATOM   2682  O   VAL    10      20.894  16.872 -59.542  1.00 40.68      1FNF2847
+ATOM   2683  CB  VAL    10      19.129  17.565 -56.803  1.00 26.88      1FNF2848
+ATOM   2684  CG1 VAL    10      18.240  17.030 -57.900  1.00 43.94      1FNF2849
+ATOM   2685  CG2 VAL    10      18.953  16.709 -55.575  1.00 27.60      1FNF2850
+ATOM   2686  H   VAL    10      20.951  19.221 -55.986  1.00  0.00      1FNF2851
+ATOM   2687  N   ALA    11      20.815  19.086 -59.102  1.00 48.85      1FNF2852
+ATOM   2688  CA  ALA    11      20.965  19.517 -60.484  1.00 50.53      1FNF2853
+ATOM   2689  C   ALA    11      21.957  20.680 -60.462  1.00 57.42      1FNF2854
+ATOM   2690  O   ALA    11      22.323  21.149 -59.375  1.00 58.11      1FNF2855
+ATOM   2691  CB  ALA    11      19.626  19.962 -61.036  1.00 46.54      1FNF2856
+ATOM   2692  H   ALA    11      20.782  19.780 -58.408  1.00  0.00      1FNF2857
+ATOM   2693  N   ALA    12      22.407  21.132 -61.636  1.00 59.92      1FNF2858
+ATOM   2694  CA  ALA    12      23.365  22.240 -61.716  1.00 62.73      1FNF2859
+ATOM   2695  C   ALA    12      23.620  22.765 -63.127  1.00 63.25      1FNF2860
+ATOM   2696  O   ALA    12      23.702  21.996 -64.080  1.00 66.65      1FNF2861
+ATOM   2697  CB  ALA    12      24.697  21.839 -61.073  1.00 61.70      1FNF2862
+ATOM   2698  H   ALA    12      22.126  20.725 -62.491  1.00  0.00      1FNF2863
+ATOM   2699  N   THR    13      23.772  24.080 -63.239  1.00 64.66      1FNF2864
+ATOM   2700  CA  THR    13      24.051  24.733 -64.512  1.00 65.22      1FNF2865
+ATOM   2701  C   THR    13      25.318  25.569 -64.296  1.00 68.92      1FNF2866
+ATOM   2702  O   THR    13      25.843  25.622 -63.181  1.00 69.33      1FNF2867
+ATOM   2703  CB  THR    13      22.884  25.652 -64.950  1.00 60.81      1FNF2868
+ATOM   2704  OG1 THR    13      22.793  26.769 -64.061  1.00 67.89      1FNF2869
+ATOM   2705  CG2 THR    13      21.562  24.898 -64.945  1.00 58.61      1FNF2870
+ATOM   2706  H   THR    13      23.765  24.642 -62.436  1.00  0.00      1FNF2871
+ATOM   2707  HG1 THR    13      22.074  27.343 -64.365  1.00  0.00      1FNF2872
+ATOM   2708  N   PRO    14      25.824  26.242 -65.349  1.00 73.79      1FNF2873
+ATOM   2709  CA  PRO    14      27.039  27.058 -65.198  1.00 73.12      1FNF2874
+ATOM   2710  C   PRO    14      26.891  28.279 -64.292  1.00 67.72      1FNF2875
+ATOM   2711  O   PRO    14      27.863  28.987 -64.042  1.00 69.52      1FNF2876
+ATOM   2712  CB  PRO    14      27.348  27.482 -66.637  1.00 75.79      1FNF2877
+ATOM   2713  CG  PRO    14      26.791  26.352 -67.451  1.00 78.00      1FNF2878
+ATOM   2714  CD  PRO    14      25.466  26.114 -66.774  1.00 76.38      1FNF2879
+ATOM   2715  N   THR    15      25.678  28.537 -63.820  1.00 65.14      1FNF2880
+ATOM   2716  CA  THR    15      25.430  29.683 -62.954  1.00 66.00      1FNF2881
+ATOM   2717  C   THR    15      24.412  29.356 -61.863  1.00 62.02      1FNF2882
+ATOM   2718  O   THR    15      23.842  30.263 -61.242  1.00 60.47      1FNF2883
+ATOM   2719  CB  THR    15      24.880  30.880 -63.774  1.00 70.21      1FNF2884
+ATOM   2720  OG1 THR    15      23.710  30.473 -64.504  1.00 62.71      1FNF2885
+ATOM   2721  CG2 THR    15      25.937  31.409 -64.745  1.00 73.95      1FNF2886
+ATOM   2722  H   THR    15      24.905  27.991 -64.051  1.00  0.00      1FNF2887
+ATOM   2723  HG1 THR    15      23.425  31.225 -65.033  1.00  0.00      1FNF2888
+ATOM   2724  N   SER    16      24.204  28.070 -61.607  1.00 56.54      1FNF2889
+ATOM   2725  CA  SER    16      23.219  27.664 -60.619  1.00 49.10      1FNF2890
+ATOM   2726  C   SER    16      23.453  26.273 -60.048  1.00 44.47      1FNF2891
+ATOM   2727  O   SER    16      24.264  25.494 -60.558  1.00 38.36      1FNF2892
+ATOM   2728  CB  SER    16      21.821  27.734 -61.249  1.00 47.89      1FNF2893
+ATOM   2729  OG  SER    16      20.814  27.218 -60.391  1.00 60.94      1FNF2894
+ATOM   2730  H   SER    16      24.727  27.365 -62.042  1.00  0.00      1FNF2895
+ATOM   2731  HG  SER    16      20.001  27.166 -60.900  1.00  0.00      1FNF2896
+ATOM   2732  N   LEU    17      22.719  25.982 -58.981  1.00 44.89      1FNF2897
+ATOM   2733  CA  LEU    17      22.762  24.702 -58.291  1.00 40.55      1FNF2898
+ATOM   2734  C   LEU    17      21.370  24.470 -57.720  1.00 40.12      1FNF2899
+ATOM   2735  O   LEU    17      20.746  25.398 -57.199  1.00 42.10      1FNF2900
+ATOM   2736  CB  LEU    17      23.767  24.732 -57.134  1.00 40.79      1FNF2901
+ATOM   2737  CG  LEU    17      25.259  24.886 -57.438  1.00 43.64      1FNF2902
+ATOM   2738  CD1 LEU    17      26.077  25.059 -56.155  1.00 24.02      1FNF2903
+ATOM   2739  CD2 LEU    17      25.732  23.683 -58.231  1.00 48.79      1FNF2904
+ATOM   2740  H   LEU    17      22.099  26.671 -58.653  1.00  0.00      1FNF2905
+ATOM   2741  N   LEU    18      20.838  23.270 -57.915  1.00 41.45      1FNF2906
+ATOM   2742  CA  LEU    18      19.541  22.927 -57.351  1.00 40.15      1FNF2907
+ATOM   2743  C   LEU    18      19.918  22.053 -56.163  1.00 35.66      1FNF2908
+ATOM   2744  O   LEU    18      20.490  20.975 -56.330  1.00 30.31      1FNF2909
+ATOM   2745  CB  LEU    18      18.681  22.142 -58.338  1.00 42.00      1FNF2910
+ATOM   2746  CG  LEU    18      17.299  21.771 -57.793  1.00 45.63      1FNF2911
+ATOM   2747  CD1 LEU    18      16.378  22.977 -57.862  1.00 44.79      1FNF2912
+ATOM   2748  CD2 LEU    18      16.710  20.617 -58.592  1.00 55.70      1FNF2913
+ATOM   2749  H   LEU    18      21.341  22.592 -58.414  1.00  0.00      1FNF2914
+ATOM   2750  N   ILE    19      19.698  22.568 -54.965  1.00 34.06      1FNF2915
+ATOM   2751  CA  ILE    19      20.046  21.826 -53.769  1.00 29.90      1FNF2916
+ATOM   2752  C   ILE    19      18.845  21.150 -53.144  1.00 29.76      1FNF2917
+ATOM   2753  O   ILE    19      17.698  21.572 -53.342  1.00 25.95      1FNF2918
+ATOM   2754  CB  ILE    19      20.777  22.718 -52.740  1.00 28.58      1FNF2919
+ATOM   2755  CG1 ILE    19      19.861  23.844 -52.252  1.00 23.00      1FNF2920
+ATOM   2756  CG2 ILE    19      22.032  23.299 -53.370  1.00 20.00      1FNF2921
+ATOM   2757  CD1 ILE    19      20.494  24.737 -51.233  1.00 21.23      1FNF2922
+ATOM   2758  H   ILE    19      19.272  23.444 -54.895  1.00  0.00      1FNF2923
+ATOM   2759  N   SER    20      19.128  20.084 -52.401  1.00 33.95      1FNF2924
+ATOM   2760  CA  SER    20      18.108  19.289 -51.736  1.00 32.81      1FNF2925
+ATOM   2761  C   SER    20      18.659  18.826 -50.384  1.00 29.73      1FNF2926
+ATOM   2762  O   SER    20      19.873  18.708 -50.203  1.00 29.93      1FNF2927
+ATOM   2763  CB  SER    20      17.773  18.076 -52.605  1.00 26.56      1FNF2928
+ATOM   2764  OG  SER    20      16.504  17.544 -52.292  1.00 44.16      1FNF2929
+ATOM   2765  H   SER    20      20.054  19.806 -52.261  1.00  0.00      1FNF2930
+ATOM   2766  HG  SER    20      15.844  18.248 -52.205  1.00  0.00      1FNF2931
+ATOM   2767  N   TRP    21      17.768  18.608 -49.428  1.00 29.17      1FNF2932
+ATOM   2768  CA  TRP    21      18.169  18.151 -48.106  1.00 29.40      1FNF2933
+ATOM   2769  C   TRP    21      16.977  17.442 -47.483  1.00 31.41      1FNF2934
+ATOM   2770  O   TRP    21      15.859  17.513 -48.015  1.00 24.70      1FNF2935
+ATOM   2771  CB  TRP    21      18.614  19.334 -47.228  1.00 26.20      1FNF2936
+ATOM   2772  CG  TRP    21      17.542  20.360 -46.993  1.00 22.56      1FNF2937
+ATOM   2773  CD1 TRP    21      16.650  20.393 -45.956  1.00 22.77      1FNF2938
+ATOM   2774  CD2 TRP    21      17.225  21.479 -47.833  1.00 18.64      1FNF2939
+ATOM   2775  NE1 TRP    21      15.791  21.457 -46.106  1.00 21.36      1FNF2940
+ATOM   2776  CE2 TRP    21      16.123  22.141 -47.245  1.00 20.67      1FNF2941
+ATOM   2777  CE3 TRP    21      17.763  21.983 -49.026  1.00 15.87      1FNF2942
+ATOM   2778  CZ2 TRP    21      15.548  23.287 -47.810  1.00 18.55      1FNF2943
+ATOM   2779  CZ3 TRP    21      17.193  23.122 -49.587  1.00 16.07      1FNF2944
+ATOM   2780  CH2 TRP    21      16.096  23.758 -48.978  1.00 22.29      1FNF2945
+ATOM   2781  H   TRP    21      16.803  18.714 -49.591  1.00  0.00      1FNF2946
+ATOM   2782  HE1 TRP    21      15.044  21.676 -45.512  1.00  0.00      1FNF2947
+ATOM   2783  N   ASP    22      17.213  16.752 -46.371  1.00 26.40      1FNF2948
+ATOM   2784  CA  ASP    22      16.143  16.053 -45.684  1.00 30.21      1FNF2949
+ATOM   2785  C   ASP    22      15.771  16.784 -44.423  1.00 27.08      1FNF2950
+ATOM   2786  O   ASP    22      16.612  17.030 -43.553  1.00 25.99      1FNF2951
+ATOM   2787  CB  ASP    22      16.526  14.609 -45.369  1.00 39.64      1FNF2952
+ATOM   2788  CG  ASP    22      16.535  13.733 -46.603  1.00 46.93      1FNF2953
+ATOM   2789  OD1 ASP    22      15.622  13.869 -47.454  1.00 53.55      1FNF2954
+ATOM   2790  OD2 ASP    22      17.465  12.915 -46.729  1.00 53.32      1FNF2955
+ATOM   2791  H   ASP    22      18.095  16.688 -46.016  1.00  0.00      1FNF2956
+ATOM   2792  N   ALA    23      14.503  17.170 -44.369  1.00 27.64      1FNF2957
+ATOM   2793  CA  ALA    23      13.928  17.894 -43.245  1.00 33.33      1FNF2958
+ATOM   2794  C   ALA    23      14.191  17.163 -41.942  1.00 30.78      1FNF2959
+ATOM   2795  O   ALA    23      14.262  15.929 -41.918  1.00 33.22      1FNF2960
+ATOM   2796  CB  ALA    23      12.410  18.067 -43.447  1.00 25.08      1FNF2961
+ATOM   2797  H   ALA    23      13.940  16.928 -45.134  1.00  0.00      1FNF2962
+ATOM   2798  N   PRO    24      14.470  17.918 -40.868  1.00 29.89      1FNF2963
+ATOM   2799  CA  PRO    24      14.712  17.239 -39.598  1.00 29.48      1FNF2964
+ATOM   2800  C   PRO    24      13.351  16.816 -39.050  1.00 30.42      1FNF2965
+ATOM   2801  O   PRO    24      12.319  17.312 -39.503  1.00 26.88      1FNF2966
+ATOM   2802  CB  PRO    24      15.388  18.323 -38.760  1.00 27.62      1FNF2967
+ATOM   2803  CG  PRO    24      14.796  19.602 -39.317  1.00 25.96      1FNF2968
+ATOM   2804  CD  PRO    24      14.825  19.346 -40.788  1.00 21.32      1FNF2969
+ATOM   2805  N   ALA    25      13.352  15.871 -38.115  1.00 34.46      1FNF2970
+ATOM   2806  CA  ALA    25      12.126  15.357 -37.511  1.00 35.20      1FNF2971
+ATOM   2807  C   ALA    25      11.459  16.334 -36.533  1.00 35.78      1FNF2972
+ATOM   2808  O   ALA    25      11.094  15.955 -35.418  1.00 35.21      1FNF2973
+ATOM   2809  CB  ALA    25      12.417  14.034 -36.827  1.00 33.91      1FNF2974
+ATOM   2810  H   ALA    25      14.200  15.494 -37.853  1.00  0.00      1FNF2975
+ATOM   2811  N   VAL    26      11.328  17.593 -36.951  1.00 34.05      1FNF2976
+ATOM   2812  CA  VAL    26      10.702  18.651 -36.155  1.00 27.19      1FNF2977
+ATOM   2813  C   VAL    26       9.968  19.566 -37.125  1.00 28.45      1FNF2978
+ATOM   2814  O   VAL    26      10.170  19.478 -38.338  1.00 29.42      1FNF2979
+ATOM   2815  CB  VAL    26      11.737  19.518 -35.375  1.00 23.27      1FNF2980
+ATOM   2816  CG1 VAL    26      12.394  18.711 -34.259  1.00 25.71      1FNF2981
+ATOM   2817  CG2 VAL    26      12.782  20.105 -36.321  1.00 17.99      1FNF2982
+ATOM   2818  H   VAL    26      11.599  17.855 -37.852  1.00  0.00      1FNF2983
+ATOM   2819  N   THR    27       9.105  20.428 -36.600  1.00 33.54      1FNF2984
+ATOM   2820  CA  THR    27       8.374  21.362 -37.447  1.00 32.09      1FNF2985
+ATOM   2821  C   THR    27       9.244  22.593 -37.699  1.00 31.79      1FNF2986
+ATOM   2822  O   THR    27       9.656  23.296 -36.771  1.00 28.93      1FNF2987
+ATOM   2823  CB  THR    27       7.042  21.793 -36.819  1.00 36.84      1FNF2988
+ATOM   2824  OG1 THR    27       6.355  20.640 -36.313  1.00 44.00      1FNF2989
+ATOM   2825  CG2 THR    27       6.164  22.472 -37.868  1.00 39.09      1FNF2990
+ATOM   2826  H   THR    27       8.942  20.449 -35.637  1.00  0.00      1FNF2991
+ATOM   2827  HG1 THR    27       5.527  20.963 -35.937  1.00  0.00      1FNF2992
+ATOM   2828  N   VAL    28       9.592  22.791 -38.961  1.00 30.40      1FNF2993
+ATOM   2829  CA  VAL    28      10.412  23.912 -39.373  1.00 24.21      1FNF2994
+ATOM   2830  C   VAL    28       9.500  24.981 -39.963  1.00 30.51      1FNF2995
+ATOM   2831  O   VAL    28       8.678  24.694 -40.843  1.00 31.35      1FNF2996
+ATOM   2832  CB  VAL    28      11.436  23.466 -40.445  1.00 23.11      1FNF2997
+ATOM   2833  CG1 VAL    28      12.373  24.622 -40.819  1.00 14.70      1FNF2998
+ATOM   2834  CG2 VAL    28      12.208  22.229 -39.954  1.00 12.44      1FNF2999
+ATOM   2835  H   VAL    28       9.275  22.164 -39.656  1.00  0.00      1FNF3000
+ATOM   2836  N   ARG    29       9.614  26.202 -39.454  1.00 29.22      1FNF3001
+ATOM   2837  CA  ARG    29       8.807  27.298 -39.968  1.00 27.18      1FNF3002
+ATOM   2838  C   ARG    29       9.274  27.632 -41.381  1.00 21.00      1FNF3003
+ATOM   2839  O   ARG    29       8.458  27.827 -42.280  1.00 27.63      1FNF3004
+ATOM   2840  CB  ARG    29       8.894  28.518 -39.053  1.00 25.25      1FNF3005
+ATOM   2841  CG  ARG    29       8.112  28.356 -37.752  1.00 36.33      1FNF3006
+ATOM   2842  CD  ARG    29       7.257  29.585 -37.453  1.00 38.24      1FNF3007
+ATOM   2843  NE  ARG    29       8.042  30.816 -37.511  1.00 47.53      1FNF3008
+ATOM   2844  CZ  ARG    29       7.661  31.926 -38.141  1.00 49.51      1FNF3009
+ATOM   2845  NH1 ARG    29       6.493  31.972 -38.776  1.00 47.22      1FNF3010
+ATOM   2846  NH2 ARG    29       8.453  32.993 -38.138  1.00 50.34      1FNF3011
+ATOM   2847  H   ARG    29      10.253  26.365 -38.734  1.00  0.00      1FNF3012
+ATOM   2848  HE  ARG    29       8.906  30.781 -37.027  1.00  0.00      1FNF3013
+ATOM   2849 1HH1 ARG    29       5.862  31.205 -38.810  1.00  0.00      1FNF3014
+ATOM   2850 2HH1 ARG    29       6.221  32.828 -39.248  1.00  0.00      1FNF3015
+ATOM   2851 1HH2 ARG    29       9.331  33.025 -37.666  1.00  0.00      1FNF3016
+ATOM   2852 2HH2 ARG    29       8.158  33.837 -38.614  1.00  0.00      1FNF3017
+ATOM   2853  N   TYR    30      10.590  27.705 -41.562  1.00 20.14      1FNF3018
+ATOM   2854  CA  TYR    30      11.208  27.972 -42.856  1.00 18.92      1FNF3019
+ATOM   2855  C   TYR    30      12.679  27.662 -42.712  1.00 24.41      1FNF3020
+ATOM   2856  O   TYR    30      13.175  27.546 -41.590  1.00 24.43      1FNF3021
+ATOM   2857  CB  TYR    30      11.023  29.432 -43.304  1.00 19.40      1FNF3022
+ATOM   2858  CG  TYR    30      11.610  30.473 -42.370  1.00 18.01      1FNF3023
+ATOM   2859  CD1 TYR    30      10.867  30.975 -41.305  1.00 16.19      1FNF3024
+ATOM   2860  CD2 TYR    30      12.906  30.947 -42.547  1.00 13.79      1FNF3025
+ATOM   2861  CE1 TYR    30      11.403  31.916 -40.434  1.00 16.20      1FNF3026
+ATOM   2862  CE2 TYR    30      13.449  31.884 -41.688  1.00 17.04      1FNF3027
+ATOM   2863  CZ  TYR    30      12.689  32.363 -40.628  1.00 15.84      1FNF3028
+ATOM   2864  OH  TYR    30      13.237  33.261 -39.744  1.00 15.38      1FNF3029
+ATOM   2865  H   TYR    30      11.198  27.577 -40.796  1.00  0.00      1FNF3030
+ATOM   2866  HH  TYR    30      12.597  33.466 -39.051  1.00  0.00      1FNF3031
+ATOM   2867  N   TYR    31      13.364  27.488 -43.840  1.00 25.99      1FNF3032
+ATOM   2868  CA  TYR    31      14.794  27.202 -43.846  1.00 25.74      1FNF3033
+ATOM   2869  C   TYR    31      15.523  28.431 -44.331  1.00 24.95      1FNF3034
+ATOM   2870  O   TYR    31      15.007  29.164 -45.182  1.00 17.72      1FNF3035
+ATOM   2871  CB  TYR    31      15.137  26.046 -44.801  1.00 13.40      1FNF3036
+ATOM   2872  CG  TYR    31      14.526  24.722 -44.433  1.00 13.61      1FNF3037
+ATOM   2873  CD1 TYR    31      15.187  23.834 -43.573  1.00 13.40      1FNF3038
+ATOM   2874  CD2 TYR    31      13.272  24.363 -44.922  1.00 12.79      1FNF3039
+ATOM   2875  CE1 TYR    31      14.599  22.609 -43.204  1.00 10.39      1FNF3040
+ATOM   2876  CE2 TYR    31      12.682  23.157 -44.564  1.00 22.85      1FNF3041
+ATOM   2877  CZ  TYR    31      13.347  22.284 -43.707  1.00 13.58      1FNF3042
+ATOM   2878  OH  TYR    31      12.735  21.096 -43.372  1.00 24.73      1FNF3043
+ATOM   2879  H   TYR    31      12.913  27.564 -44.698  1.00  0.00      1FNF3044
+ATOM   2880  HH  TYR    31      11.845  21.095 -43.759  1.00  0.00      1FNF3045
+ATOM   2881  N   ARG    32      16.720  28.647 -43.795  1.00 24.06      1FNF3046
+ATOM   2882  CA  ARG    32      17.566  29.766 -44.198  1.00 21.96      1FNF3047
+ATOM   2883  C   ARG    32      18.770  29.158 -44.907  1.00 22.96      1FNF3048
+ATOM   2884  O   ARG    32      19.472  28.311 -44.345  1.00 27.14      1FNF3049
+ATOM   2885  CB  ARG    32      18.014  30.583 -42.981  1.00 14.64      1FNF3050
+ATOM   2886  CG  ARG    32      19.159  31.539 -43.253  1.00 12.92      1FNF3051
+ATOM   2887  CD  ARG    32      19.526  32.252 -41.992  1.00 26.28      1FNF3052
+ATOM   2888  NE  ARG    32      20.833  32.885 -42.087  1.00 37.57      1FNF3053
+ATOM   2889  CZ  ARG    32      21.785  32.786 -41.163  1.00 38.06      1FNF3054
+ATOM   2890  NH1 ARG    32      21.582  32.072 -40.061  1.00 33.08      1FNF3055
+ATOM   2891  NH2 ARG    32      22.929  33.431 -41.332  1.00 53.45      1FNF3056
+ATOM   2892  H   ARG    32      17.049  28.023 -43.117  1.00  0.00      1FNF3057
+ATOM   2893  HE  ARG    32      20.983  33.445 -42.885  1.00  0.00      1FNF3058
+ATOM   2894 1HH1 ARG    32      20.688  31.626 -39.881  1.00  0.00      1FNF3059
+ATOM   2895 2HH1 ARG    32      22.267  31.983 -39.343  1.00  0.00      1FNF3060
+ATOM   2896 1HH2 ARG    32      23.017  33.995 -42.173  1.00  0.00      1FNF3061
+ATOM   2897 2HH2 ARG    32      23.726  33.421 -40.725  1.00  0.00      1FNF3062
+ATOM   2898  N   ILE    33      18.956  29.545 -46.163  1.00 25.04      1FNF3063
+ATOM   2899  CA  ILE    33      20.055  29.060 -46.995  1.00 21.39      1FNF3064
+ATOM   2900  C   ILE    33      21.055  30.205 -47.168  1.00 19.18      1FNF3065
+ATOM   2901  O   ILE    33      20.653  31.347 -47.368  1.00 17.39      1FNF3066
+ATOM   2902  CB  ILE    33      19.540  28.634 -48.439  1.00 27.93      1FNF3067
+ATOM   2903  CG1 ILE    33      18.585  27.433 -48.368  1.00 30.24      1FNF3068
+ATOM   2904  CG2 ILE    33      20.700  28.270 -49.351  1.00 15.25      1FNF3069
+ATOM   2905  CD1 ILE    33      17.159  27.767 -47.998  1.00 26.05      1FNF3070
+ATOM   2906  H   ILE    33      18.347  30.210 -46.553  1.00  0.00      1FNF3071
+ATOM   2907  N   THR    34      22.345  29.918 -47.030  1.00 20.93      1FNF3072
+ATOM   2908  CA  THR    34      23.368  30.929 -47.240  1.00 21.50      1FNF3073
+ATOM   2909  C   THR    34      24.377  30.319 -48.174  1.00 21.38      1FNF3074
+ATOM   2910  O   THR    34      24.588  29.101 -48.171  1.00 28.22      1FNF3075
+ATOM   2911  CB  THR    34      24.099  31.368 -45.952  1.00 27.37      1FNF3076
+ATOM   2912  OG1 THR    34      24.816  30.260 -45.390  1.00 40.26      1FNF3077
+ATOM   2913  CG2 THR    34      23.119  31.940 -44.927  1.00 23.43      1FNF3078
+ATOM   2914  H   THR    34      22.632  29.008 -46.809  1.00  0.00      1FNF3079
+ATOM   2915  HG1 THR    34      25.509  29.974 -46.011  1.00  0.00      1FNF3080
+ATOM   2916  N   TYR    35      24.980  31.157 -49.000  1.00 29.20      1FNF3081
+ATOM   2917  CA  TYR    35      25.984  30.688 -49.944  1.00 29.82      1FNF3082
+ATOM   2918  C   TYR    35      27.019  31.771 -50.173  1.00 26.11      1FNF3083
+ATOM   2919  O   TYR    35      26.706  32.969 -50.184  1.00 27.92      1FNF3084
+ATOM   2920  CB  TYR    35      25.340  30.273 -51.268  1.00 32.46      1FNF3085
+ATOM   2921  CG  TYR    35      24.654  31.390 -52.024  1.00 28.65      1FNF3086
+ATOM   2922  CD1 TYR    35      23.304  31.697 -51.793  1.00 28.23      1FNF3087
+ATOM   2923  CD2 TYR    35      25.336  32.095 -53.022  1.00 29.39      1FNF3088
+ATOM   2924  CE1 TYR    35      22.649  32.677 -52.547  1.00 22.41      1FNF3089
+ATOM   2925  CE2 TYR    35      24.694  33.069 -53.780  1.00 27.66      1FNF3090
+ATOM   2926  CZ  TYR    35      23.355  33.357 -53.543  1.00 28.80      1FNF3091
+ATOM   2927  OH  TYR    35      22.739  34.322 -54.312  1.00 35.94      1FNF3092
+ATOM   2928  H   TYR    35      24.772  32.117 -48.990  1.00  0.00      1FNF3093
+ATOM   2929  HH  TYR    35      21.828  34.430 -54.024  1.00  0.00      1FNF3094
+ATOM   2930  N   GLY    36      28.256  31.338 -50.314  1.00 19.20      1FNF3095
+ATOM   2931  CA  GLY    36      29.344  32.259 -50.530  1.00 26.27      1FNF3096
+ATOM   2932  C   GLY    36      30.527  31.425 -50.949  1.00 31.76      1FNF3097
+ATOM   2933  O   GLY    36      30.591  30.238 -50.623  1.00 32.13      1FNF3098
+ATOM   2934  H   GLY    36      28.460  30.380 -50.263  1.00  0.00      1FNF3099
+ATOM   2935  N   GLU    37      31.431  32.035 -51.706  1.00 32.84      1FNF3100
+ATOM   2936  CA  GLU    37      32.632  31.380 -52.193  1.00 27.11      1FNF3101
+ATOM   2937  C   GLU    37      33.388  30.754 -51.040  1.00 27.46      1FNF3102
+ATOM   2938  O   GLU    37      33.653  31.416 -50.040  1.00 35.05      1FNF3103
+ATOM   2939  CB  GLU    37      33.509  32.405 -52.893  1.00 30.61      1FNF3104
+ATOM   2940  CG  GLU    37      34.753  31.840 -53.525  1.00 40.98      1FNF3105
+ATOM   2941  CD  GLU    37      35.361  32.808 -54.501  1.00 46.14      1FNF3106
+ATOM   2942  OE1 GLU    37      35.608  33.970 -54.108  1.00 53.43      1FNF3107
+ATOM   2943  OE2 GLU    37      35.560  32.425 -55.669  1.00 47.04      1FNF3108
+ATOM   2944  H   GLU    37      31.294  32.973 -51.932  1.00  0.00      1FNF3109
+ATOM   2945  N   THR    38      33.715  29.474 -51.175  1.00 28.77      1FNF3110
+ATOM   2946  CA  THR    38      34.425  28.738 -50.144  1.00 26.21      1FNF3111
+ATOM   2947  C   THR    38      35.706  29.469 -49.823  1.00 31.33      1FNF3112
+ATOM   2948  O   THR    38      36.439  29.865 -50.729  1.00 34.41      1FNF3113
+ATOM   2949  CB  THR    38      34.723  27.307 -50.608  1.00 27.28      1FNF3114
+ATOM   2950  OG1 THR    38      33.486  26.633 -50.865  1.00 31.72      1FNF3115
+ATOM   2951  CG2 THR    38      35.485  26.550 -49.543  1.00 28.13      1FNF3116
+ATOM   2952  H   THR    38      33.502  28.989 -51.981  1.00  0.00      1FNF3117
+ATOM   2953  HG1 THR    38      33.727  25.857 -51.400  1.00  0.00      1FNF3118
+ATOM   2954  N   GLY    39      35.937  29.708 -48.533  1.00 31.27      1FNF3119
+ATOM   2955  CA  GLY    39      37.128  30.426 -48.110  1.00 33.80      1FNF3120
+ATOM   2956  C   GLY    39      37.166  31.876 -48.576  1.00 32.82      1FNF3121
+ATOM   2957  O   GLY    39      38.219  32.520 -48.547  1.00 37.38      1FNF3122
+ATOM   2958  H   GLY    39      35.288  29.404 -47.866  1.00  0.00      1FNF3123
+ATOM   2959  N   GLY    40      36.022  32.386 -49.017  1.00 30.11      1FNF3124
+ATOM   2960  CA  GLY    40      35.949  33.758 -49.473  1.00 32.88      1FNF3125
+ATOM   2961  C   GLY    40      36.095  34.768 -48.347  1.00 38.06      1FNF3126
+ATOM   2962  O   GLY    40      36.706  35.818 -48.533  1.00 42.25      1FNF3127
+ATOM   2963  H   GLY    40      35.211  31.846 -49.044  1.00  0.00      1FNF3128
+ATOM   2964  N   ASN    41      35.521  34.461 -47.186  1.00 35.23      1FNF3129
+ATOM   2965  CA  ASN    41      35.565  35.336 -46.011  1.00 31.59      1FNF3130
+ATOM   2966  C   ASN    41      34.640  36.561 -46.094  1.00 34.77      1FNF3131
+ATOM   2967  O   ASN    41      34.342  37.176 -45.073  1.00 43.91      1FNF3132
+ATOM   2968  CB  ASN    41      37.006  35.773 -45.699  1.00 28.30      1FNF3133
+ATOM   2969  CG  ASN    41      37.146  36.392 -44.316  1.00 28.34      1FNF3134
+ATOM   2970  OD1 ASN    41      37.671  37.493 -44.161  1.00 30.42      1FNF3135
+ATOM   2971  ND2 ASN    41      36.709  35.665 -43.298  1.00 27.17      1FNF3136
+ATOM   2972  H   ASN    41      35.069  33.595 -47.108  1.00  0.00      1FNF3137
+ATOM   2973 1HD2 ASN    41      36.745  36.055 -42.403  1.00  0.00      1FNF3138
+ATOM   2974 2HD2 ASN    41      36.343  34.777 -43.477  1.00  0.00      1FNF3139
+ATOM   2975  N   SER    42      34.149  36.887 -47.288  1.00 30.49      1FNF3140
+ATOM   2976  CA  SER    42      33.252  38.031 -47.482  1.00 27.62      1FNF3141
+ATOM   2977  C   SER    42      31.819  37.658 -47.048  1.00 28.72      1FNF3142
+ATOM   2978  O   SER    42      31.525  36.485 -46.810  1.00 32.61      1FNF3143
+ATOM   2979  CB  SER    42      33.269  38.453 -48.957  1.00 32.96      1FNF3144
+ATOM   2980  OG  SER    42      34.592  38.682 -49.422  1.00 29.19      1FNF3145
+ATOM   2981  H   SER    42      34.383  36.354 -48.068  1.00  0.00      1FNF3146
+ATOM   2982  HG  SER    42      35.055  37.835 -49.452  1.00  0.00      1FNF3147
+ATOM   2983  N   PRO    43      30.902  38.641 -46.964  1.00 24.56      1FNF3148
+ATOM   2984  CA  PRO    43      29.527  38.336 -46.552  1.00 25.75      1FNF3149
+ATOM   2985  C   PRO    43      28.820  37.306 -47.434  1.00 30.12      1FNF3150
+ATOM   2986  O   PRO    43      28.907  37.365 -48.671  1.00 34.09      1FNF3151
+ATOM   2987  CB  PRO    43      28.830  39.702 -46.635  1.00 26.06      1FNF3152
+ATOM   2988  CG  PRO    43      29.931  40.668 -46.370  1.00 17.58      1FNF3153
+ATOM   2989  CD  PRO    43      31.065  40.088 -47.187  1.00 24.36      1FNF3154
+ATOM   2990  N   VAL    44      28.149  36.351 -46.792  1.00 27.71      1FNF3155
+ATOM   2991  CA  VAL    44      27.405  35.317 -47.509  1.00 26.11      1FNF3156
+ATOM   2992  C   VAL    44      26.075  35.921 -47.937  1.00 28.02      1FNF3157
+ATOM   2993  O   VAL    44      25.629  36.916 -47.359  1.00 24.13      1FNF3158
+ATOM   2994  CB  VAL    44      27.077  34.047 -46.627  1.00 25.39      1FNF3159
+ATOM   2995  CG1 VAL    44      28.344  33.312 -46.195  1.00 15.84      1FNF3160
+ATOM   2996  CG2 VAL    44      26.220  34.423 -45.426  1.00 27.07      1FNF3161
+ATOM   2997  H   VAL    44      28.155  36.353 -45.810  1.00  0.00      1FNF3162
+ATOM   2998  N   GLN    45      25.480  35.367 -48.988  1.00 22.51      1FNF3163
+ATOM   2999  CA  GLN    45      24.185  35.831 -49.440  1.00 25.16      1FNF3164
+ATOM   3000  C   GLN    45      23.222  34.795 -48.919  1.00 28.05      1FNF3165
+ATOM   3001  O   GLN    45      23.618  33.646 -48.720  1.00 31.37      1FNF3166
+ATOM   3002  CB  GLN    45      24.116  35.880 -50.957  1.00 31.15      1FNF3167
+ATOM   3003  CG  GLN    45      24.994  36.936 -51.572  1.00 34.14      1FNF3168
+ATOM   3004  CD  GLN    45      25.058  36.793 -53.064  1.00 33.07      1FNF3169
+ATOM   3005  OE1 GLN    45      25.967  36.159 -53.597  1.00 41.27      1FNF3170
+ATOM   3006  NE2 GLN    45      24.078  37.347 -53.750  1.00 37.21      1FNF3171
+ATOM   3007  H   GLN    45      25.922  34.633 -49.475  1.00  0.00      1FNF3172
+ATOM   3008 1HE2 GLN    45      24.106  37.210 -54.720  1.00  0.00      1FNF3173
+ATOM   3009 2HE2 GLN    45      23.372  37.836 -53.286  1.00  0.00      1FNF3174
+ATOM   3010  N   GLU    46      21.980  35.197 -48.666  1.00 27.26      1FNF3175
+ATOM   3011  CA  GLU    46      20.989  34.271 -48.155  1.00 29.24      1FNF3176
+ATOM   3012  C   GLU    46      19.567  34.593 -48.556  1.00 24.90      1FNF3177
+ATOM   3013  O   GLU    46      19.276  35.683 -49.038  1.00 26.84      1FNF3178
+ATOM   3014  CB  GLU    46      21.091  34.141 -46.631  1.00 37.84      1FNF3179
+ATOM   3015  CG  GLU    46      20.906  35.409 -45.837  1.00 37.04      1FNF3180
+ATOM   3016  CD  GLU    46      20.811  35.128 -44.346  1.00 49.30      1FNF3181
+ATOM   3017  OE1 GLU    46      21.863  35.067 -43.667  1.00 50.01      1FNF3182
+ATOM   3018  OE2 GLU    46      19.681  34.939 -43.846  1.00 39.47      1FNF3183
+ATOM   3019  H   GLU    46      21.695  36.121 -48.805  1.00  0.00      1FNF3184
+ATOM   3020  N   PHE    47      18.699  33.607 -48.379  1.00 24.19      1FNF3185
+ATOM   3021  CA  PHE    47      17.280  33.701 -48.694  1.00 21.45      1FNF3186
+ATOM   3022  C   PHE    47      16.611  32.570 -47.922  1.00 20.61      1FNF3187
+ATOM   3023  O   PHE    47      17.294  31.718 -47.344  1.00 22.58      1FNF3188
+ATOM   3024  CB  PHE    47      17.039  33.539 -50.201  1.00 23.31      1FNF3189
+ATOM   3025  CG  PHE    47      17.507  32.215 -50.765  1.00 24.62      1FNF3190
+ATOM   3026  CD1 PHE    47      18.851  32.005 -51.066  1.00 25.07      1FNF3191
+ATOM   3027  CD2 PHE    47      16.600  31.186 -51.007  1.00 29.44      1FNF3192
+ATOM   3028  CE1 PHE    47      19.282  30.798 -51.595  1.00 22.69      1FNF3193
+ATOM   3029  CE2 PHE    47      17.022  29.966 -51.537  1.00 24.71      1FNF3194
+ATOM   3030  CZ  PHE    47      18.363  29.774 -51.831  1.00 17.57      1FNF3195
+ATOM   3031  H   PHE    47      19.015  32.757 -47.994  1.00  0.00      1FNF3196
+ATOM   3032  N   THR    48      15.287  32.543 -47.921  1.00 17.40      1FNF3197
+ATOM   3033  CA  THR    48      14.572  31.509 -47.197  1.00 23.37      1FNF3198
+ATOM   3034  C   THR    48      13.797  30.575 -48.103  1.00 25.26      1FNF3199
+ATOM   3035  O   THR    48      13.618  30.832 -49.294  1.00 25.05      1FNF3200
+ATOM   3036  CB  THR    48      13.581  32.114 -46.189  1.00 26.42      1FNF3201
+ATOM   3037  OG1 THR    48      12.548  32.828 -46.891  1.00 30.85      1FNF3202
+ATOM   3038  CG2 THR    48      14.314  33.061 -45.220  1.00 20.07      1FNF3203
+ATOM   3039  H   THR    48      14.761  33.207 -48.421  1.00  0.00      1FNF3204
+ATOM   3040  HG1 THR    48      11.988  32.234 -47.429  1.00  0.00      1FNF3205
+ATOM   3041  N   VAL    49      13.300  29.504 -47.501  1.00 31.02      1FNF3206
+ATOM   3042  CA  VAL    49      12.496  28.497 -48.181  1.00 27.05      1FNF3207
+ATOM   3043  C   VAL    49      11.426  28.125 -47.151  1.00 26.84      1FNF3208
+ATOM   3044  O   VAL    49      11.706  28.126 -45.953  1.00 29.20      1FNF3209
+ATOM   3045  CB  VAL    49      13.359  27.256 -48.541  1.00 26.98      1FNF3210
+ATOM   3046  CG1 VAL    49      12.502  26.158 -49.115  1.00 30.89      1FNF3211
+ATOM   3047  CG2 VAL    49      14.418  27.630 -49.552  1.00 23.28      1FNF3212
+ATOM   3048  H   VAL    49      13.482  29.372 -46.544  1.00  0.00      1FNF3213
+ATOM   3049  N   PRO    50      10.169  27.914 -47.583  1.00 25.59      1FNF3214
+ATOM   3050  CA  PRO    50       9.130  27.554 -46.610  1.00 26.92      1FNF3215
+ATOM   3051  C   PRO    50       9.460  26.221 -45.949  1.00 29.25      1FNF3216
+ATOM   3052  O   PRO    50      10.096  25.355 -46.554  1.00 28.52      1FNF3217
+ATOM   3053  CB  PRO    50       7.871  27.457 -47.468  1.00 21.98      1FNF3218
+ATOM   3054  CG  PRO    50       8.141  28.431 -48.563  1.00 28.60      1FNF3219
+ATOM   3055  CD  PRO    50       9.579  28.143 -48.911  1.00 26.46      1FNF3220
+ATOM   3056  N   GLY    51       9.008  26.056 -44.714  1.00 34.84      1FNF3221
+ATOM   3057  CA  GLY    51       9.281  24.836 -43.979  1.00 34.67      1FNF3222
+ATOM   3058  C   GLY    51       8.783  23.590 -44.673  1.00 36.59      1FNF3223
+ATOM   3059  O   GLY    51       9.355  22.513 -44.503  1.00 40.83      1FNF3224
+ATOM   3060  H   GLY    51       8.472  26.763 -44.285  1.00  0.00      1FNF3225
+ATOM   3061  N   SER    52       7.732  23.740 -45.473  1.00 33.80      1FNF3226
+ATOM   3062  CA  SER    52       7.143  22.620 -46.185  1.00 32.18      1FNF3227
+ATOM   3063  C   SER    52       7.960  22.104 -47.358  1.00 33.88      1FNF3228
+ATOM   3064  O   SER    52       7.629  21.054 -47.899  1.00 41.82      1FNF3229
+ATOM   3065  CB  SER    52       5.729  22.974 -46.653  1.00 28.19      1FNF3230
+ATOM   3066  OG  SER    52       5.731  24.174 -47.408  1.00 42.16      1FNF3231
+ATOM   3067  H   SER    52       7.323  24.621 -45.602  1.00  0.00      1FNF3232
+ATOM   3068  HG  SER    52       4.816  24.364 -47.673  1.00  0.00      1FNF3233
+ATOM   3069  N   LYS    53       9.001  22.828 -47.772  1.00 36.99      1FNF3234
+ATOM   3070  CA  LYS    53       9.815  22.363 -48.892  1.00 37.70      1FNF3235
+ATOM   3071  C   LYS    53      11.311  22.228 -48.608  1.00 38.41      1FNF3236
+ATOM   3072  O   LYS    53      11.938  23.117 -48.028  1.00 40.60      1FNF3237
+ATOM   3073  CB  LYS    53       9.569  23.197 -50.148  1.00 44.47      1FNF3238
+ATOM   3074  CG  LYS    53       9.977  24.644 -50.060  1.00 51.61      1FNF3239
+ATOM   3075  CD  LYS    53       9.720  25.373 -51.393  1.00 62.48      1FNF3240
+ATOM   3076  CE  LYS    53      10.703  24.994 -52.511  1.00 47.99      1FNF3241
+ATOM   3077  NZ  LYS    53      11.978  25.750 -52.425  1.00 45.88      1FNF3242
+ATOM   3078  H   LYS    53       9.262  23.658 -47.324  1.00  0.00      1FNF3243
+ATOM   3079 1HZ  LYS    53      11.810  26.769 -52.487  1.00  0.00      1FNF3244
+ATOM   3080 2HZ  LYS    53      12.458  25.520 -51.528  1.00  0.00      1FNF3245
+ATOM   3081 3HZ  LYS    53      12.646  25.431 -53.153  1.00  0.00      1FNF3246
+ATOM   3082  N   SER    54      11.877  21.125 -49.089  1.00 34.23      1FNF3247
+ATOM   3083  CA  SER    54      13.285  20.800 -48.896  1.00 33.09      1FNF3248
+ATOM   3084  C   SER    54      14.114  20.829 -50.171  1.00 31.34      1FNF3249
+ATOM   3085  O   SER    54      15.016  20.009 -50.358  1.00 29.81      1FNF3250
+ATOM   3086  CB  SER    54      13.405  19.435 -48.225  1.00 29.13      1FNF3251
+ATOM   3087  OG  SER    54      12.565  18.505 -48.879  1.00 37.01      1FNF3252
+ATOM   3088  H   SER    54      11.344  20.482 -49.607  1.00  0.00      1FNF3253
+ATOM   3089  HG  SER    54      13.118  18.070 -49.552  1.00  0.00      1FNF3254
+ATOM   3090  N   THR    55      13.816  21.797 -51.029  1.00 31.18      1FNF3255
+ATOM   3091  CA  THR    55      14.534  21.986 -52.283  1.00 38.92      1FNF3256
+ATOM   3092  C   THR    55      14.729  23.478 -52.524  1.00 37.73      1FNF3257
+ATOM   3093  O   THR    55      13.935  24.302 -52.047  1.00 34.62      1FNF3258
+ATOM   3094  CB  THR    55      13.758  21.396 -53.488  1.00 46.62      1FNF3259
+ATOM   3095  OG1 THR    55      12.343  21.554 -53.287  1.00 54.26      1FNF3260
+ATOM   3096  CG2 THR    55      14.098  19.927 -53.672  1.00 54.00      1FNF3261
+ATOM   3097  H   THR    55      13.102  22.424 -50.811  1.00  0.00      1FNF3262
+ATOM   3098  HG1 THR    55      11.894  21.260 -54.091  1.00  0.00      1FNF3263
+ATOM   3099  N   ALA    56      15.778  23.835 -53.254  1.00 31.14      1FNF3264
+ATOM   3100  CA  ALA    56      16.024  25.235 -53.557  1.00 24.15      1FNF3265
+ATOM   3101  C   ALA    56      16.945  25.350 -54.758  1.00 27.32      1FNF3266
+ATOM   3102  O   ALA    56      17.684  24.422 -55.083  1.00 26.66      1FNF3267
+ATOM   3103  CB  ALA    56      16.634  25.946 -52.350  1.00 25.04      1FNF3268
+ATOM   3104  H   ALA    56      16.421  23.172 -53.607  1.00  0.00      1FNF3269
+ATOM   3105  N   THR    57      16.894  26.501 -55.406  1.00 31.63      1FNF3270
+ATOM   3106  CA  THR    57      17.723  26.765 -56.565  1.00 37.22      1FNF3271
+ATOM   3107  C   THR    57      18.513  28.005 -56.211  1.00 36.20      1FNF3272
+ATOM   3108  O   THR    57      17.949  28.962 -55.693  1.00 34.73      1FNF3273
+ATOM   3109  CB  THR    57      16.866  27.090 -57.794  1.00 42.37      1FNF3274
+ATOM   3110  OG1 THR    57      15.757  26.182 -57.857  1.00 45.72      1FNF3275
+ATOM   3111  CG2 THR    57      17.701  26.977 -59.067  1.00 38.46      1FNF3276
+ATOM   3112  H   THR    57      16.314  27.231 -55.118  1.00  0.00      1FNF3277
+ATOM   3113  HG1 THR    57      15.351  26.251 -58.724  1.00  0.00      1FNF3278
+ATOM   3114  N   ILE    58      19.816  27.969 -56.439  1.00 38.33      1FNF3279
+ATOM   3115  CA  ILE    58      20.668  29.106 -56.145  1.00 36.67      1FNF3280
+ATOM   3116  C   ILE    58      21.193  29.599 -57.486  1.00 40.21      1FNF3281
+ATOM   3117  O   ILE    58      22.122  29.023 -58.063  1.00 34.89      1FNF3282
+ATOM   3118  CB  ILE    58      21.819  28.710 -55.207  1.00 34.35      1FNF3283
+ATOM   3119  CG1 ILE    58      21.264  28.068 -53.937  1.00 28.30      1FNF3284
+ATOM   3120  CG2 ILE    58      22.605  29.934 -54.823  1.00 39.17      1FNF3285
+ATOM   3121  CD1 ILE    58      22.332  27.477 -53.060  1.00 32.23      1FNF3286
+ATOM   3122  H   ILE    58      20.219  27.165 -56.826  1.00  0.00      1FNF3287
+ATOM   3123  N   SER    59      20.552  30.646 -57.990  1.00 45.17      1FNF3288
+ATOM   3124  CA  SER    59      20.885  31.220 -59.286  1.00 52.31      1FNF3289
+ATOM   3125  C   SER    59      22.037  32.217 -59.295  1.00 57.81      1FNF3290
+ATOM   3126  O   SER    59      22.546  32.618 -58.244  1.00 63.86      1FNF3291
+ATOM   3127  CB  SER    59      19.644  31.893 -59.865  1.00 43.78      1FNF3292
+ATOM   3128  OG  SER    59      18.488  31.122 -59.590  1.00 51.63      1FNF3293
+ATOM   3129  H   SER    59      19.833  31.060 -57.475  1.00  0.00      1FNF3294
+ATOM   3130  HG  SER    59      18.607  30.241 -59.949  1.00  0.00      1FNF3295
+ATOM   3131  N   GLY    60      22.454  32.573 -60.509  1.00 58.24      1FNF3296
+ATOM   3132  CA  GLY    60      23.508  33.549 -60.719  1.00 55.81      1FNF3297
+ATOM   3133  C   GLY    60      24.893  33.277 -60.175  1.00 52.58      1FNF3298
+ATOM   3134  O   GLY    60      25.716  34.196 -60.108  1.00 53.50      1FNF3299
+ATOM   3135  H   GLY    60      22.076  32.131 -61.291  1.00  0.00      1FNF3300
+ATOM   3136  N   LEU    61      25.180  32.038 -59.810  1.00 48.03      1FNF3301
+ATOM   3137  CA  LEU    61      26.492  31.713 -59.278  1.00 53.92      1FNF3302
+ATOM   3138  C   LEU    61      27.566  31.994 -60.330  1.00 61.19      1FNF3303
+ATOM   3139  O   LEU    61      27.276  32.553 -61.393  1.00 65.66      1FNF3304
+ATOM   3140  CB  LEU    61      26.528  30.246 -58.843  1.00 55.23      1FNF3305
+ATOM   3141  CG  LEU    61      25.371  29.792 -57.946  1.00 55.36      1FNF3306
+ATOM   3142  CD1 LEU    61      25.584  28.353 -57.531  1.00 52.44      1FNF3307
+ATOM   3143  CD2 LEU    61      25.272  30.679 -56.722  1.00 53.40      1FNF3308
+ATOM   3144  H   LEU    61      24.496  31.348 -59.875  1.00  0.00      1FNF3309
+ATOM   3145  N   LYS    62      28.813  31.669 -60.015  1.00 63.18      1FNF3310
+ATOM   3146  CA  LYS    62      29.908  31.881 -60.951  1.00 65.03      1FNF3311
+ATOM   3147  C   LYS    62      30.713  30.590 -61.051  1.00 67.79      1FNF3312
+ATOM   3148  O   LYS    62      31.029  29.967 -60.035  1.00 72.63      1FNF3313
+ATOM   3149  CB  LYS    62      30.805  33.031 -60.479  1.00 65.70      1FNF3314
+ATOM   3150  CG  LYS    62      30.079  34.358 -60.272  1.00 73.24      1FNF3315
+ATOM   3151  CD  LYS    62      29.546  34.927 -61.580  1.00 79.96      1FNF3316
+ATOM   3152  CE  LYS    62      28.774  36.229 -61.362  1.00 78.80      1FNF3317
+ATOM   3153  NZ  LYS    62      27.513  36.018 -60.597  1.00 87.09      1FNF3318
+ATOM   3154  H   LYS    62      29.039  31.276 -59.147  1.00  0.00      1FNF3319
+ATOM   3155 1HZ  LYS    62      26.901  35.290 -61.042  1.00  0.00      1FNF3320
+ATOM   3156 2HZ  LYS    62      27.701  35.630 -59.655  1.00  0.00      1FNF3321
+ATOM   3157 3HZ  LYS    62      26.965  36.890 -60.501  1.00  0.00      1FNF3322
+ATOM   3158  N   PRO    63      31.004  30.136 -62.281  1.00 67.10      1FNF3323
+ATOM   3159  CA  PRO    63      31.775  28.905 -62.489  1.00 62.99      1FNF3324
+ATOM   3160  C   PRO    63      33.218  29.106 -62.058  1.00 59.49      1FNF3325
+ATOM   3161  O   PRO    63      33.710  30.234 -62.038  1.00 60.98      1FNF3326
+ATOM   3162  CB  PRO    63      31.663  28.687 -63.994  1.00 63.40      1FNF3327
+ATOM   3163  CG  PRO    63      31.583  30.086 -64.523  1.00 66.90      1FNF3328
+ATOM   3164  CD  PRO    63      30.610  30.730 -63.571  1.00 66.75      1FNF3329
+ATOM   3165  N   GLY    64      33.896  28.014 -61.725  1.00 57.01      1FNF3330
+ATOM   3166  CA  GLY    64      35.272  28.117 -61.280  1.00 61.36      1FNF3331
+ATOM   3167  C   GLY    64      35.307  28.804 -59.926  1.00 64.31      1FNF3332
+ATOM   3168  O   GLY    64      36.312  29.410 -59.536  1.00 61.77      1FNF3333
+ATOM   3169  H   GLY    64      33.497  27.110 -61.733  1.00  0.00      1FNF3334
+ATOM   3170  N   VAL    65      34.195  28.709 -59.209  1.00 63.44      1FNF3335
+ATOM   3171  CA  VAL    65      34.064  29.322 -57.901  1.00 61.21      1FNF3336
+ATOM   3172  C   VAL    65      33.455  28.311 -56.942  1.00 59.58      1FNF3337
+ATOM   3173  O   VAL    65      32.279  27.957 -57.058  1.00 59.49      1FNF3338
+ATOM   3174  CB  VAL    65      33.159  30.591 -57.959  1.00 62.65      1FNF3339
+ATOM   3175  CG1 VAL    65      32.873  31.119 -56.565  1.00 64.31      1FNF3340
+ATOM   3176  CG2 VAL    65      33.818  31.675 -58.795  1.00 65.60      1FNF3341
+ATOM   3177  H   VAL    65      33.440  28.170 -59.520  1.00  0.00      1FNF3342
+ATOM   3178  N   ASP    66      34.278  27.807 -56.032  1.00 57.68      1FNF3343
+ATOM   3179  CA  ASP    66      33.820  26.860 -55.023  1.00 55.72      1FNF3344
+ATOM   3180  C   ASP    66      32.829  27.632 -54.136  1.00 48.95      1FNF3345
+ATOM   3181  O   ASP    66      33.126  28.738 -53.685  1.00 40.52      1FNF3346
+ATOM   3182  CB  ASP    66      35.013  26.389 -54.183  1.00 60.58      1FNF3347
+ATOM   3183  CG  ASP    66      34.909  24.934 -53.782  1.00 68.39      1FNF3348
+ATOM   3184  OD1 ASP    66      35.267  24.068 -54.611  1.00 68.85      1FNF3349
+ATOM   3185  OD2 ASP    66      34.486  24.650 -52.636  1.00 73.67      1FNF3350
+ATOM   3186  H   ASP    66      35.218  28.076 -56.035  1.00  0.00      1FNF3351
+ATOM   3187  N   TYR    67      31.640  27.075 -53.927  1.00 44.96      1FNF3352
+ATOM   3188  CA  TYR    67      30.621  27.723 -53.108  1.00 38.78      1FNF3353
+ATOM   3189  C   TYR    67      30.235  26.900 -51.895  1.00 38.51      1FNF3354
+ATOM   3190  O   TYR    67      29.908  25.724 -52.034  1.00 45.11      1FNF3355
+ATOM   3191  CB  TYR    67      29.355  27.953 -53.922  1.00 42.17      1FNF3356
+ATOM   3192  CG  TYR    67      29.390  29.140 -54.843  1.00 54.81      1FNF3357
+ATOM   3193  CD1 TYR    67      29.376  30.439 -54.336  1.00 59.09      1FNF3358
+ATOM   3194  CD2 TYR    67      29.388  28.969 -56.228  1.00 56.71      1FNF3359
+ATOM   3195  CE1 TYR    67      29.352  31.543 -55.190  1.00 64.33      1FNF3360
+ATOM   3196  CE2 TYR    67      29.364  30.066 -57.089  1.00 60.10      1FNF3361
+ATOM   3197  CZ  TYR    67      29.344  31.348 -56.565  1.00 61.90      1FNF3362
+ATOM   3198  OH  TYR    67      29.305  32.435 -57.410  1.00 62.16      1FNF3363
+ATOM   3199  H   TYR    67      31.484  26.194 -54.329  1.00  0.00      1FNF3364
+ATOM   3200  HH  TYR    67      29.380  33.226 -56.864  1.00  0.00      1FNF3365
+ATOM   3201  N   THR    68      30.290  27.498 -50.708  1.00 32.08      1FNF3366
+ATOM   3202  CA  THR    68      29.873  26.793 -49.502  1.00 30.98      1FNF3367
+ATOM   3203  C   THR    68      28.388  27.113 -49.300  1.00 28.36      1FNF3368
+ATOM   3204  O   THR    68      28.008  28.283 -49.185  1.00 31.62      1FNF3369
+ATOM   3205  CB  THR    68      30.693  27.211 -48.277  1.00 30.32      1FNF3370
+ATOM   3206  OG1 THR    68      32.054  26.823 -48.472  1.00 27.05      1FNF3371
+ATOM   3207  CG2 THR    68      30.167  26.526 -47.013  1.00 24.84      1FNF3372
+ATOM   3208  H   THR    68      30.621  28.406 -50.622  1.00  0.00      1FNF3373
+ATOM   3209  HG1 THR    68      32.291  26.945 -49.403  1.00  0.00      1FNF3374
+ATOM   3210  N   ILE    69      27.551  26.079 -49.330  1.00 27.94      1FNF3375
+ATOM   3211  CA  ILE    69      26.105  26.236 -49.179  1.00 25.19      1FNF3376
+ATOM   3212  C   ILE    69      25.698  25.720 -47.808  1.00 29.70      1FNF3377
+ATOM   3213  O   ILE    69      26.056  24.602 -47.440  1.00 28.55      1FNF3378
+ATOM   3214  CB  ILE    69      25.361  25.456 -50.285  1.00 30.70      1FNF3379
+ATOM   3215  CG1 ILE    69      25.956  25.813 -51.653  1.00 31.55      1FNF3380
+ATOM   3216  CG2 ILE    69      23.878  25.788 -50.267  1.00 25.88      1FNF3381
+ATOM   3217  CD1 ILE    69      25.420  25.008 -52.788  1.00 31.47      1FNF3382
+ATOM   3218  H   ILE    69      27.926  25.179 -49.427  1.00  0.00      1FNF3383
+ATOM   3219  N   THR    70      24.979  26.546 -47.050  1.00 23.95      1FNF3384
+ATOM   3220  CA  THR    70      24.550  26.185 -45.713  1.00 21.95      1FNF3385
+ATOM   3221  C   THR    70      23.039  26.287 -45.639  1.00 28.84      1FNF3386
+ATOM   3222  O   THR    70      22.431  27.077 -46.365  1.00 25.72      1FNF3387
+ATOM   3223  CB  THR    70      25.192  27.117 -44.661  1.00 24.13      1FNF3388
+ATOM   3224  OG1 THR    70      26.604  27.226 -44.918  1.00 24.86      1FNF3389
+ATOM   3225  CG2 THR    70      24.988  26.569 -43.246  1.00 18.25      1FNF3390
+ATOM   3226  H   THR    70      24.688  27.408 -47.396  1.00  0.00      1FNF3391
+ATOM   3227  HG1 THR    70      27.005  27.668 -44.162  1.00  0.00      1FNF3392
+ATOM   3228  N   VAL    71      22.432  25.441 -44.806  1.00 29.18      1FNF3393
+ATOM   3229  CA  VAL    71      20.983  25.421 -44.616  1.00 26.35      1FNF3394
+ATOM   3230  C   VAL    71      20.699  25.286 -43.116  1.00 26.66      1FNF3395
+ATOM   3231  O   VAL    71      21.356  24.498 -42.431  1.00 28.21      1FNF3396
+ATOM   3232  CB  VAL    71      20.311  24.242 -45.400  1.00 18.79      1FNF3397
+ATOM   3233  CG1 VAL    71      18.816  24.262 -45.212  1.00 15.32      1FNF3398
+ATOM   3234  CG2 VAL    71      20.614  24.341 -46.886  1.00 19.59      1FNF3399
+ATOM   3235  H   VAL    71      22.958  24.784 -44.299  1.00  0.00      1FNF3400
+ATOM   3236  N   TYR    72      19.774  26.106 -42.611  1.00 29.55      1FNF3401
+ATOM   3237  CA  TYR    72      19.373  26.105 -41.196  1.00 22.16      1FNF3402
+ATOM   3238  C   TYR    72      17.872  25.918 -41.134  1.00 18.69      1FNF3403
+ATOM   3239  O   TYR    72      17.144  26.451 -41.969  1.00 21.49      1FNF3404
+ATOM   3240  CB  TYR    72      19.659  27.456 -40.524  1.00 24.38      1FNF3405
+ATOM   3241  CG  TYR    72      21.063  27.981 -40.660  1.00 23.82      1FNF3406
+ATOM   3242  CD1 TYR    72      21.472  28.649 -41.815  1.00 18.41      1FNF3407
+ATOM   3243  CD2 TYR    72      21.971  27.851 -39.616  1.00 25.88      1FNF3408
+ATOM   3244  CE1 TYR    72      22.750  29.168 -41.925  1.00 24.79      1FNF3409
+ATOM   3245  CE2 TYR    72      23.250  28.372 -39.709  1.00 28.12      1FNF3410
+ATOM   3246  CZ  TYR    72      23.638  29.025 -40.864  1.00 26.27      1FNF3411
+ATOM   3247  OH  TYR    72      24.921  29.507 -40.951  1.00 32.80      1FNF3412
+ATOM   3248  H   TYR    72      19.325  26.731 -43.220  1.00  0.00      1FNF3413
+ATOM   3249  HH  TYR    72      25.059  30.021 -41.761  1.00  0.00      1FNF3414
+ATOM   3250  N   ALA    73      17.406  25.213 -40.112  1.00 21.54      1FNF3415
+ATOM   3251  CA  ALA    73      15.981  24.983 -39.930  1.00 13.21      1FNF3416
+ATOM   3252  C   ALA    73      15.477  25.956 -38.895  1.00 12.39      1FNF3417
+ATOM   3253  O   ALA    73      15.756  25.796 -37.716  1.00 23.21      1FNF3418
+ATOM   3254  CB  ALA    73      15.737  23.560 -39.444  1.00 17.86      1FNF3419
+ATOM   3255  H   ALA    73      18.018  24.830 -39.445  1.00  0.00      1FNF3420
+ATOM   3256  N   VAL    74      14.767  26.989 -39.321  1.00 25.85      1FNF3421
+ATOM   3257  CA  VAL    74      14.231  27.957 -38.370  1.00 24.60      1FNF3422
+ATOM   3258  C   VAL    74      12.883  27.454 -37.846  1.00 27.11      1FNF3423
+ATOM   3259  O   VAL    74      11.905  27.298 -38.592  1.00 22.82      1FNF3424
+ATOM   3260  CB  VAL    74      14.116  29.359 -38.976  1.00 24.71      1FNF3425
+ATOM   3261  CG1 VAL    74      13.488  30.306 -37.978  1.00 19.36      1FNF3426
+ATOM   3262  CG2 VAL    74      15.496  29.854 -39.390  1.00 19.23      1FNF3427
+ATOM   3263  H   VAL    74      14.572  27.104 -40.273  1.00  0.00      1FNF3428
+ATOM   3264  N   THR    75      12.867  27.171 -36.550  1.00 29.41      1FNF3429
+ATOM   3265  CA  THR    75      11.708  26.623 -35.864  1.00 24.87      1FNF3430
+ATOM   3266  C   THR    75      10.999  27.646 -34.967  1.00 24.27      1FNF3431
+ATOM   3267  O   THR    75       9.804  27.508 -34.664  1.00 20.01      1FNF3432
+ATOM   3268  CB  THR    75      12.168  25.417 -35.012  1.00 26.23      1FNF3433
+ATOM   3269  OG1 THR    75      13.254  25.830 -34.168  1.00 23.55      1FNF3434
+ATOM   3270  CG2 THR    75      12.669  24.271 -35.916  1.00 18.97      1FNF3435
+ATOM   3271  H   THR    75      13.681  27.309 -36.020  1.00  0.00      1FNF3436
+ATOM   3272  HG1 THR    75      13.564  25.031 -33.737  1.00  0.00      1FNF3437
+ATOM   3273  N   GLY    76      11.746  28.655 -34.529  1.00 24.57      1FNF3438
+ATOM   3274  CA  GLY    76      11.180  29.674 -33.667  1.00 28.83      1FNF3439
+ATOM   3275  C   GLY    76      10.498  30.794 -34.424  1.00 29.62      1FNF3440
+ATOM   3276  O   GLY    76      10.356  30.751 -35.649  1.00 29.19      1FNF3441
+ATOM   3277  H   GLY    76      12.676  28.707 -34.817  1.00  0.00      1FNF3442
+ATOM   3278  N   ARG    77      10.085  31.816 -33.692  1.00 30.52      1FNF3443
+ATOM   3279  CA  ARG    77       9.422  32.953 -34.296  1.00 35.56      1FNF3444
+ATOM   3280  C   ARG    77       9.837  34.258 -33.636  1.00 36.98      1FNF3445
+ATOM   3281  O   ARG    77      10.803  34.285 -32.874  1.00 39.69      1FNF3446
+ATOM   3282  CB  ARG    77       7.913  32.755 -34.284  1.00 38.56      1FNF3447
+ATOM   3283  CG  ARG    77       7.349  32.120 -33.038  1.00 40.93      1FNF3448
+ATOM   3284  CD  ARG    77       6.134  31.273 -33.402  1.00 48.65      1FNF3449
+ATOM   3285  NE  ARG    77       5.200  31.996 -34.264  1.00 59.18      1FNF3450
+ATOM   3286  CZ  ARG    77       4.200  31.437 -34.940  1.00 59.47      1FNF3451
+ATOM   3287  NH1 ARG    77       3.993  30.130 -34.861  1.00 66.83      1FNF3452
+ATOM   3288  NH2 ARG    77       3.410  32.185 -35.695  1.00 59.35      1FNF3453
+ATOM   3289  H   ARG    77      10.246  31.846 -32.724  1.00  0.00      1FNF3454
+ATOM   3290  HE  ARG    77       5.343  32.969 -34.325  1.00  0.00      1FNF3455
+ATOM   3291 1HH1 ARG    77       4.589  29.551 -34.295  1.00  0.00      1FNF3456
+ATOM   3292 2HH1 ARG    77       3.231  29.695 -35.350  1.00  0.00      1FNF3457
+ATOM   3293 1HH2 ARG    77       3.553  33.178 -35.779  1.00  0.00      1FNF3458
+ATOM   3294 2HH2 ARG    77       2.638  31.805 -36.227  1.00  0.00      1FNF3459
+ATOM   3295  N   GLY    78       9.151  35.343 -33.967  1.00 33.82      1FNF3460
+ATOM   3296  CA  GLY    78       9.495  36.633 -33.401  1.00 37.75      1FNF3461
+ATOM   3297  C   GLY    78      10.674  37.219 -34.150  1.00 38.33      1FNF3462
+ATOM   3298  O   GLY    78      11.008  36.762 -35.245  1.00 40.36      1FNF3463
+ATOM   3299  H   GLY    78       8.443  35.280 -34.605  1.00  0.00      1FNF3464
+ATOM   3300  N   ASP    79      11.316  38.219 -33.560  1.00 42.36      1FNF3465
+ATOM   3301  CA  ASP    79      12.459  38.882 -34.188  1.00 42.80      1FNF3466
+ATOM   3302  C   ASP    79      13.721  38.043 -34.126  1.00 39.89      1FNF3467
+ATOM   3303  O   ASP    79      14.629  38.221 -34.933  1.00 46.47      1FNF3468
+ATOM   3304  CB  ASP    79      12.708  40.258 -33.556  1.00 38.07      1FNF3469
+ATOM   3305  CG  ASP    79      11.440  41.103 -33.472  1.00 43.36      1FNF3470
+ATOM   3306  OD1 ASP    79      10.520  40.935 -34.312  1.00 43.73      1FNF3471
+ATOM   3307  OD2 ASP    79      11.354  41.917 -32.533  1.00 40.94      1FNF3472
+ATOM   3308  H   ASP    79      10.994  38.532 -32.692  1.00  0.00      1FNF3473
+ATOM   3309  N   SER    80      13.788  37.141 -33.155  1.00 43.19      1FNF3474
+ATOM   3310  CA  SER    80      14.943  36.263 -33.019  1.00 44.49      1FNF3475
+ATOM   3311  C   SER    80      14.485  34.814 -32.957  1.00 42.69      1FNF3476
+ATOM   3312  O   SER    80      14.443  34.181 -31.887  1.00 36.35      1FNF3477
+ATOM   3313  CB  SER    80      15.795  36.634 -31.806  1.00 47.25      1FNF3478
+ATOM   3314  OG  SER    80      16.400  37.901 -31.998  1.00 50.73      1FNF3479
+ATOM   3315  H   SER    80      13.049  37.061 -32.523  1.00  0.00      1FNF3480
+ATOM   3316  HG  SER    80      15.808  38.585 -31.652  1.00  0.00      1FNF3481
+ATOM   3317  N   PRO    81      14.096  34.284 -34.123  1.00 38.98      1FNF3482
+ATOM   3318  CA  PRO    81      13.619  32.918 -34.297  1.00 39.04      1FNF3483
+ATOM   3319  C   PRO    81      14.666  31.912 -33.877  1.00 38.86      1FNF3484
+ATOM   3320  O   PRO    81      15.863  32.135 -34.071  1.00 42.33      1FNF3485
+ATOM   3321  CB  PRO    81      13.393  32.841 -35.804  1.00 37.88      1FNF3486
+ATOM   3322  CG  PRO    81      13.041  34.235 -36.167  1.00 37.02      1FNF3487
+ATOM   3323  CD  PRO    81      14.063  35.003 -35.406  1.00 28.32      1FNF3488
+ATOM   3324  N   ALA    82      14.207  30.813 -33.285  1.00 43.16      1FNF3489
+ATOM   3325  CA  ALA    82      15.096  29.735 -32.877  1.00 36.23      1FNF3490
+ATOM   3326  C   ALA    82      15.455  29.001 -34.156  1.00 32.51      1FNF3491
+ATOM   3327  O   ALA    82      14.580  28.664 -34.959  1.00 30.91      1FNF3492
+ATOM   3328  CB  ALA    82      14.397  28.790 -31.906  1.00 32.82      1FNF3493
+ATOM   3329  H   ALA    82      13.259  30.749 -33.072  1.00  0.00      1FNF3494
+ATOM   3330  N   SER    83      16.747  28.814 -34.370  1.00 30.89      1FNF3495
+ATOM   3331  CA  SER    83      17.224  28.125 -35.547  1.00 29.32      1FNF3496
+ATOM   3332  C   SER    83      18.106  26.975 -35.118  1.00 34.42      1FNF3497
+ATOM   3333  O   SER    83      18.766  27.037 -34.081  1.00 40.13      1FNF3498
+ATOM   3334  CB  SER    83      18.028  29.076 -36.432  1.00 30.03      1FNF3499
+ATOM   3335  OG  SER    83      18.599  28.390 -37.534  1.00 29.50      1FNF3500
+ATOM   3336  H   SER    83      17.408  29.135 -33.724  1.00  0.00      1FNF3501
+ATOM   3337  HG  SER    83      19.258  27.758 -37.211  1.00  0.00      1FNF3502
+ATOM   3338  N   SER    84      18.096  25.921 -35.917  1.00 31.13      1FNF3503
+ATOM   3339  CA  SER    84      18.903  24.748 -35.664  1.00 29.38      1FNF3504
+ATOM   3340  C   SER    84      20.344  25.118 -35.959  1.00 28.94      1FNF3505
+ATOM   3341  O   SER    84      20.630  26.235 -36.419  1.00 27.90      1FNF3506
+ATOM   3342  CB  SER    84      18.488  23.627 -36.623  1.00 24.49      1FNF3507
+ATOM   3343  OG  SER    84      18.954  23.870 -37.949  1.00 22.61      1FNF3508
+ATOM   3344  H   SER    84      17.518  25.900 -36.711  1.00  0.00      1FNF3509
+ATOM   3345  HG  SER    84      19.880  23.588 -38.016  1.00  0.00      1FNF3510
+ATOM   3346  N   LYS    85      21.252  24.194 -35.664  1.00 31.23      1FNF3511
+ATOM   3347  CA  LYS    85      22.652  24.388 -35.975  1.00 29.62      1FNF3512
+ATOM   3348  C   LYS    85      22.676  24.140 -37.478  1.00 26.28      1FNF3513
+ATOM   3349  O   LYS    85      21.802  23.459 -38.012  1.00 29.16      1FNF3514
+ATOM   3350  CB  LYS    85      23.522  23.364 -35.257  1.00 31.20      1FNF3515
+ATOM   3351  CG  LYS    85      23.952  23.777 -33.874  1.00 37.66      1FNF3516
+ATOM   3352  CD  LYS    85      25.105  22.902 -33.431  1.00 47.92      1FNF3517
+ATOM   3353  CE  LYS    85      25.711  23.360 -32.114  1.00 51.77      1FNF3518
+ATOM   3354  NZ  LYS    85      26.898  22.514 -31.787  1.00 54.05      1FNF3519
+ATOM   3355  H   LYS    85      20.966  23.358 -35.241  1.00  0.00      1FNF3520
+ATOM   3356 1HZ  LYS    85      26.568  21.526 -31.735  1.00  0.00      1FNF3521
+ATOM   3357 2HZ  LYS    85      27.599  22.592 -32.549  1.00  0.00      1FNF3522
+ATOM   3358 3HZ  LYS    85      27.310  22.787 -30.875  1.00  0.00      1FNF3523
+ATOM   3359  N   PRO    86      23.666  24.693 -38.179  1.00 29.53      1FNF3524
+ATOM   3360  CA  PRO    86      23.798  24.542 -39.630  1.00 29.74      1FNF3525
+ATOM   3361  C   PRO    86      24.352  23.234 -40.161  1.00 31.76      1FNF3526
+ATOM   3362  O   PRO    86      25.058  22.500 -39.472  1.00 40.33      1FNF3527
+ATOM   3363  CB  PRO    86      24.763  25.657 -39.984  1.00 26.26      1FNF3528
+ATOM   3364  CG  PRO    86      25.696  25.652 -38.799  1.00 33.06      1FNF3529
+ATOM   3365  CD  PRO    86      24.727  25.566 -37.639  1.00 29.87      1FNF3530
+ATOM   3366  N   ILE    87      24.042  22.985 -41.421  1.00 26.31      1FNF3531
+ATOM   3367  CA  ILE    87      24.545  21.845 -42.156  1.00 20.22      1FNF3532
+ATOM   3368  C   ILE    87      24.935  22.468 -43.503  1.00 22.00      1FNF3533
+ATOM   3369  O   ILE    87      24.187  23.259 -44.072  1.00 23.80      1FNF3534
+ATOM   3370  CB  ILE    87      23.496  20.734 -42.359  1.00 16.12      1FNF3535
+ATOM   3371  CG1 ILE    87      24.044  19.701 -43.355  1.00 24.10      1FNF3536
+ATOM   3372  CG2 ILE    87      22.179  21.322 -42.804  1.00 17.95      1FNF3537
+ATOM   3373  CD1 ILE    87      23.129  18.559 -43.667  1.00 24.60      1FNF3538
+ATOM   3374  H   ILE    87      23.431  23.582 -41.908  1.00  0.00      1FNF3539
+ATOM   3375  N   SER    88      26.132  22.177 -43.974  1.00 18.84      1FNF3540
+ATOM   3376  CA  SER    88      26.576  22.746 -45.223  1.00 30.46      1FNF3541
+ATOM   3377  C   SER    88      27.438  21.784 -46.008  1.00 34.58      1FNF3542
+ATOM   3378  O   SER    88      27.779  20.699 -45.524  1.00 37.38      1FNF3543
+ATOM   3379  CB  SER    88      27.358  24.035 -44.943  1.00 38.09      1FNF3544
+ATOM   3380  OG  SER    88      28.262  23.868 -43.866  1.00 36.99      1FNF3545
+ATOM   3381  H   SER    88      26.736  21.576 -43.488  1.00  0.00      1FNF3546
+ATOM   3382  HG  SER    88      28.909  23.201 -44.108  1.00  0.00      1FNF3547
+ATOM   3383  N   ILE    89      27.788  22.208 -47.216  1.00 35.45      1FNF3548
+ATOM   3384  CA  ILE    89      28.641  21.456 -48.128  1.00 40.36      1FNF3549
+ATOM   3385  C   ILE    89      29.409  22.499 -48.923  1.00 44.63      1FNF3550
+ATOM   3386  O   ILE    89      29.108  23.692 -48.849  1.00 43.89      1FNF3551
+ATOM   3387  CB  ILE    89      27.821  20.615 -49.163  1.00 40.73      1FNF3552
+ATOM   3388  CG1 ILE    89      26.880  21.516 -49.969  1.00 34.55      1FNF3553
+ATOM   3389  CG2 ILE    89      27.063  19.483 -48.478  1.00 43.80      1FNF3554
+ATOM   3390  CD1 ILE    89      26.141  20.798 -51.069  1.00 36.18      1FNF3555
+ATOM   3391  H   ILE    89      27.478  23.085 -47.529  1.00  0.00      1FNF3556
+ATOM   3392  N   ASN    90      30.391  22.042 -49.689  1.00 54.54      1FNF3557
+ATOM   3393  CA  ASN    90      31.179  22.914 -50.557  1.00 62.52      1FNF3558
+ATOM   3394  C   ASN    90      30.974  22.306 -51.934  1.00 62.69      1FNF3559
+ATOM   3395  O   ASN    90      31.073  21.086 -52.084  1.00 61.99      1FNF3560
+ATOM   3396  CB  ASN    90      32.666  22.862 -50.194  1.00 69.44      1FNF3561
+ATOM   3397  CG  ASN    90      32.950  23.381 -48.796  1.00 77.29      1FNF3562
+ATOM   3398  OD1 ASN    90      32.090  23.348 -47.912  1.00 82.73      1FNF3563
+ATOM   3399  ND2 ASN    90      34.168  23.849 -48.584  1.00 81.56      1FNF3564
+ATOM   3400  H   ASN    90      30.591  21.080 -49.685  1.00  0.00      1FNF3565
+ATOM   3401 1HD2 ASN    90      34.347  24.192 -47.688  1.00  0.00      1FNF3566
+ATOM   3402 2HD2 ASN    90      34.799  23.834 -49.333  1.00  0.00      1FNF3567
+ATOM   3403  N   TYR    91      30.617  23.115 -52.925  1.00 65.72      1FNF3568
+ATOM   3404  CA  TYR    91      30.415  22.552 -54.247  1.00 70.61      1FNF3569
+ATOM   3405  C   TYR    91      31.547  22.694 -55.257  1.00 76.40      1FNF3570
+ATOM   3406  O   TYR    91      32.078  23.781 -55.495  1.00 75.55      1FNF3571
+ATOM   3407  CB  TYR    91      29.106  22.999 -54.896  1.00 68.44      1FNF3572
+ATOM   3408  CG  TYR    91      28.844  22.181 -56.141  1.00 66.97      1FNF3573
+ATOM   3409  CD1 TYR    91      28.737  20.790 -56.060  1.00 69.66      1FNF3574
+ATOM   3410  CD2 TYR    91      28.821  22.769 -57.401  1.00 66.39      1FNF3575
+ATOM   3411  CE1 TYR    91      28.626  20.003 -57.195  1.00 71.37      1FNF3576
+ATOM   3412  CE2 TYR    91      28.708  21.986 -58.553  1.00 73.93      1FNF3577
+ATOM   3413  CZ  TYR    91      28.615  20.602 -58.439  1.00 73.93      1FNF3578
+ATOM   3414  OH  TYR    91      28.537  19.807 -59.563  1.00 80.01      1FNF3579
+ATOM   3415  H   TYR    91      30.530  24.076 -52.777  1.00  0.00      1FNF3580
+ATOM   3416  HH  TYR    91      28.625  20.411 -60.316  1.00  0.00      1FNF3581
+ATOM   3417  N   ARG    92      31.807  21.568 -55.913  1.00 78.54      1FNF3582
+ATOM   3418  CA  ARG    92      32.819  21.408 -56.943  1.00 78.87      1FNF3583
+ATOM   3419  C   ARG    92      32.333  21.941 -58.300  1.00 80.08      1FNF3584
+ATOM   3420  O   ARG    92      31.677  21.215 -59.056  1.00 80.39      1FNF3585
+ATOM   3421  CB  ARG    92      33.140  19.912 -57.067  1.00 80.06      1FNF3586
+ATOM   3422  CG  ARG    92      31.886  19.020 -57.159  1.00 77.25      1FNF3587
+ATOM   3423  CD  ARG    92      32.207  17.586 -57.554  1.00 76.89      1FNF3588
+ATOM   3424  NE  ARG    92      31.014  16.818 -57.930  1.00 76.24      1FNF3589
+ATOM   3425  CZ  ARG    92      30.397  16.898 -59.113  1.00 77.99      1FNF3590
+ATOM   3426  NH1 ARG    92      30.849  17.725 -60.053  1.00 78.38      1FNF3591
+ATOM   3427  NH2 ARG    92      29.350  16.118 -59.375  1.00 67.70      1FNF3592
+ATOM   3428  H   ARG    92      31.267  20.804 -55.642  1.00  0.00      1FNF3593
+ATOM   3429  HE  ARG    92      30.693  16.212 -57.220  1.00  0.00      1FNF3594
+ATOM   3430 1HH1 ARG    92      31.627  18.319 -59.849  1.00  0.00      1FNF3595
+ATOM   3431 2HH1 ARG    92      30.439  17.845 -60.967  1.00  0.00      1FNF3596
+ATOM   3432 1HH2 ARG    92      29.031  15.443 -58.697  1.00  0.00      1FNF3597
+ATOM   3433 2HH2 ARG    92      28.882  16.164 -60.261  1.00  0.00      1FNF3598
+ATOM   3434  N   THR    93      32.674  23.183 -58.628  1.00 83.93      1FNF3599
+ATOM   3435  CA  THR    93      32.264  23.769 -59.906  1.00 87.04      1FNF3600
+ATOM   3436  C   THR    93      33.316  24.717 -60.492  1.00 86.80      1FNF3601
+ATOM   3437  O   THR    93      33.359  24.840 -61.734  1.00 84.79      1FNF3602
+ATOM   3438  CB  THR    93      30.902  24.507 -59.793  1.00 88.84      1FNF3603
+ATOM   3439  OG1 THR    93      30.537  25.050 -61.069  1.00 90.73      1FNF3604
+ATOM   3440  CG2 THR    93      30.966  25.629 -58.762  1.00 92.97      1FNF3605
+ATOM   3441  OXT THR    93      34.085  25.327 -59.716  1.00 87.48      1FNF3606
+ATOM   3442  H   THR    93      33.228  23.748 -58.039  1.00  0.00      1FNF3607
+ATOM   3443  HG1 THR    93      31.357  25.427 -61.421  1.00  0.00      1FNF3608
+TER    3444      THR    93                                                      
+MASTER                                                                          
+END                                                                             

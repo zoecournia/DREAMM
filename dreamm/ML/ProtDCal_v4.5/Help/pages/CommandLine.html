@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    </head>
+    <body>
+        <div>
+            <h1>Calculations from Command Line</h1>
+            <hr/>
+        </div>
+
+        <div>
+            <p>
+                This option allows to do calculations without the GUI.
+                First is necessary start a console and then move to the ProtDCal folder using command cd /path/to/ProtDCal.
+                Second execute the follow command:
+            </p>
+
+                <code>java [Java parameters] [ProtDCal parameters]</code>
+            <p>
+                This command has divide in two parts (Java and ProtDCal) for configure Java and ProtDCal parameters in a separated way. In the
+                first part (Java) you configure all Java parameters, but we recommend just the next parameter:
+			</p>
+            <table>
+				<tr>
+                    <td>-Xms[RAM]M</td>
+					<td> for increase the memory for calculations. RAM is the quantity in Megabytes, for example: -Xms256M -Xms512M</td>
+				</tr>
+            </table>
+
+            <p>In other way, the second part (ProtDCal) you can configure the next options:</p>
+
+            <table>
+				<tr>
+                    <td><b>p</td>
+					<td> [/path/to/project/folder] for specify the projects to be processed, by default we recommend put the projects in the
+                        Projects folder in the ProtDCal workspace.</td>
+                </tr>
+				<tr>
+                    <td><b>o</td>
+					<td>[/path/to/output/folder] for specify the output folder for calculations, by default this option use the Outputs
+                        folder in ProtDCal workspace.</td>
+                </tr>
+				<tr>
+                    <td><b>i</td>
+					<td>[/path/to/input/folder] for specify the input folder for calculations.</td>
+                </tr>
+				<tr>
+                    <td><b>f</td>
+					<td>for specify the dataset format: (PDB-> pdb or FASTA-> fasta)</td>
+                </tr>
+				<tr>
+                    <td><b>x</td>
+					<td>[/path/to/features/list/folder] for specify the path to a file containing a list of specific descriptors, each descriptor label must be in a different line. For using this option it is necessary to indicate additional parameters(-i, -f and -o).</td>
+                </tr>
+				<tr>
+                    <td><b>ppi</td>
+					<td>[/path/to/ppi/file/combinations] for specify the PPI file combinations path for protein pairs descriptors calculations.</td>
+                </tr>
+				<tr>
+                    <td><b>v</td>
+					<td> 1 or 0 for including the project name in the descriptor name. The "1" include the name "0" not.</td>
+				</tr>
+            </table>
+            <p>The formats for using this CLI are::</p>
+
+          <p><code>java -Xmx1000m -jar ProtDCal.jar -p [/path/to/project/folder] -o [/path/to/output/folder]</code></p></br>
+		  <p><code>java -Xmx1000m -jar ProtDCal.jar -f [fasta o pdb] -i [/path/to/input/folder] -x [/path/to/features/list/folder] -o [/path/to/output/folder]</code></p></br>
+		  <p><code>java -Xmx1000m -jar ProtDCal.jar -f fasta -i [/path/to/input/folder] -x [/path/to/features/list/folder] -o [/path/to/output/folder] -ppi [/path/to/ppi/file/combinations]</code></p></br>
+		  <p><code>java -Xmx1000m -jar ProtDCal.jar -i [/path/to/input/folder] -p [/path/to/project/folder] -o [/path/to/output/folder] -ppi [/path/to/ppi/file/combinations]</code></p></br>
+
+            <div id="footer">
+                <hr/>
+                <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+            </div>
+        </div>
+    </body>
+</html>

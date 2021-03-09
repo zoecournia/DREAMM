@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+    </head>
+    <body>
+        <div style="">
+            <h1>Scoring Function (DGscr)</h1>
+            <hr/>		
+        </div>
+
+        <div>	
+
+            <p> This function is intended for the discrimination of non-native protein structures from native ones.
+            </p>
+
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/dgscr.jpg"/>			
+                </div>
+            </div>
+
+            <p>Where:
+            </p>
+
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/data2.jpg"/>			
+                </div>
+            </div>
+
+            <p>Where <img src="../images/formula/np+arm.png"/> takes value one if a residue is aromatic or non-polar and cero otherwise, takes value one if the particular atom has an area value of cero and if is not involved in an H-bond and cero otherwise, <img src="../images/formula/anglepsi.png"/> and <img src="../images/formula/anglephi.png"/> are the torsion angles of the backbone of the protein around bonds Ca-C and N-Ca respectively.
+                This function comprises all those factors of the global free energy potential that favour the folding process being the interfacial free energy the mayor contribution for the scoring factor. Configurational free energy was ignore in this function due to according with our folding model this should be just a consequence of the force imposed by the hydrophobic effect over the protein chain but not a primary factor in folding. The hydrogen bond penalty DGHbd is taken into consideration given the important role of this factor as a constraint to the folding process. 
+
+            </p>
+            <p>
+                For more information see: <a href="dgwat.html">DGwat</a>, <a href="DGCP.html">DGcp</a>, <a href="DGHBd.html">DGHBd</a>, <a href="DGtor.html">DGtor</a> and <a href="dghbd.html">DGwat</a>.
+            </p>
+
+            <div>				
+                <hr/>
+                <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+            </div>
+        </div>
+    </body>
+</html>

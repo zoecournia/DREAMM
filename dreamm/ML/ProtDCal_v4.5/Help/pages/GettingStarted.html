@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    </head>
+    <body>
+        <h1> What is ProtDCal? </h1>
+        <hr/>
+        <p></p>
+        <div>
+            <p id="info">
+                ProtDCal is a user-friendly software package that was developed to generate a variety of numeric descriptors for protein structures and sequences. This manual is intended to provide an overview of the main interfaces and functionalities of the program. As part of the current distribution of ProtDCal, one can find a similar tutorial and a theory section describing the formalism and parameters of the indices implemented in the program.
+				ProtDCal's feature generation strategy comprises four hierarchical levels:
+			</p>
+			<div class="figure">
+				<image src="images/workflow.png"/>
+			</div>
+			<p id="info">
+				<p id="info">1. An initial layer intended to select the type of indices to encode for each residue. These indices are grouped in three main classes:
+					<ul><b>Thermodynamics</b>, which are almost all novel indices designed in our laboratory based on an empirical model of the main factors involved in the stability of protein structures. These indices are, in turn, divided into two panels grouping, on one side, those that are defined for 3D folded structures and on the other side, those based on information relating to the protein sequence. These indices refer to the contribution of the folded and unfolded (reference) states of a protein chain.</ul>
+					<ul><b>Topographic</b>, which include many of the contact-based descriptors with proven correlation with the protein folding rate constant, e. g. the relative contact order (CO), the total contact distance (TCD), the cliquishness (CLQ), etc. These indices were defined originally as global metrics, however, they were modified to obtain a value for each residue of a protein. Each contact of the protein is weighted by a determined residue property selected in this interface. The weighting procedure is conducted by multiplying the values of the selected property for both residues that are in contact. </ul>
+					<ul><b>Property-based indices</b>, this final group encloses a number of chemical-physical and structural properties of each type of residue such as hydrophobicity, electronic charge index, molar weight, volume, isotropic surface area, etc.</ul>
+				</p>
+				<p id="info">
+				2. Modification operators, these approaches are intended to modify the value of a selected index for a given residue according to the residues within a vicinity defined by the type of modification operator and its parameter value (e.g. for the autocorrelation operator with parameter k = 2, the neighbourhood of residue i comprises the residues in positions i +/- 2). ProtDCal implements five modification operators that can be selected in the Menu: "Options/Weighting operators".
+				</p>
+				<p id ="info">
+				3. A third layer named "Groups" is intended to select one or more groups of residues according their ID or type. When a group of residues is selected, an array of index values is obtained corresponding to the residues in the group. In addition to the implemented grouping approaches, an option is included by which users can define their own groups of residues (see the option Groups in menu Option).
+				</p>
+				<p id ="info">
+				4. A fourth layer comprises several aggregation operators that are used to combine an array of values (from a group of residues) into a single value (descriptor) reflecting the distribution of the index within that group. Some examples of these aggregation operators are the sum, average, variance, kurtosis, geometric mean, information content, etc.
+				<p>
+				<p id ="info">
+				The output of the calculation shows the full combination of indices, groups and aggregation operators selected in each panel. The input file formats of the software can be either PDB or FASTA; for PDB files, all indices can be computed, whereas for FASTA files, only the indices of the second (Thermodynamics indices for sequences) and fourth (Properties-based indices) panels can be evaluated. Multiple proteins may be input simultaneously. The output files of ProtDCal calculations are two tab-delimited text documents named [name]_AA.txt and [name]_Prot.txt which store all the descriptors for each residue of each protein and the descriptors for the combinations of indices, groups, and aggregation operators for each protein respectively.
+				<p>
+
+			<ul></ul>
+            </p>
+        </div>
+        <div class="footer">
+            <hr/>
+            <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+        </div>
+    </body>
+</html>

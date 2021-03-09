@@ -1,0 +1,12 @@
+
+==================================================================
+        RELEASE NOTES PROTDCAL 4.5
+==================================================================
+
+Updates summary:
+
+>> The output file <name>_AA.txt can now be obtained by executing ProtDCal from the command line interface. 
+
+>> Some small updates to improve the performance of the software were implemented.
+		
+==================================================================

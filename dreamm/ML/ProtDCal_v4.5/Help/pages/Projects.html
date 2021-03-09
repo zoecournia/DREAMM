@@ -1,0 +1,155 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    </head>
+    <body>
+        <h1>What is a project?</h1>
+        <hr/>
+        <p>
+            Projects are text files in which all options required to execute a calculation are included. They contain information regarding the indices, their weighting parameters, groups and aggregation operators. Also it includes values for all the configuration parameters needed for calculations (default settings are automatically saved).
+        </p>
+        <p>
+            A project is very simple to configure from the GUI, it is only needed to settle the configuration for the desired calculation and to export it by using the "Save Project" (<image src="images/SAVEP.png"/> ) button located in the toolbar.
+        </p>
+
+        <h1>Project Structure</h1>
+        <p>
+            A ProtDCal project uses unique tags to identify the different steps of the calculation process
+            (indices, weightings, groups, aggregation operators, etc.). The general structure of a project is:
+        </p>
+
+        <div>
+            <p>
+                <b>directory:</b>
+                <p>/path/to/datasets</p>
+            </p>
+            <p>
+                <b>indices:</b>
+                <p>
+                    Indices names separated by comma. The weighted indices must include two lines more specifying the index's name and the weights separated by comma.
+                </p>
+            </p>
+            <p>
+                <b>weighted index:</b>
+                <p>Weights for the indices separated by commas. For instance:</p>
+                <i>wPhiH:</i><br/>
+                <i>Mw, Hp,...</i>
+                <p>It's important being careful with manual setting of tags, missing data shall cause a failure in the excecution.</p>
+            </p>
+            <p>
+                <b>user-defined:</b>
+                <p>
+                    Properties indices defined using the ProtDCal GUI.
+                </p>
+            </p>
+            <p>
+                <b>cdk indices:</b>
+                <p>TAE indices provided by CDK library.</p>
+            </p>
+            <p>
+                <b>functions:</b>
+                <p>Functions names separated by comma.</p>
+            </p>
+            <p>
+                <b>groups:</b>
+                <p>Group names separated by comma.</p>
+            </p>
+            <p>
+                <b>invariants:</b>
+                <p>Aggregation operators separated by comma.</p>
+            </p>
+            <p>
+                <b>parameters:</b>
+                Parameters for calculations, in the next order: t_cont, s_cont, area, dHSG, n, Int, K, Subgraph where:
+                <ul>
+                    <li/><b>t_cont:</b> is the Topological cutoff for contacts.
+                    <li/><b>s_cont:</b> is the Spacial cutoff for contacts.
+                    <li/><b>area:</b> is the Cutoff of surface area percent.
+                    <li/><b>dHSG:</b> is the Distance cutoff for HSG (d) [7.6 - 10.6].
+                    <li/><b>n:</b> is the Topografic root.
+                    <li/><b>Int:</b> is the number of intervals to compute the Mean Information Content.
+                    <li/><b>K:</b> is the topological distance to compute Classical procedural invariants.
+                    <li/><b>Subgraph:</b> is the number of subgraph to be computed in the Kier Hall algorithm.
+                </ul>
+            </p>
+            <p>
+                <b>options:</b>
+                <p>Options like output format, dataset type, windex algorithm, etc. in the next order:</p>
+                <i>(decimals,armonicMeanType,geometricMeanType,windexID,datasetType,outputOrder)</i> <p>where:</p>
+                    <p>
+                        <ul>
+                            <li/><b>decimals:</b> is the quantity of decimals numbers.
+                            <li/><b>armonicMeanType and geometricMeanType:</b> specify the options to compute the Armonic and Geometric Mean, but we recommend use the default option "0".
+                            <li/><b>windexID:</b> specify the windex algorithm to use in values from 0 to 4, where:              0-AutoCorrelation, 1-Gravitational, 2-Kier Hall, 3-Ivanciuc-Balaban, 4-ElectroTopological State, -1-None
+                            <li/><b>datasetType:</b> specify the dataset format with the project will be work(true-PDB,false-FASTA).
+                            <li/><b>outputOrder:</b> specify the output order for the Prot output.
+                        </ul>
+                    </p>
+            </p>
+            <p>
+                In addition a project don't must contains any empty line, incorrect tag or bad IDs. For more information about the IDs for
+                each tags see the next section.
+            </p>
+        </div>
+
+		<h1>ProtDCal IDs</h1>
+        <h2>Indices IDs</h2>
+
+        <p>Thermodynamic Indices of Folded Protein States </p>
+            Gc(F) Gw(F) Gs(F) W(F) DGs HBd DGel DGw DGLJ DGtor
+
+		<p>Thermodynamic Indices of the Extended Protein State </p>
+			Gw(U) Gs(U) W(U)
+
+		<p>Topographic Indices</p>
+			A DA DAnp wSp lnfd wR2 wDHBd wNc wFLC wNLC wCO wLCO wRWCO wCTP wCLQ wPsiH wPsiS wPsiI wPhiH wPhiS wPhiI Phi Psi
+
+		<p>Property Based Indices</p>
+			Mw HP IP ECI Vm Anp Z1 Z2 Z3 ISA At Ap Pa Pb Pt
+
+		<h2>Functions IDs</h2>
+			DGfold DGwat DGconf DGpack ln(kf) DGscr DGHBd
+
+		<h2>Groups IDs</h2>
+		<p>Residue Basic Group</p>
+			ALA ARG ASN ASP CYS GLU GLN GLY HIS ILE LEU LYS MET PHE PRO SER THR TRP TYR VAL
+
+		<p>Properties Based Group</p>
+			RTR BSR AHR ALR NPR ARM PLR PCR NCR UCR UFR
+
+		<p>Topographic Group</p>
+			SHT HEX TRN RCL INT SUP PRT
+
+		<h2>Procedural Invariants IDs</h2>
+			<p>Distances</p>
+				N1 N2 N3
+
+			<p>Means</p>
+				Ar P2 P3 M G V
+
+			<p>Statistics </p>
+				CV Q3 S RA MN K Q1 MX DE Q2 I50
+
+			<p>Classics</p>
+				SI MI TI
+
+
+		<h1>Loading a project </h1>
+		<hr/>
+		<p>
+        To For up loading a project there is the "Load Project" (<img src="images/loadpr32.png"/>  ) button on the toolbar or from the File menu, and also the key combination Ctrl. + L. Any of these options will launch a window to select the desired project.
+
+		</p>
+		<div class="figure">
+			<img src="images/openproject.png"/>
+			<p id="piefoto"/>The Project open file dialog
+		</div>
+
+
+		<div id="footer">
+			<hr/>
+			<p id="footer">ProtDCal Protein Descriptor Calculation</p>
+		</div>
+	</body>
+</html>

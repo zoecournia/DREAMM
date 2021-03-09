@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    </head>
+    <body>
+        <h1>Repair datasets</h1>
+        <hr/>
+        <p>
+            This option allows repairing PDB file with some missing labels like TER, END, HELIX, SHEET, TURN, etc. It is located in the Option menu (<img src="images/lifebelt.png"/> ). 
+            First the input and output directory must be loaded, and then the options can be configured. 
+
+        </p>
+        <p>
+            First the input and output directory must load, and then configure the options.
+        </p>
+        <p>
+            Options:
+            <ul>
+                <li><b>Replace datasets:</b> 
+                    replace the originals files with the new fixed ones. 
+                </li>
+                <li><b>Repair secondary structure:</b> 
+                    this option repairs secondary structure lines in the PDB file by using DSSP files with the same name, computed in the DSSP program available at:
+                    <a href="ftp://ftp.cmbi.ru.nl/pub/software/dssp">ftp://ftp.cmbi.ru.nl/pub/software/dssp</a>
+                </li>
+            </ul>
+        </p>
+
+        <div class="figure">
+            <img src="images/repair data.png"/> 
+            <p id ="piefoto">Repair Dataset Window </p>
+        </div>
+        <p></p>
+        <hr/>
+        <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+    </body>
+</html>

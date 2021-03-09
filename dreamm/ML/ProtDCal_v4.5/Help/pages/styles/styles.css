@@ -1,0 +1,118 @@
+/* Header  Style */
+
+h1, h2, h3, h4, h5, h6{
+	color: #000080;
+	font-family:"Arial", "Dialog";
+	font-weight:bold;
+}
+
+#tableidx{
+    text-align: center;
+    
+}
+
+h1{
+	margin-top: 20;
+	margin-bottom: 20pt;
+	font-size: 30pt;
+}
+
+h2{
+	margin-top: 35pt;
+	font-size: 26pt;
+}
+
+h3{
+	margin-top:30pt;
+	margin-bottom:10pt;
+	font-size: 18pt;
+}
+
+/* Paragraph*/
+p{
+	margin-top:6pt;
+	margin-bottom:6pt;
+	line-height:1.5;
+	text-align:justify;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+
+#piefoto{
+	text-align:center;
+}
+
+ul{
+	list-style:disc;
+}
+
+
+
+/* Body */
+body, table, .normal{
+	font-family: "Times New Roman", "Serif";
+	font-size: 14pt;
+}
+
+body, .normal{
+	padding-left: 15pt;
+	padding-right: 15pt;
+}
+
+#footer{
+	background:transparent;
+	text-align:right;
+	font-style:italic;
+}
+
+li{
+	list-style-image: url(../images/carpeta.png);
+	line-height:2;
+	text-align:justify;
+}
+.bib{
+	list-style-image: url(../images/blue.png);
+	line-height:1.5;
+	text-align:justify;
+}
+/* Figure */
+.figure{
+	font-family:"Times New Roman", "San Serif", "Serif";
+	font-size:12pt;
+	font-style:Italic;
+	border-style:none;
+	border: 1px;
+}
+#author{
+	text-align: left;
+}
+
+div.figure{
+	text-align: center;
+	margin-bottom: 10pt;
+}
+
+/* Code */
+.code{
+	font-family: "Courier New","Dialog","Arial";
+	font-size: 12pt;
+}
+
+/* Font style Only*/
+.UI{
+	font-weight: bold;	
+}
+
+#Hotkey{
+	font-style: Italic;
+	font-weight: bold;
+	color: rgb(48,84,140);
+}
+
+.keyword{
+	font-weight: bold;
+}
+
+.reference{
+	text-decoration: underline;
+}

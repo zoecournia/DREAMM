@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+    </head>
+    <body>
+        <div style="">
+            <h1>Weighted deficit of the H-bond between the backbone atoms(wDHBd)</h1>
+            <hr/>
+        </div>
+
+        <div>	
+            <p> This index counts the number of backbone nitrogen and oxygen atoms with accessible surface area equal to cero. The theory behind this parameter consists in the intuitive fact that these atoms, when are exposed, they should be involved in an H-bond with water molecules of the solvent and in an internal environment they should form an intramolecular H-bond in order to compensate the breaking of the protein-water interaction. The weighted implementation of this parameter in ProtDCal is as follow:
+            </p>
+
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/wdhbd.jpg"/>			
+                </div>
+            </div>
+
+            <p>Where <img src="../images/formula/dx.png"/> takes value 0.5 if the particular atom has an area value of cero and if is not involved in an H-bond. The conditions that are considered to classify an O---N pair as H-bonded are summarized in the following figure:
+            </p>
+
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/hbd.png"/>			
+                </div>
+            </div>
+
+            <div>		
+                <p></p>
+                <hr/>
+                <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+            </div>
+        </div>
+    </body>
+</html>

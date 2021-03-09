@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    </head>
+    <body>
+        <div>
+            <h1>User-Specified descriptors from Command Line</h1>
+            <hr/>
+        </div>
+
+        <div>
+            <p>
+                This option allows the user to compute specific ProtDCal descriptors using the Index Definition Language(IDL) file. IDL is represented by a file
+				with the extension ".idl" with one descriptors name per line, an example could be:
+            </p>
+			<i>
+				Mw_NO_ALA_N1<br/>
+				ISA_NO_ALA_N1<br/>
+				...<br/>
+			</i>
+            <p>
+                The output generated using IDL interface will be a <a href="OutputCalcultion.html">Prot</a> file containing only the descriptor described in the IDL file.
+				This option is executed only for CLI mode, using the next parameters:
+			</p>
+
+            <table>
+				<tr>
+                    <td><b>i</td>
+					<td>[/path/to/input/folder] for specify the input folder for calculations, by default this option use the Datasets folder in ProtDCal workspace.</td>
+                </tr>
+				<tr>
+                    <td><b>f</td>
+					<td>specify the dataset format (PDB-> pdb or FASTA-> fasta).</td>
+                </tr>
+				<tr>
+                    <td><b>x</td>
+					<td>[/path/to/projects/folder] for specify a file containing a list of specific descriptors, each descriptor must be a line. For use this option is necesary indicate to ProtDCal additional parameters(input and output directory, and the format of dataset(PDB or FASTA)).</td>
+				</tr>
+            </table>
+            <p> In addition the parameters "o" for output directory is necessary. An example for use this command will be:</p><br/>
+
+            <code>java -jar ProtDCal.jar -i Datasets/Fasta_Protein_Format/Stability -f fasta -x Projects -o Output/example </code>
+
+            <div id="footer">
+                <hr/>
+                <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+            </div>
+        </div>
+    </body>
+</html>

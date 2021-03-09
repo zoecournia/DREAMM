@@ -1,0 +1,76 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+    </head>
+    <body>
+        <div style="">
+            <h1>Relation between ProtDCal indices and some others published in literature of the field</h1>
+            <hr/>
+
+        </div>
+
+        <div>	
+
+            <p> Some published indices like those listed ahead can be obtained from the previously described using other aggregation_operator procedure to transform the vector of residue indices to a single value for the protein or a particular group:
+            </p>
+
+            <h2> Long Range Order (LRO):</h2>
+
+            <p>Long range order (LRO) is defined by the quotient between the total number of contacts of the protein and its whole number of residues (Gromiha and Selvaraj, 2001). 
+            </p>
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/LRO.jpg"/>			
+                </div>
+            </div>
+
+            <p>Where i and j are two residues whose Ca-Ca distance is less equal than 8Å and nr is the total number of residues in a protein.
+                This descriptor can be calculated with ProtDCal averaging the number of contacts over the protein (using the aggregation_operator procedure arithmetic mean, Ar), using <img src="../images/formula/wij.png"/>	 . 
+
+            </p>
+            <p/>
+
+            <h2> Absolute Contact Order (Abs_CO):</h2>
+
+            <p>Absolute contact order (Abs_CO) was originally defined by Ivankov (Ivankov et al., 2003) as:
+            </p>
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/AbsCO.jpg"/>			
+                </div>
+            </div>
+            <p>ProtDCal can estimates such descriptor as the summation (the aggregation_operator procedure N1, distance 1 of Minkosky) of the weighted residue-wise relative contact order for each residue of the protein, using <img src="../images/formula/wij.png"/>.
+            </p>
+            <p/>
+
+            <h2>Total Contact Distance (TCD):</h2>
+
+            <p>The total contact distance was originally defined as:
+            </p>
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/TCD.jpg"/>			
+                </div>
+            </div>
+            <p>where nr is the number of amino acid residues of a protein, nc is the number of contacts (Zhou and Zhou, 2002).
+                The original global TCD can be obtained averaging (using the aggregation_operator procedure arithmetic mean, Ar) all the obtained residue-wise values using <img src="../images/formula/wij.png"/>.
+            </p>
+            <p/>
+
+            <h2>References</h2>
+            <p>Gromiha, M.M., and Selvaraj, S., 2001. Comparison between long-range interactions and contact order in determining the folding rate of two-state proteins: application of long-range order to folding rate prediction. J. Mol. Biol. 310, 27-32.
+            </p> 
+            <p>Ivankov, D.N., Garbuzynskiy, S.O., Alm, E., Plaxco, K.W., Baker, D., and Finkelstein, A.V., 2003. Contact order revisited: Influence of protein size on the folding rate. Protein Sci. 12, 2057-2062.
+            </p>    
+            <p>Zhou, H., and Zhou, Y., 2002. Folding Rate Prediction Using Total Contact Distance. Biophysical Journal 82, 458-463.
+            </p>
+            <p></p>
+
+            <div>			
+                <hr/>
+                <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+            </div>
+        </div>
+    </body>
+</html>

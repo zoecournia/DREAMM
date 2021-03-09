@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>  
+<toc version="2.0" categoryclosedimage="bookclose" categoryopenimage="bookopen">  
+    <tocitem text="Descriptor" >
+        <tocitem text="Indices"    	   	 target="Indices">
+            <tocitem text="Thermodynamic Indices"  target="Panel1">
+                <tocitem text="Gc(F)"    target="gcf"/>  
+                <tocitem text="Gw(F)" 	 target="GwF"/>  
+                <tocitem text="Gs(F)"    target="GsF"/>  
+                <tocitem text="W(F)"    target="Wf"/>  
+                <tocitem text="HBd"    target="HBd"/>
+                <tocitem text="DGw"    target="DGw"/>
+                <tocitem text="DGs"    target="DGs"/>  
+                <tocitem text="DGel"    target="DGel"/>  
+                <tocitem text="DGLJ"    target="DGLJ"/>  
+                <tocitem text="DGtor"    target="DGtor"/>  
+            </tocitem>
+		
+            <tocitem text="Sequences Indices"  target="Panel2">
+                <tocitem text="Gw(U)"    target="GwU"/>  
+                <tocitem text="Gs(U)" 	 target="GsU"/>  
+                <tocitem text="W(U)"    target="Wu"/>  
+            </tocitem>
+		
+            <tocitem text="Topographic Indices"    	   	 target="Panel3">
+                <tocitem text="A"               target="A"/>  
+                <tocitem text="DA"              target="DA"/>  
+                <tocitem text="DAnp"            target="DAnp"/> 
+                <tocitem text="lnFD"            target="lnFD"/>  
+                <tocitem text="Phi and Psi"     target="PhiPsi"/>  
+                <tocitem text="Phi and Psi H"   target="PhiPsiH"/>  
+                <tocitem text="Phi and Psi S"   target="PhiPsiS"/>  
+                <tocitem text="Phi and Psi I"   target="PhiPsiI"/>  
+                <tocitem text="wRWCO"           target="wRWCO"/>  
+                <tocitem text="wDHBd"           target="wDHBd"/>  
+                <tocitem text="wLCO"            target="wLCO"/>  
+                <tocitem text="wCO"             target="wCO"/>  
+                <tocitem text="wNLC"            target="wNLC"/>  
+                <tocitem text="wFLC"            target="wFLC"/>  
+                <tocitem text="wR2"            target="wRG"/>  
+                <tocitem text="wCLQ"            target="wCLQ"/>  
+                <tocitem text="wCTP"            target="wCTP"/>  
+                <tocitem text="wSp"             target="wSp"/>  
+                <tocitem text="wNc"             target="wNc"/>                    
+            </tocitem>
+            
+            <tocitem text="Property Based Indices" target="">
+                <tocitem text="Property Based Indices"  target="Indices2d"/>
+            </tocitem>
+        
+            <tocitem text="Transferable Atom Equivalent (TAE)" target="">
+                <tocitem text="TAE"   	 target="CDK"/>
+            </tocitem>
+        
+            <tocitem text="Others Indices" target="">
+                <tocitem text="Others Indices"   	 target="otros"/>
+            </tocitem>
+        </tocitem>	
+		
+        <tocitem text="Windex" target="">
+            <tocitem text="Windex"   	 target="windex"/>
+        </tocitem>    
+                	
+        <tocitem text="Functions"    target="Functions">
+            <tocitem text="DGfold"   target="DGfold"/>  
+            <tocitem text="DGwat"    target="DGwat"/>  
+            <tocitem text="DGconf"   target="DGconf"/>  
+            <tocitem text="DGpack"   target="DGpack"/>  
+            <tocitem text="DGHBd"    target="DGHBd"/>  
+            <tocitem text="DGscr"    target="DGscr"/>  
+            <tocitem text="lnKf"     target="lnKf"/>  
+        </tocitem>	
+		
+        <tocitem text="Groups"    	   	 target="Groups">
+            
+            <tocitem text="Residue Basic"  target="Basic"/>
+            
+            <tocitem text="Properties"     target="Properties"/>
+            
+            <tocitem text="Topographic"    target="Topographic"/>
+			
+        </tocitem>	
+		
+        <tocitem text="Invariants"    target="Invariants">
+            
+            <tocitem text="Distances" target="Distances"/>
+		
+            <tocitem text="Means"    target="Means"/>
+		
+            <tocitem text="Statistics" target="Statistics"/>
+			
+            <tocitem text="Classics" target="Classics"/>
+			
+        </tocitem>	 	  
+		
+        <tocitem text="Parameters"   	 target="">
+            <tocitem text="Table of parameters"   	 target="param"/>
+        </tocitem> 
+		
+    </tocitem>
+		
+</toc>  

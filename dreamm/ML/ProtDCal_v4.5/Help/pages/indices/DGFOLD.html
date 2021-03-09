@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+    </head>
+    <body>
+        <div style="">
+            <h1>Folding free energy (DGfold)</h1>
+            <hr/>
+        </div>
+
+        <div>
+
+            <p> This function constitutes an empirical potential (Ruiz-Blanco et al., 2013)designed to predict and describe the main factors involved in protein folding stability.
+            </p>
+
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/dgfold.jpg"/>
+                </div>
+            </div>
+
+            <p>Where:
+            </p>
+
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/data.jpg"/>
+                </div>
+            </div>
+
+            <p>Where <img src="../images/formula/np+arm.png"/> takes value one if a residue is aromatic or non-polar and cero otherwise, <img src="../images/formula/dix.png"/> takes value one if the particular atom has an area value of cero and if is not involved in an H-bond and cero otherwise, <img src="../images/formula/anglepsi.png"/> and <img src="../images/formula/anglephi.png"/> are the torsion angles of the backbone of the protein around bonds Ca-C and N-Ca respectively.
+            </p>
+            <p>For more information see: <a href="DGLJ.html">DGLJ</a>, <a href="DGel.html">DGel</a>, <a href="DGtor.html">DGtor</a>, <a href="DGHBd.html">DGHBd</a>, <a href="DGC.html">DGconf</a>, <a href="DAnp.html">DAnp</a>, <a href="DGw.html">DGw</a> and <a href="param.html">Table of index's parameters</a> for values of knp, w1, w2, w3 .
+            </p>
+
+            <h2>References</h2>
+            <p>Ruiz-Blanco, Y.B., Marrero-Ponce, Y., Paz, W., García, Y., and Salgado, J., 2013. Global Stability of Protein Folding from an Empirical Free Energy Function, DOI: 10.1016/j.jtbi.2012.12.023
+            </p>
+            <p></p>
+
+            <div>
+                <hr/>
+                <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+            </div>
+        </div>
+    </body>
+</html>

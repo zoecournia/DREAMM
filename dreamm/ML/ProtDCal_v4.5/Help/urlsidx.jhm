@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<map version="1.0">  
+    <mapID target="windex"     url="pages/indices/windex.html"/>
+    
+    <mapID target="Basic"       url="pages/groups/basic.html"/>
+   
+    <mapID target="Properties"  url="pages/groups/properties.html"/>
+
+    <mapID target="Topographic" url="pages/groups/topographic.html"/>
+    
+    <mapID target="param"     url="pages/indices/param.html"/>
+	
+    <mapID target="bookopen"     url="pages/images/bookopen.png"/>
+	
+    <mapID target="bookclose"    url="pages/images/bookclose.png"/>
+	
+    <mapID target="print"        url="pages/images/printer.png"/>
+	
+    <mapID target="printsetup"   url="pages/images/printersetup.png"/>
+	
+    <mapID target="next"     	 url="pages/images/next.png"/>
+	
+    <mapID target="previuos"     url="pages/images/previous.png"/>
+		
+    <mapID target="find"     	 url="pages/images/find.png"/>
+	
+    <mapID target="window"       url="pages/images/ICO.png"/>
+	
+    <mapID target="CDK"     url="pages/indices/CDK.html"/>
+    
+    <mapID target="DGw"     url="pages/indices/DGw.html"/>
+    
+    <mapID target="gcf"     url="pages/indices/gcf.html"/>
+	
+    <mapID target="GwF"     url="pages/indices/gwf.html"/>
+	
+    <mapID target="GsF"     url="pages/indices/gsf.html"/>
+	
+    <mapID target="Wf"      url="pages/indices/wf.html"/>
+	
+    <mapID target="HBd"     url="pages/indices/HBd.html"/>
+	
+    <mapID target="DGs" 	url="pages/indices/DGS.html"/>
+	
+    <mapID target="DGel"    url="pages/indices/DGEL.html"/>
+	
+    <mapID target="DGLJ"    url="pages/indices/DGLJ.html"/>
+	
+    <mapID target="DGtor"   url="pages/indices/DGtor.html"/>
+	
+    <mapID target="GwU"     url="pages/indices/gwu.html"/>
+	
+    <mapID target="GsU" 	url="pages/indices/gsu.html"/>
+	
+    <mapID target="Wu"      url="pages/indices/wu.html"/>
+	
+    <mapID target="wRWCO"   url="pages/indices/wRWCO.html"/>
+	
+    <mapID target="wDHBd"   url="pages/indices/wDHBd.html"/>
+	
+    <mapID target="otros"   url="pages/indices/OTHERS.html"/>
+	
+    <mapID target="wLCO"    url="pages/indices/wLCO.html"/>
+	
+    <mapID target="wCO"     url="pages/indices/wCO.html"/>
+	
+    <mapID target="wNLC"    url="pages/indices/wNLC.html"/>
+	
+    <mapID target="PhiPsi"  url="pages/indices/PhiPsi.html"/>
+	
+    <mapID target="PhiPsiH" url="pages/indices/PhiPsiH.html"/>
+	
+    <mapID target="PhiPsiS" url="pages/indices/PhiPsiS.html"/>
+	
+    <mapID target="PhiPsiI" url="pages/indices/PhiPsiI.html"/>
+	
+    <mapID target="wFLC" 	url="pages/indices/wFLC.html"/>
+	
+    <mapID target="wRG"     url="pages/indices/wRG.html"/>
+	
+    <mapID target="wCLQ"    url="pages/indices/wCLQ.html"/>
+	
+    <mapID target="wCTP"  	 url="pages/indices/wCTP.html"/>
+	
+    <mapID target="wSp"      url="pages/indices/wSp.html"/>
+	
+    <mapID target="wNc"    	 url="pages/indices/wNc.html"/>
+	
+    <mapID target="lnFD"     url="pages/indices/lnFD.html"/>
+	
+    <mapID target="A"     	 url="pages/indices/A.html"/>
+	
+    <mapID target="DA"     	 url="pages/indices/DA.html"/>
+	
+    <mapID target="DAnp"     url="pages/indices/DAnp.html"/>
+	
+    <mapID target="Vs"     	 url="pages/indices/Vs.html"/>
+
+    <mapID target="DGfold"   url="pages/indices/DGFOLD.html"/>
+	
+    <mapID target="DGwat"    url="pages/indices/DGwat.html"/>
+
+    <mapID target="DGconf"   url="pages/indices/DGC.html"/>	
+
+    <mapID target="DGpack"   url="pages/indices/DGCP.html"/>
+
+    <mapID target="DGHBd"    url="pages/indices/DGHBd.html"/>
+
+    <mapID target="DGscr"    url="pages/indices/DGSCR.html"/>
+
+    <mapID target="lnKf"     url="pages/indices/lnKf.html"/>
+
+    <mapID target="Indices2d" url="pages/indices/idx2d.html"/>
+    
+    <mapID target="Distances" url="pages/invariants/Distances.html"/>
+    
+    <mapID target="Means" url="pages/invariants/means.html"/>
+    
+    <mapID target="Statistics" url="pages/invariants/statistics.html"/>
+    
+    <mapID target="Classics" url="pages/invariants/classics.html"/>
+	
+    <mapID target="Auto"   	url="pages/invariants/auto.html"/>
+	
+    <mapID target="Gravi"  	url="pages/invariants/gravi.html"/>
+	
+    <mapID target="Kier"   	url="pages/invariants/kier.html"/>
+	
+    <mapID target="Elect"   url="pages/invariants/elect.html"/>
+	
+    <mapID target="Ivan"    url="pages/invariants/ivan.html"/>
+	
+</map>  

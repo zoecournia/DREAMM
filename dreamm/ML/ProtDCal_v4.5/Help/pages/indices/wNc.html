@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+    </head>
+    <body>
+        <div style="">
+            <h1>Weighted Number of Contact(wNc)</h1>
+            <hr/>
+        </div>
+
+        <div>	
+
+            <p> Contacts are structural features commonly use to define the majority of available protein descriptors. The simplest descriptor the makes use of contacts is the total number of such contacts within the structure.
+            </p>
+
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/Nc.jpg"/>			
+                </div>
+            </div>
+
+            <p>The weighted number of contacts per residue implemented in ProtDCal is defined as follow:
+            </p>
+
+            <div class="dropshadow">
+                <div class="innerbox">
+                    <img src="../images/formula/wNci.jpg"/>			
+                </div>
+            </div>
+
+            <p>Where wij is a weighting factor equal to the product of any of the residue's properties listed as property based indices for each residue involved in the contact, additionally it can be fixed at 1 in the case that not weight it wants to be used. The total number of contacts can thus be obtained applying the summation (the aggregation_operator procedure N1, distance 1 of Minkosky) of the residue-wise values for each residue of the protein, using wij. Here wij also can be set as the topological distance between the pair of residues.
+            </p>
+
+            <div>		
+                <p></p>
+                <hr/>
+                <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+            </div>
+        </div>
+    </body>
+</html>

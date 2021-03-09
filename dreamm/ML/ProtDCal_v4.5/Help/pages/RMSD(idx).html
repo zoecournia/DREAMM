@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    </head>
+    <body>
+
+        <h1>Matrix Distance</h1>
+        <hr/>
+        <p>
+            This option compares proteins, using previously computed descriptors. This process calculates a distance value (Euclidean, Minkowsky or Manhattan) between all proteins using standardized values of the available descriptors. 
+        </p>
+        <p>
+            This option is accessed using the menu "Analyze", and once there you select the RMSD-IDX, which will launch a window like the following: 
+        </p>
+        <p></p>
+
+        <div class="figure">
+            <img src="images/rmsdidx1.png"/>
+            <p id="piefoto">The Matrix Distance window</p>
+        </div>
+
+        <p>
+            To use this option first, a file *_Prot must load with "Load * _Prot" button, then the configuration  should be fixed for the comparison process using the "Missing Values" and "Distances" panels, and finally press "Calculate" button to start the process. 
+        </p>
+
+        <p>
+            The panel "Missing Values" manages the missing values (-9999.0), for which there are two options: 
+            <ul>
+                <li>Delete descriptor: </li>
+                <p/>Removes the descriptor that contains at least one missing value
+                <li>Geometric Mean:</li>
+                <p/>Replaces missing values with the geometric mean of the descriptor column 
+            </ul>
+        </p>
+
+        <p>
+            In the panel "Distances" there are listed the distances measures to that could be used for comparison test, these are: 
+            <ul>
+                <li> N1: Manhattan Distance 
+                    <div>
+                        <image src="images/formula/x3.jpg"/>
+                    </div>
+
+                </li>
+                <li> N2: Euclidean Distance 
+                    <div>
+                        <image src="images/formula/x2.jpg"/>
+                    </div>
+                </li>
+                <li> N3: Minkowsky Distance 
+                    <div>
+                        <image src="images/formula/x1.jpg"/>
+                    </div>
+                </li>
+            </ul>
+        </p>
+
+        <div id="footer">
+            <hr/>
+            <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+        </div>
+    </body>
+</html>

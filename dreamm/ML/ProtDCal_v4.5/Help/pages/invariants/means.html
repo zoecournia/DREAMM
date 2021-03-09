@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css"/>
+    </head>
+    <body>
+        <h1>Aritmetic Mean Ar</h1>
+        <hr/>
+        <p> This aggregation_operator calculate the aritmetic mean of the indices values. It is implemented as follow:
+        </p>
+        <div class="figure">
+            <img src="../images/formula/media.jpg"/>			
+        </div>
+        <p/>The alfa value is 1 and ai are the indices values for each amino acid.
+        <p/>
+
+        <h1>Geometric Mean G</h1>
+        <hr/>
+        <p> In ProtDCal this aggregation_operator is implemented as follows:</p>
+        <div class="figure">
+            <img src="../images/formula/geo.jpg"/>			
+        </div>
+        <p>ProtDCal implement various options to process the harmonic mean, this are:</p>
+        <table>
+            <td></td><tr></tr>
+            <td><b/>IGNORE THE "0" VALUES</td>	
+            <td>With this option with zero rates are excluded only operations, but not analysis, that is, zero elements are taken into account when dividing or find the nth root.</td><tr></tr>
+
+            <td><b/>PRINT -9999</td>
+            <td>This option prints the value -9999 occurs when a mathematical uncertainty. In the case of the geometric mean would occur when the group size is zero, whereas in the case of the harmonic mean occurred when any of the elements is zero.</td><tr></tr>
+
+            <td><b/>DELETE THE "0" VALUES</td>
+            <td>With this option with zero rates are not scanned and not taken into account when dividing or find the nth root.</td><tr/>
+        </table>
+        <p/>
+
+        <h1>Harmonic Mean</h1>
+        <hr/>
+        <p> This aggregation_operator calculates the armonic mean for the group. </p>
+        <div class="figure">
+            <img src="../images/formula/media.jpg"/>			
+        </div>
+        <p>Where alfa is equal to -1 and ai is the indice value for each amino acid.
+            ProtDCal implement various options to process the harmonic mean, this are:</p>
+        <table>
+            <td></td><tr></tr>
+            <td><b/>IGNORE THE "0" VALUES</td>	
+            <td>With this option with zero rates are excluded only operations, but not analysis, that is, zero elements are taken into account when dividing or find the nth root.</td><tr></tr>
+
+            <td><b/>PRINT -9999</td>
+            <td>This option prints the value -9999 occurs when a mathematical uncertainty. In the case of the geometric mean would occur when the group size is zero, whereas in the case of the harmonic mean occurred when any of the elements is zero.</td><tr></tr>
+
+            <td><b/>DELETE THE "0" VALUES</td>
+            <td>With this option with zero rates are not scanned and not taken into account when dividing or find the nth root.</td><tr></tr>
+
+        </table>
+        <p/>
+
+        <h1>Squared Mean P2</h1>
+        <hr/>
+        <p> This aggregation_operator calculate the squared mean for the group. It is implemented as follow:</p>
+        <div class="figure">
+            <img src="../images/formula/media.jpg"/>			
+        </div>
+        <p>The alfa value is 2 and ai are the indices values for each amino acid.</p>
+        <p/>
+
+
+        <h1>Cube Mean P3</h1>
+        <hr/>
+        <p> This aggregation_operator calculate the cube mean for the group. It is implemented as follow:</p>
+        <div class="figure">
+            <img src="../images/formula/media.jpg"/>			
+        </div>
+        <p>The alfa value is 3 and ai are the indices values for each amino acid.</p>
+        <p/>
+
+        <div id="footer">
+            <hr/>
+            <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+        </div>
+    </body>
+</html>

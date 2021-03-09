@@ -1,0 +1,75 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    </head>
+    <body>
+
+        <h1>Datasets Selection</h1>
+        <hr/>
+        <p>
+            This option compares proteins in a datasets, using the Root Mean Squared Distance(RMSD).
+        </p>
+        <p>
+            This option is available in the menu "Analyze/RMSD", which will launch the following window:
+        </p>
+        <p/>
+        <div class="figure">
+            <img src="images/RMSDWindow.png"/>
+            <p id="piefoto">The RMSD-IDX window</p>
+        </div>
+        <p>
+            In the RMSD window there are three panels for settling the comparison process data, first is Datasets panel, where all files are loaded. In the
+            Target panel, shows the file that is used like reference for comparison. It can be selected using (<img src="images/from.png"/>) and (<img src="images/to.png"/>) buttons; Ultimatelly the last Compare panel,
+            shows the files to compare with the Target. Those files can be selected using (<img src="images/atras.png"/>), ("ALL") and (<img src="images/delante.png"/>) buttons.
+            Also atoms types to compare datasets can be selected.
+        </p>
+        <p>
+            <b>Atoms Types:</b>
+            <ul>
+                <li><b>Carbon Alfa:</b></li>
+                <p>Include only the carbon alfa atoms of each residue.</p>
+                <li><b>Backbone:</b></li>
+                <p>Include only the backbone atoms(N, C, Ca, O) of each residue.</p>
+                <li><b>All Atoms:</b></li>
+                <p>Include all atoms of each residues.</p>
+            </ul>
+        </p>
+        <p>
+            When all needed options are configured, continue clicking the "Calculate" button to start the process.
+        </p>
+
+		<h1>Configuring the comparison process </h1>
+        <hr/>
+        <p>
+            Options are provided for comparison tests in the "Advanced" panel.
+        </p>
+        <div class="figure">
+            <img src="images/panelRMSD.png"/>
+            <p id ="piefoto">The Advanced panel RMSD-Ca</p>
+        </div>
+
+        <p>
+            The two options contained in the panel are:
+            <ul>
+                <li>"Use the best N-residues":</li>
+                <p>This option superposes the structures firstly, considering all the residues, and then selects the N best distances and computes the RMSD with them.</p>
+                <li>"Use specific ranges":</li>
+                <p>This option computes RMSD calculated using residues ranges,
+                   which can be added or deleted with the (<img src="images/add24.png"/> ) and(<img src="images/remove24.png"/> ) buttons. In addition these ranges can be applied to the Target, Decoys or both.
+                </p>
+            </ul>
+        </p>
+
+        <div class="figure">
+            <img src="images/RangeWindow.png"/>
+            <p id="piefoto">The RMSD Interval Window</p>
+        </div>
+
+
+        <div id="footer">
+            <hr/>
+            <p id="footer">ProtDCal Protein Descriptor Calculation</p>
+        </div>
+    </body>
+</html>
