@@ -9,8 +9,8 @@ Created on Tue Mar  9 11:10:55 2021
 import sys
 import argparse
 import os
-from lib.extract_features import featurizer
-from lib.predict import predict
+from ML.extract_features import featurizer
+from ML.predict import predict
 
 
 def process_command_line(argv):

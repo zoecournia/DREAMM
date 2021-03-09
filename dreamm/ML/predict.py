@@ -34,7 +34,7 @@ def predict(f):
     
     #Read untested case
     dff2 = pd.read_csv('outputs/features/' + f + '.csv', thousands = ',', low_memory=False)# .drop(columns=['Unnamed: 0']) #drop chain names
-    tmpp = pd.read_csv('lib/ProtDCal_v4.5/Outputs/' + f + '/' + f + '.csv', thousands = ',', sep="\t", low_memory=False)
+    tmpp = pd.read_csv('ML/ProtDCal_v4.5/Outputs/' + f + '/' + f + '.csv', thousands = ',', sep="\t", low_memory=False)
     tmpp = tmpp.drop_duplicates()
     if (len(dff2) != len(tmpp)) or (len(tmpp) == 0):
         sys.exit("Mismatch in ProtDCal")    

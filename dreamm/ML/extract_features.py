@@ -122,7 +122,7 @@ def featurizer(file, chains, database, processes):
     
     #ProtDCal
     #It takes some time, so run it in parallel as a subprocess
-    command = "python lib/train_ProtDCal.py " + file + ' ' + filename + " &"
+    command = "python ML/train_ProtDCal.py " + file + ' ' + filename + " &"
     subprocess.run(command, shell=True)
     
     #PARSE PDB

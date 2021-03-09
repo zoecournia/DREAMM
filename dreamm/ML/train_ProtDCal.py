@@ -19,24 +19,24 @@ filename4 = 'outputs/prepared/fixed/' + file + '_Prot.pdb'
 mol.renumberResidues()
 mol.write(filename4)
 
-command = "mkdir " + "lib/ProtDCal_v4.5/Datasets/PMPs/" + file
+command = "mkdir " + "ML/ProtDCal_v4.5/Datasets/PMPs/" + file
 os.system(command)
 
-command = "cp " + filename4 + " " + "lib/ProtDCal_v4.5/Datasets/PMPs/" + file
+command = "cp " + filename4 + " " + "ML/ProtDCal_v4.5/Datasets/PMPs/" + file
 os.system(command)
 
-with open('lib/ProtDCal_v4.5/Projects/dreamm.proj', 'r') as file2:
+with open('ML/ProtDCal_v4.5/Projects/dreamm.proj', 'r') as file2:
     # read a list of lines into data
     data = file2.readlines()
 
 data[1] = data[1].rstrip() + file + "\n"
 
-command = "mkdir " + "lib/ProtDCal_v4.5/Projects/" + file
+command = "mkdir " + "ML/ProtDCal_v4.5/Projects/" + file
 os.system(command)
-with open('lib/ProtDCal_v4.5/Projects/' + file + '/' + file + '.proj', 'w') as file2:
+with open('ML/ProtDCal_v4.5/Projects/' + file + '/' + file + '.proj', 'w') as file2:
     file2.writelines(data)
 
-os.chdir("lib/ProtDCal_v4.5")
+os.chdir("ML/ProtDCal_v4.5")
 
 command = "java -Xms1g -Xmx4g -jar ProtDCal.jar -p Projects/" + file + " -o Outputs/"
 os.system(command)
