@@ -6,13 +6,11 @@ Created on Mon Sep 16 11:24:27 2019
 """
 
 import os, sys, subprocess, urllib.request, warnings
-if not sys.warnoptions:
-    warnings.simplefilter("ignore")
 from multiprocessing import Pool
 from Bio.PDB import *
 import pandas as pd
-import ssbio.protein.structure.properties.freesasa
-import ssbio.protein.structure.properties.msms
+#import ssbio.protein.structure.properties.freesasa
+import freesasa
 from prody.dynamics import *
 from prody.proteins import *
 import numpy as np
@@ -22,6 +20,8 @@ from moleculekit.tools.preparation import proteinPrepare
 from pdb2pqr.main import mainCommand
 import MDAnalysis as mda
 from MDAnalysis.lib.distances import distance_array
+warnings.filterwarnings("ignore")
+
 
 substitutions = {
         'AR0':'ARG', 'ASH':'ASP', 'CYM':'CYS', 'CYX':'CYS', 'GLH':'GLU', 'HIE':'HIS', 'HSE':'HIS', 'HID':'HIS', 'HSD':'HIS', 'HIP':'HIS', 'DSG':'ASN',
@@ -122,8 +122,9 @@ def featurizer(file, chains, database, processes):
     
     #ProtDCal
     #It takes some time, so run it in parallel as a subprocess
-    command = "python ML/train_ProtDCal.py " + file + ' ' + filename + " &"
-    subprocess.run(command, shell=True)
+    command = "python lib/train_ProtDCal.py " + file + ' ' + filename + " &"
+    p = subprocess.Popen(command, shell=True,
+    stdin=subprocess.PIPE, stdout=subprocess.PIPE, close_fds=True)
     
     #PARSE PDB
     p2 = PDBParser(QUIET=True)
@@ -142,13 +143,40 @@ def featurizer(file, chains, database, processes):
     
     #FREESASA
     print ('Calculating FREESASA...')
-    ssbio.protein.structure.properties.freesasa.run_freesasa(filename, file + "output.rsa", include_hetatms=True, outdir=None, force_rerun=True)
-    frsasa = ssbio.protein.structure.properties.freesasa.parse_rsa_data(file + "output.rsa", ignore_hets=False)
-    frsasa = pd.DataFrame.from_dict(frsasa).T
+# =============================================================================
+#     ssbio.protein.structure.properties.freesasa.run_freesasa(filename, file + "output.rsa", include_hetatms=True, outdir=None, force_rerun=True)
+#     frsasa = ssbio.protein.structure.properties.freesasa.parse_rsa_data(file + "output.rsa", ignore_hets=False)
+#     frsasa = pd.DataFrame.from_dict(frsasa).T
+# =============================================================================
     
+    structure = freesasa.Structure(filename)
+    result = freesasa.calc(structure, freesasa.Parameters({'n-slices' : 1000}))
+    residueAreas = result.residueAreas()
+    frsasa = pd.DataFrame(columns = ['residueType', 'residueNumber', 'total', 'mainChain', 'sideChain', 'polar', 'apolar',
+       'hasRelativeAreas', 'relativeTotal', 'relativeMainChain',
+       'relativeSideChain', 'relativePolar', 'relativeApolar']).set_index('residueType')
+    for ch in residueAreas:
+        for res in residueAreas[ch]:
+            df = pd.DataFrame(residueAreas[ch][res].__dict__.items()).T
+            df.columns = df.iloc[0]
+            df = df[1:].set_index(['residueType'])
+            df = df.astype(float).round(2)
+            frsasa = frsasa.append(df)
+    frsasa.rename(columns={'total': 'all_atoms_abs', 'sideChain': 'side_chain_abs', 'mainChain': 'main_chain_abs', 'polar': 'all_polar_abs', 'apolar': 'non_polar_abs'}, inplace=True)
+    frsasa = frsasa.set_index(dssp.index)
+
     #MSMS
     print ('Calculating MSMS...')
-    msms = ssbio.protein.structure.properties.get_msms_df(model, filename, outfile=file, outdir=None, outext='_msms.df', force_rerun=True)
+    rd = ResidueDepth(model)
+    appender = []
+    for k in rd.property_keys:
+        x = rd.property_dict[k]
+        residue = k[1]
+        resnum = residue[1]
+        resdepth = x[0]
+        cadepth = x[1]
+        appender.append((resnum, resdepth, cadepth))
+    msms = pd.DataFrame(appender, columns=['resnum', 'res_depth', 'ca_depth'])
     resnum = msms['resnum']
     resnum.index = dssp.index
     
@@ -304,6 +332,8 @@ def featurizer(file, chains, database, processes):
     features2 = features2.drop(columns = ['resnum2'])
     
     features2.to_csv("outputs/features/" + file + ".csv")
+    
+    p.wait()
 
     #Clean leftovers
 # =============================================================================
