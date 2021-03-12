@@ -13,7 +13,7 @@ git clone https://github.com/zoecournia/DREAMM
 
 chmod +x DREAMM/dreamm/dreamm.py
 
-export DREAMM="/home/"user"/DREAMM/dreamm"
+export DREAMM="/home/USER/DREAMM/dreamm" Replace USER with your username
 
 alias dreamm="$DREAMM/dreamm.py"
 
