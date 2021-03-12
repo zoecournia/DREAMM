@@ -10,7 +10,7 @@ We recommend installing DREAMM in a new conda environment (see <a href="#Install
 Java is also necessary to be installed on your machine as DREAMM utilizes also [ProtDCal](https://protdcal.zmb.uni-due.de/), which is written in java, for feature extraction.
 
 Lastly, you have to download [Uniclust30_2018_08_hhsuite](http://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/) database, which is necessary to generate conservation scores (may take a while to download).
-<a href="http://example.com/" target="_blank">Hello, world!</a>
+
 ### Installation
 1. Create a new conda environment, installing all necessary python libraries
 ```
