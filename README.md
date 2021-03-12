@@ -32,14 +32,16 @@ git clone https://github.com/zoecournia/DREAMM
 ```
 chmod +x DREAMM/dreamm/dreamm.py
 ```
-6. Export and alias DREAMM
+6. To use DREAMM from any directory, place the following in the end of your .bashrc file
 ```
 export DREAMM="/home/USER/DREAMM/dreamm" #Replace USER with your username 
 alias dreamm="$DREAMM/dreamm.py"
 ```
 
 ## Usage
+```
 dreamm -h
+```
 
 Input Settings:
   -i INPUT, --input INPUT
