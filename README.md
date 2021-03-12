@@ -1,6 +1,13 @@
-# DREAMM
-Predicting protein-membrane interfaces using ensemple machine learning
+# About DREAMM
+DREAMM provides a fast and robust prediction of protein-membrane interfaces for peripheral membrane proteins using ensemble machine learning.
 
+## Getting Started
+## Prerequisites
+We recommend installing Miniconda on your machine to better manage python packages and environments.
+
+We recommend installing DREAMM either in a new conda environment (see <a href="#Installation">Installation</a>). 
+
+Java is also necessary to be installed on your machine as DREAMM utilizes also [ProtDCal](https://protdcal.zmb.uni-due.de/), which is written in java, for feature extraction.
 
 ## Installation
 conda create -n dreamm moleculekit htmd-pdb2pqr biopython prody mdanalysis scikit-learn dssp msms hhsuite lightgbm mlxtend -c acellera -c anaconda -c insilichem -c conda-forge -c salilab -c bioconda
