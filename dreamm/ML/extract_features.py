@@ -9,7 +9,6 @@ import os, sys, subprocess, urllib.request, warnings
 from multiprocessing import Pool
 from Bio.PDB import *
 import pandas as pd
-#import ssbio.protein.structure.properties.freesasa
 import freesasa
 from prody.dynamics import *
 from prody.proteins import *
@@ -143,12 +142,6 @@ def featurizer(file, chains, database, processes):
     
     #FREESASA
     print ('Calculating FREESASA...')
-# =============================================================================
-#     ssbio.protein.structure.properties.freesasa.run_freesasa(filename, file + "output.rsa", include_hetatms=True, outdir=None, force_rerun=True)
-#     frsasa = ssbio.protein.structure.properties.freesasa.parse_rsa_data(file + "output.rsa", ignore_hets=False)
-#     frsasa = pd.DataFrame.from_dict(frsasa).T
-# =============================================================================
-    
     structure = freesasa.Structure(filename)
     result = freesasa.calc(structure, freesasa.Parameters({'n-slices' : 1000}))
     residueAreas = result.residueAreas()
