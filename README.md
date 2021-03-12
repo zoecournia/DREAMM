@@ -14,23 +14,23 @@ Lastly, you have to download [Uniclust30_2018_08_hhsuite](http://wwwuser.gwdg.de
 ### Installation
 1. Create a new conda environment, installing all necessary python libraries
 ```
-conda create -n dreamm moleculekit htmd-pdb2pqr biopython prody mdanalysis scikit-learn dssp msms hhsuite lightgbm mlxtend -c acellera -c anaconda -c insilichem -c conda-forge -c salilab -c bioconda
+(base) user@computer:~$ conda create -n dreamm moleculekit htmd-pdb2pqr biopython prody mdanalysis scikit-learn dssp msms hhsuite lightgbm mlxtend -c acellera -c anaconda -c insilichem -c conda-forge -c salilab -c bioconda
 ```
 2. Activate the environment
 ```
-conda activate dreamm
+(base) user@computer:~$ conda activate dreamm
 ```
 3. Install freesasa using ```pip```
 ```
-pip install freesasa
+(dreamm) user@computer:~$ pip install freesasa
 ```
 4. Clone the DREAMM repo
 ```
-git clone https://github.com/zoecournia/DREAMM
+(dreamm) user@computer:~$ git clone https://github.com/zoecournia/DREAMM
 ```
 5. Make dreamm.py executable
 ```
-chmod +x DREAMM/dreamm/dreamm.py
+(dreamm) user@computer:~$ chmod +x DREAMM/dreamm/dreamm.py
 ```
 6. To use DREAMM from any directory, place the following in the end of your .bashrc file
 ```
@@ -40,19 +40,28 @@ alias dreamm="$DREAMM/dreamm.py"
 
 ## Usage
 ```
-dreamm -h
+(dreamm) user@computer:~$ dreamm -h
 ```
 
-Input Settings:
-  -i INPUT, --input INPUT
-                        The 4 letter PDB code or the path to the PDB file
-  -c CHAIN [CHAIN ...], --chain CHAIN [CHAIN ...]
-                        The chain or chains. Default is None
-  -d DATABASE, --database DATABASE
-                        The path to the Uniclust30_2018_8 database.
-  -p PROCESSES, --processes PROCESSES
-                        The number of CPUs. Default is All minus 1
-                        
+Input Parameters:
+```
+  -i INPUT, --input INPUT                           The 4 letter PDB code or the path to the PDB file
+  -c CHAIN [CHAIN ...], --chain CHAIN [CHAIN ...]   The chain or chains. Default is None
+  -d DATABASE, --database DATABASE                  The path to the Uniclust30_2018_8 database.
+  -p PROCESSES, --processes PROCESSES               The number of CPUs. Default is All minus 1
+ ```
+
 ## Example
-dreamm -i 5BZZ -c A -d /media/mydata/Databases/uniclust30_2018_08_hhsuite/uniclust30_2018_08 -p 16
+```
+(dreamm) user@computer:~$ dreamm -i 5BZZ -c A -d /media/mydata/Databases/uniclust30_2018_08_hhsuite/uniclust30_2018_08/ -p 16
+```
+Results are ouput to the terminal and written to DREAMM/dreamm/outputs/prepared/fixed/5BZZ.csv
+
+## License
+Distributed under the GPL-3.0 License. See `LICENSE` for more information.
+
+
+## Issues
+For any bugs or questions on usage feel free to use the issue tracker of this github repo.
+
 
