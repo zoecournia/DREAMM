@@ -70,8 +70,8 @@ def featurizer(file, chains, database, processes):
         pdbl = PDBList()
         url = "http://www.rcsb.org/pdb/download/downloadFile.do?fileFormat=pdb&compression=NO&structureId="
         pdbid = url+file.split("_")[0]
-        open(file + ".pdb", "wb" ).write(urllib.request.urlopen(pdbid).read())
-        filename = file + '.pdb'
+        open(os.path.join(os.path.dirname(sys.argv[0]), file + ".pdb"), "wb" ).write(urllib.request.urlopen(pdbid).read())
+        filename = os.path.join(os.path.dirname(sys.argv[0]), file + '.pdb')
     
     try:
         mol = Molecule(filename)
@@ -90,11 +90,11 @@ def featurizer(file, chains, database, processes):
         mol.filter('protein and chain ' + chains_sel)
         print ('protein and chain ' + chains_sel)
         file = file + '_chainA_fixed.pdb'
-        filename2 = 'outputs/prepared/fixed/' + file
-        filename = 'outputs/prepared/' + file
+        filename2 = os.path.join(os.path.dirname(sys.argv[0]), 'outputs/prepared/fixed/' + file)
+        filename = os.path.join(os.path.dirname(sys.argv[0]), 'outputs/prepared/' + file)
     else:
         mol.filter('protein')
-        filename2 = 'outputs/prepared/fixed/' + file + '_fixed.pdb'
+        filename2 = os.path.join(os.path.dirname(sys.argv[0]), 'outputs/prepared/fixed/' + file + '_fixed.pdb')
     
     filename3 = filename
     print ('Preparing Protein...')
@@ -108,8 +108,8 @@ def featurizer(file, chains, database, processes):
     mol.write(filename)
     
     #For charges
-    mainCommand(['pdb2pqr.py', '--with-ph=7.0','--ph-calc-method=propka31', '--ff=parse', '--ffout=amber', '--verbose', '--neutraln', '--neutralc', filename, file + '.pqr'])
-    u = mda.Universe(file + '.pqr')
+    mainCommand(['pdb2pqr.py', '--with-ph=7.0','--ph-calc-method=propka31', '--ff=parse', '--ffout=amber', '--verbose', '--neutraln', '--neutralc', filename, os.path.join(os.path.dirname(sys.argv[0]), file + '.pqr')])
+    u = mda.Universe(os.path.join(os.path.dirname(sys.argv[0]), file + '.pqr'))
     
     filename = filename2
     
@@ -121,7 +121,7 @@ def featurizer(file, chains, database, processes):
     
     #ProtDCal
     #It takes some time, so run it in parallel as a subprocess
-    command = "python lib/train_ProtDCal.py " + file + ' ' + filename + " &"
+    command = "python " + os.path.join(os.path.dirname(sys.argv[0]), "ML/train_ProtDCal.py " + file + ' ' + filename + " &")
     p = subprocess.Popen(command, shell=True,
     stdin=subprocess.PIPE, stdout=subprocess.PIPE, close_fds=True)
     
@@ -324,7 +324,7 @@ def featurizer(file, chains, database, processes):
     
     features2 = features2.drop(columns = ['resnum2'])
     
-    features2.to_csv("outputs/features/" + file + ".csv")
+    features2.to_csv(os.path.join(os.path.dirname(sys.argv[0]), "outputs/features/" + file + ".csv"))
     
     p.wait()
 

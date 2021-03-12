@@ -5,7 +5,7 @@ Created on Tue Oct  8 12:04:59 2019
 @author: alexis
 """
 
-import sys
+import sys, os
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
@@ -16,10 +16,10 @@ from MDAnalysis.lib.distances import distance_array
 
 def predict(f):
     print ('Precting protein-membrane interfaces')
-    df = pd.read_csv('../data/dataset_res_depth<2.5_selected.csv',thousands = ',', low_memory=False).drop(columns=['Unnamed: 0'])
+    df = pd.read_csv(os.path.join(os.path.dirname(sys.argv[0]), '..', 'data/dataset_res_depth<2.5_selected.csv'), thousands = ',', low_memory=False).drop(columns=['Unnamed: 0'])
     df.apply(pd.to_numeric)
         
-    unimport_feats_ProtDCal = pd.read_csv('../data/unimport_feats.csv', low_memory=False).drop(columns=['Unnamed: 0'])
+    unimport_feats_ProtDCal = pd.read_csv(os.path.join(os.path.dirname(sys.argv[0]), '..', 'data/unimport_feats.csv'), low_memory=False).drop(columns=['Unnamed: 0'])
     undf = pd.DataFrame(columns=sum(unimport_feats_ProtDCal.values.tolist(), []))
     
     intersection_cols = df.columns & undf.columns
@@ -33,8 +33,8 @@ def predict(f):
     data_scaled_all = pd.DataFrame(data_scaled_all, columns = df.drop(columns=['class']).columns)
     
     #Read untested case
-    dff2 = pd.read_csv('outputs/features/' + f + '.csv', thousands = ',', low_memory=False)# .drop(columns=['Unnamed: 0']) #drop chain names
-    tmpp = pd.read_csv('ML/ProtDCal_v4.5/Outputs/' + f + '/' + f + '.csv', thousands = ',', sep="\t", low_memory=False)
+    dff2 = pd.read_csv(os.path.join(os.path.dirname(sys.argv[0]), 'outputs/features/' + f + '.csv'), thousands = ',', low_memory=False)
+    tmpp = pd.read_csv(os.path.join(os.path.dirname(sys.argv[0]), 'ML/ProtDCal_v4.5/Outputs/' + f + '/' + f + '.csv'), thousands = ',', sep="\t", low_memory=False)
     tmpp = tmpp.drop_duplicates()
     if (len(dff2) != len(tmpp)) or (len(tmpp) == 0):
         sys.exit("Mismatch in ProtDCal")    
@@ -72,14 +72,13 @@ def predict(f):
     dfff = pd.concat([dfff, SSdf], axis = 1)
     aminoacids = dfff['Amino acid']
     dfff = dfff.drop(columns=['Amino acid', 'Secondary structure', 'Unnamed: 1', 'index'])
-    #dfff = dfff.drop(columns=['Secondary structure2']) #Drop stride
     
     dfff.drop(columns=['Unnamed: 0']).apply(pd.to_numeric)
     dfff = dfff[dfff['res_depth'] < 2.5] # Comment out to keep all residues
     
     dfff2 = dfff
     
-    loaded_model = load('../data/final_classifier.sav')
+    loaded_model = load(os.path.join(os.path.dirname(sys.argv[0]), '..', 'data/final_classifier.sav'))
     
     
     chain_and_residues = dfff[['Unnamed: 0', 'resnum']]
@@ -122,9 +121,9 @@ def predict(f):
     
         if not (res.empty or res2.empty):
             if f.endswith('_fixed.pdb'):
-                filename = 'outputs/prepared/fixed/' + f
+                filename = os.path.join(os.path.dirname(sys.argv[0]), 'outputs/prepared/fixed/' + f)
             else:
-                filename = 'outputs/prepared/fixed/' + f + '_fixed.pdb'
+                filename = os.path.join(os.path.dirname(sys.argv[0]), 'outputs/prepared/fixed/' + f + '_fixed.pdb')
     
             u = mda.Universe(filename)
             prot = u.select_atoms('protein')
@@ -190,13 +189,8 @@ def predict(f):
     
         print ('The residues: \n', res2[res2['class'] == 1][['Unnamed: 0', 'Amino acid', 'resnum', 'broken_chain']].to_string(index=False, header = False).strip(), '\nare predicted to insert the membrane.')
     
-# =============================================================================
-#         for i in res2[res2['class'] == 1][['Unnamed: 0']]['Unnamed: 0'].unique():
-#             print (i, res2[(res2['class'] == 1) & (res2['Unnamed: 0'] == i)][['resnum', 'broken_chain']].to_string(index=False, header = False).strip().replace('\n',''))
-# =============================================================================
         res2.rename(columns={"Unnamed: 0": "chain"}, inplace = True)
-        res2[['chain', 'resnum', 'Amino acid', 'broken_chain']].to_csv("outputs/prepared/fixed/" + f.split('.')[0].split('_chainA')[0] + ".csv", index=False)
+        res2[['chain', 'resnum', 'Amino acid', 'broken_chain']].to_csv(os.path.join(os.path.dirname(sys.argv[0]), "outputs/prepared/fixed/" + f).split('.')[0].split('_chainA')[0] + ".csv", index=False)
         if res2.empty:
             print ('Could not predict any residues inserting the membrane.')
-        #res2[['chain', 'resnum', 'Amino acid', 'broken_chain']].to_csv(location + f.split('.')[0].split('_chainA')[0] + ".csv", index=False)
     
