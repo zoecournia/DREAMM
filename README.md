@@ -2,28 +2,41 @@
 DREAMM provides a fast and robust prediction of protein-membrane interfaces for peripheral membrane proteins using ensemble machine learning.
 
 ## Getting Started
-## Prerequisites
+### Prerequisites
 We recommend installing Miniconda on your machine to better manage python packages and environments.
 
 We recommend installing DREAMM either in a new conda environment (see <a href="#Installation">Installation</a>). 
 
 Java is also necessary to be installed on your machine as DREAMM utilizes also [ProtDCal](https://protdcal.zmb.uni-due.de/), which is written in java, for feature extraction.
 
-## Installation
+Lastly, you have to download [Uniclust30_2018_08_hhsuite](http://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/) database, which is necessary to generate conservation scores (may take a while to download).
+
+### Installation
+1. Create a new conda environment, installing all necessary python libraries
+```
 conda create -n dreamm moleculekit htmd-pdb2pqr biopython prody mdanalysis scikit-learn dssp msms hhsuite lightgbm mlxtend -c acellera -c anaconda -c insilichem -c conda-forge -c salilab -c bioconda
-
+```
+2. Activate the environment
+```
 conda activate dreamm
-
+```
+3. Install freesasa using ```pip```
+```
 pip install freesasa
-
+```
+4. Clone the DREAMM repo
+```
 git clone https://github.com/zoecournia/DREAMM
-
+```
+5. Make dreamm.py executable
+```
 chmod +x DREAMM/dreamm/dreamm.py
-
-export DREAMM="/home/USER/DREAMM/dreamm" #Replace USER with your username
-
+```
+6. Export and alias DREAMM
+```
+export DREAMM="/home/USER/DREAMM/dreamm" #Replace USER with your username 
 alias dreamm="$DREAMM/dreamm.py"
-
+```
 
 ## Usage
 dreamm -h
