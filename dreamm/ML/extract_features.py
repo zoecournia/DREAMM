@@ -326,6 +326,7 @@ def featurizer(file, chains, database, processes):
     
     features2.to_csv(os.path.join(os.path.dirname(sys.argv[0]), "outputs/features/" + file + ".csv"))
     
+    p.communicate()
     p.wait()
 
     #Clean leftovers
