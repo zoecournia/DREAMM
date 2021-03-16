@@ -15,7 +15,7 @@ from MDAnalysis.lib.distances import distance_array
 
 
 def predict(f):
-    print ('Precting protein-membrane interfaces')
+    print ('Predicting protein-membrane interfaces')
     df = pd.read_csv(os.path.join(os.path.dirname(sys.argv[0]), '..', 'data/dataset_res_depth<2.5_selected.csv'), thousands = ',', low_memory=False).drop(columns=['Unnamed: 0'])
     df.apply(pd.to_numeric)
         
