@@ -37,7 +37,7 @@ substitutions = {
         'MHS':'HIS', 'MIS':'SER', 'MLE':'LEU', 'MPQ':'GLY', 'MSA':'GLY', 'MSE':'MET', 'MVA':'VAL', 'NEM':'HIS', 'NEP':'HIS', 'NLE':'LEU', 'SHR':'LYS',
         'NLN':'LEU', 'NLP':'LEU', 'NMC':'GLY', 'OAS':'SER', 'OCS':'CYS', 'OMT':'MET', 'PAQ':'TYR', 'PCA':'GLU', 'PEC':'CYS', 'PHI':'PHE', 'SHC':'CYS',
         'PHL':'PHE', 'PR3':'CYS', 'PRR':'ALA', 'PTR':'TYR', 'PYX':'CYS', 'SAC':'SER', 'SAR':'GLY', 'SCH':'CYS', 'SCS':'CYS', 'SCY':'CYS', 'SET':'SER',
-        'SEL':'SER', 'SEP':'SER', 'DSG':'ASN', 'MED':'MET', '2TL':'THR', 'CYSF': 'CYS', 'MLY': 'LYS', 'CAF':'CYS', 'ALS':'ALA', 'PPN':'PHE'
+        'SEL':'SER', 'SEP':'SER', 'DSG':'ASN', 'MED':'MET', '2TL':'THR', 'CYSF':'CYS', 'MLY':'LYS', 'CAF':'CYS', 'YCM':'CYS', 'ALS':'ALA', 'PPN':'PHE'
         }
 
 proteinResidues = ['ALA', 'ASN', 'CYS', 'GLU', 'HIS', 'LEU', 'MET', 'PRO', 'THR', 'TYR',
@@ -153,7 +153,7 @@ def featurizer(file, chains, database, processes):
             df = pd.DataFrame(residueAreas[ch][res].__dict__.items()).T
             df.columns = df.iloc[0]
             df = df[1:].set_index(['residueType'])
-            df = df.astype(float).round(2)
+            df = df.astype(float, errors='ignore').round(2)
             frsasa = frsasa.append(df)
     frsasa.rename(columns={'total': 'all_atoms_abs', 'sideChain': 'side_chain_abs', 'mainChain': 'main_chain_abs', 'polar': 'all_polar_abs', 'apolar': 'non_polar_abs'}, inplace=True)
     frsasa = frsasa.set_index(dssp.index)
