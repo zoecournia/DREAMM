@@ -37,7 +37,8 @@ substitutions = {
         'MHS':'HIS', 'MIS':'SER', 'MLE':'LEU', 'MPQ':'GLY', 'MSA':'GLY', 'MSE':'MET', 'MVA':'VAL', 'NEM':'HIS', 'NEP':'HIS', 'NLE':'LEU', 'SHR':'LYS',
         'NLN':'LEU', 'NLP':'LEU', 'NMC':'GLY', 'OAS':'SER', 'OCS':'CYS', 'OMT':'MET', 'PAQ':'TYR', 'PCA':'GLU', 'PEC':'CYS', 'PHI':'PHE', 'SHC':'CYS',
         'PHL':'PHE', 'PR3':'CYS', 'PRR':'ALA', 'PTR':'TYR', 'PYX':'CYS', 'SAC':'SER', 'SAR':'GLY', 'SCH':'CYS', 'SCS':'CYS', 'SCY':'CYS', 'SET':'SER',
-        'SEL':'SER', 'SEP':'SER', 'DSG':'ASN', 'MED':'MET', '2TL':'THR', 'CYSF':'CYS', 'MLY':'LYS', 'CAF':'CYS', 'YCM':'CYS', 'ALS':'ALA', 'PPN':'PHE'
+        'SEL':'SER', 'SEP':'SER', 'DSG':'ASN', 'MED':'MET', '2TL':'THR', 'CYSF':'CYS', 'MLY':'LYS', 'CAF':'CYS', 'YCM':'CYS', 'ALS':'ALA', 'PPN':'PHE',
+	'SEC':'CYS'
         }
 
 proteinResidues = ['ALA', 'ASN', 'CYS', 'GLU', 'HIS', 'LEU', 'MET', 'PRO', 'THR', 'TYR',
