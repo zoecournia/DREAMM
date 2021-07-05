@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 from joblib import load
 import MDAnalysis as mda
 from MDAnalysis.lib.distances import distance_array
-
+import fileinput
 
 def predict(f):
     print ('Predicting protein-membrane interfaces')
@@ -73,6 +73,7 @@ def predict(f):
     aminoacids = dfff['Amino acid']
     dfff = dfff.drop(columns=['Amino acid', 'Secondary structure', 'Unnamed: 1', 'index'])
     
+    dfff = dfff.replace({",":""}, regex=True)
     dfff.drop(columns=['Unnamed: 0']).apply(pd.to_numeric)
     dfff = dfff[dfff['res_depth'] < 2.5] # Comment out to keep all residues
     
@@ -125,6 +126,14 @@ def predict(f):
             else:
                 filename = os.path.join(os.path.dirname(sys.argv[0]), 'outputs/prepared/fixed/' + f + '_fixed.pdb')
     
+            with fileinput.FileInput(filename, inplace=True) as file:
+                for line in file:
+                    if (len(line) > 72) and (line[:72] != ''):
+                        line = line[:72] + "    " + line[76:]
+                        print(line.rstrip('\n'))
+                    else:
+                        print(line.rstrip('\n'))
+
             u = mda.Universe(filename)
             prot = u.select_atoms('protein')
     
