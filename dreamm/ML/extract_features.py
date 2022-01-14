@@ -16,7 +16,6 @@ import numpy as np
 from moleculekit.tools.hhblitsprofile import getSequenceProfile
 from moleculekit.molecule import Molecule
 from moleculekit.tools.preparation import proteinPrepare
-from pdb2pqr.main import mainCommand
 import MDAnalysis as mda
 from MDAnalysis.lib.distances import distance_array
 warnings.filterwarnings("ignore")
@@ -37,8 +36,7 @@ substitutions = {
         'MHS':'HIS', 'MIS':'SER', 'MLE':'LEU', 'MPQ':'GLY', 'MSA':'GLY', 'MSE':'MET', 'MVA':'VAL', 'NEM':'HIS', 'NEP':'HIS', 'NLE':'LEU', 'SHR':'LYS',
         'NLN':'LEU', 'NLP':'LEU', 'NMC':'GLY', 'OAS':'SER', 'OCS':'CYS', 'OMT':'MET', 'PAQ':'TYR', 'PCA':'GLU', 'PEC':'CYS', 'PHI':'PHE', 'SHC':'CYS',
         'PHL':'PHE', 'PR3':'CYS', 'PRR':'ALA', 'PTR':'TYR', 'PYX':'CYS', 'SAC':'SER', 'SAR':'GLY', 'SCH':'CYS', 'SCS':'CYS', 'SCY':'CYS', 'SET':'SER',
-        'SEL':'SER', 'SEP':'SER', 'DSG':'ASN', 'MED':'MET', '2TL':'THR', 'CYSF':'CYS', 'MLY':'LYS', 'CAF':'CYS', 'YCM':'CYS', 'ALS':'ALA', 'PPN':'PHE',
-	'SEC':'CYS'
+        'SEL':'SER', 'SEP':'SER', 'DSG':'ASN', 'MED':'MET', '2TL':'THR', 'CYSF':'CYS', 'MLY':'LYS', 'CAF':'CYS', 'YCM':'CYS', 'ALS':'ALA', 'PPN':'PHE'
         }
 
 proteinResidues = ['ALA', 'ASN', 'CYS', 'GLU', 'HIS', 'LEU', 'MET', 'PRO', 'THR', 'TYR',
@@ -109,7 +107,8 @@ def featurizer(file, chains, database, processes):
     mol.write(filename)
     
     #For charges
-    mainCommand(['pdb2pqr.py', '--with-ph=7.0','--ph-calc-method=propka31', '--ff=parse', '--ffout=amber', '--verbose', '--neutraln', '--neutralc', filename, os.path.join(os.path.dirname(sys.argv[0]), file + '.pqr')])
+    command = "pdb2pqr30 --with-ph=7.0 --ff=PARSE --ffout=AMBER --neutraln --neutralc " + filename + " " + os.path.join(os.path.dirname(sys.argv[0]), file + '.pqr')
+    os.system(command)
     u = mda.Universe(os.path.join(os.path.dirname(sys.argv[0]), file + '.pqr'))
     
     filename = filename2
