@@ -14,7 +14,7 @@ Lastly, you have to download [Uniclust30_2018_08_hhsuite](http://wwwuser.gwdg.de
 ### Installation
 1. Create a new conda environment, installing all necessary python libraries
 ```
-(base) user@computer:~$ conda create -n dreamm moleculekit htmd-pdb2pqr biopython prody mdanalysis scikit-learn dssp msms hhsuite lightgbm mlxtend -c acellera -c anaconda -c insilichem -c conda-forge -c salilab -c bioconda
+(base) user@computer:~$ conda create -n dreamm moleculekit pdb2pqr biopython prody mdanalysis scikit-learn dssp msms hhsuite lightgbm mlxtend -c acellera -c anaconda -c insilichem -c conda-forge -c salilab -c bioconda
 ```
 2. Activate the environment
 ```
@@ -58,15 +58,9 @@ Input Parameters:
 Results are output to the terminal and written to DREAMM/dreamm/outputs/prepared/fixed/5BZZ.csv, e.g.,
 ```
 The residues:
- A  M  232  0
- A  L  233  0
- A  W  498  0
- A  Y  508  0
- A  K  867  0
- A  G  868  0
- A  L  870  0
- B  F  512  1
- B  M  525  0
+ A  L   42  0
+ A  K  263  0
+ A  M  264  0
 are predicted to insert the membrane.
 ```
 where the first column indicates the chain, the second the one-letter code amino acid type, the third the resid, and the fourth indicates if the prediction is near N- or C-terminal, or near missing loops, which might be a possible false prediction (0 for no, and 1 for yes).
