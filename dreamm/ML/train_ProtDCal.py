@@ -7,6 +7,9 @@ Created on Mon Sep 16 11:24:27 2019
 
 import os, sys
 from moleculekit.molecule import Molecule
+import numpy as np
+from string import ascii_uppercase
+d = dict(enumerate(ascii_uppercase))
 
 file = sys.argv[1]
 
@@ -16,6 +19,8 @@ mol = Molecule(filename)
 
 #ProtDcal
 filename4 = os.path.join(os.path.dirname(sys.argv[0]), '..', 'outputs/prepared/fixed/' + file + '_Prot.pdb')
+if len(np.unique(mol.segid)) > len(np.unique(mol.chain)):
+    mol.chain = np.vectorize(d.get)(mol.segid.astype(int)) #If segid is different change the chain name also (ProtDCal calculates only first segid otherwise)
 mol.renumberResidues()
 mol.write(filename4)
 
