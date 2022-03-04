@@ -1,5 +1,5 @@
 # About DREAMM
-DREAMM provides a fast and robust prediction of protein-membrane interfaces for peripheral membrane proteins using ensemble machine learning.
+DREAMM provides a fast and robust prediction of protein-membrane interfaces for peripheral membrane proteins using ensemble machine learning. DREAMM is also available as a [web-server](https://dreamm.ni4os.eu/).
 
 ## Getting Started
 ### Prerequisites
