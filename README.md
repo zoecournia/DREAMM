@@ -72,4 +72,11 @@ Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 ## Issues
 For any bugs or questions on usage feel free to use the issue tracker of this github repo.
 
+## Citing DREAMM
 
+If you use DREAMM in your publication please cite:
+
+Alexios Chatzigoulas and Zoe Cournia.
+**Predicting protein–membrane interfaces of peripheral membrane proteins using ensemble machine learning.**
+*Briefings in Bioinformatics*, **2022**, bbab518.
+[doi:10.1093/bib/bbab518](https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbab518/6527274)
