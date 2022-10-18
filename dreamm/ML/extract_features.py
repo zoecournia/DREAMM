@@ -98,10 +98,11 @@ def featurizer(file, chains, database, processes):
     
     filename3 = filename
     print ('Preparing Protein...')
-    resnames = np.unique(molcp.resname)
+    resnames = np.unique(mol.resname)
     for resnm in resnames:
          if resnm not in proteinResidues:
              mol.mutateResidue('resname ' + resnm,substitutions[resnm])
+        
     mol = proteinPrepare(mol, pH=7.0, returnDetails=False)
     mol.write(filename2)
     mol.renumberResidues()
