@@ -37,7 +37,8 @@ substitutions = {
         'NLN':'LEU', 'NLP':'LEU', 'NMC':'GLY', 'OAS':'SER', 'OCS':'CYS', 'OMT':'MET', 'PAQ':'TYR', 'PCA':'GLU', 'PEC':'CYS', 'PHI':'PHE', 'SHC':'CYS',
         'PHL':'PHE', 'PR3':'CYS', 'PRR':'ALA', 'PTR':'TYR', 'PYX':'CYS', 'SAC':'SER', 'SAR':'GLY', 'SCH':'CYS', 'SCS':'CYS', 'SCY':'CYS', 'SET':'SER',
         'SEL':'SER', 'SEP':'SER', 'DSG':'ASN', 'MED':'MET', '2TL':'THR', 'CYSF':'CYS', 'MLY':'LYS', 'CAF':'CYS', 'YCM':'CYS', 'ALS':'ALA', 'PPN':'PHE',
-        'SEC':'CYS'}
+        'SEC':'CYS', 'CYSP':'CYS'
+        }
 
 proteinResidues = ['ALA', 'ASN', 'CYS', 'GLU', 'HIS', 'LEU', 'MET', 'PRO', 'THR', 'TYR',
                    'ARG', 'ASP', 'GLN', 'GLY', 'ILE', 'LYS', 'PHE', 'SER', 'TRP', 'VAL']
@@ -97,9 +98,10 @@ def featurizer(file, chains, database, processes):
     
     filename3 = filename
     print ('Preparing Protein...')
-    for resnm in mol.resname:
+    resnames = np.unique(molcp.resname)
+    for resnm in resnames:
          if resnm not in proteinResidues:
-             mol.resname[mol.resname == resnm] = substitutions[resnm]
+             mol.mutateResidue('resname ' + resnm,substitutions[resnm])
     mol = proteinPrepare(mol, pH=7.0, returnDetails=False)
     mol.write(filename2)
     mol.renumberResidues()
