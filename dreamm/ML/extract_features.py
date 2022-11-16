@@ -87,13 +87,13 @@ def featurizer(file, chains, database, processes):
         for chain in chains[0]:
             chains_sel = chains_sel + chain + " "
         print (chains_sel)
-        mol.filter('protein and chain ' + chains_sel)
+        mol.filter('protein and chain ' + chains_sel + ' and not resname UNK')
         print ('protein and chain ' + chains_sel)
         file = file + '_chainA_fixed.pdb'
         filename2 = os.path.join(os.path.dirname(sys.argv[0]), 'outputs/prepared/fixed/' + file)
         filename = os.path.join(os.path.dirname(sys.argv[0]), 'outputs/prepared/' + file)
     else:
-        mol.filter('protein')
+        mol.filter('protein and not resname UNK')
         filename2 = os.path.join(os.path.dirname(sys.argv[0]), 'outputs/prepared/fixed/' + file + '_fixed.pdb')
     
     filename3 = filename
