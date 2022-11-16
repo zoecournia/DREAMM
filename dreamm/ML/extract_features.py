@@ -106,7 +106,8 @@ def featurizer(file, chains, database, processes):
     mol = proteinPrepare(mol, pH=7.0, returnDetails=False)
     mol.write(filename2)
     mol.renumberResidues()
-    mol.center(loc=(0, 0, 0), sel='all')
+    #pdb2pqr errors with coordinates of -100 because the coordinate columns merge. We center the protein to 50 50 50 to fix this. Increase if necessary
+    mol.center(loc=(50, 50, 50), sel='all')
     mol.write(filename)
     
     #For charges
