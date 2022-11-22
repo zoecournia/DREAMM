@@ -80,3 +80,10 @@ Alexios Chatzigoulas and Zoe Cournia.
 **Predicting protein–membrane interfaces of peripheral membrane proteins using ensemble machine learning.**
 *Briefings in Bioinformatics*, **2022**, bbab518.
 [doi:10.1093/bib/bbab518](https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbab518/6527274)
+
+If you use also use DREAMM web-server please cite:
+
+Alexios Chatzigoulas and Zoe Cournia.
+**DREAMM: A web-based server for drugging protein-membrane interfaces as a novel workflow for targeted drug design.**
+*Bioinformatics*, **2022**, btac680,
+[doi:10.1093/bioinformatics/btac680](https://doi.org/10.1093/bioinformatics/btac680)
