@@ -106,12 +106,10 @@ def featurizer(file, chains, database, processes):
     mol = proteinPrepare(mol, pH=7.0, returnDetails=False)
     mol.write(filename2)
     mol.renumberResidues()
-    #pdb2pqr errors with coordinates of -100 because the coordinate columns merge. We center the protein to 50 50 50 to fix this. Increase if necessary
-    mol.center(loc=(50, 50, 50), sel='all')
     mol.write(filename)
     
     #For charges
-    command = "pdb2pqr30 --with-ph=7.0 --ff=PARSE --ffout=AMBER --neutraln --neutralc " + filename + " " + os.path.join(os.path.dirname(sys.argv[0]), file + '.pqr')
+    command = "pdb2pqr30 --with-ph=7.0 --ff=PARSE --ffout=AMBER --neutraln --neutralc --whitespace " + filename + " " + os.path.join(os.path.dirname(sys.argv[0]), file + '.pqr')
     os.system(command)
     u = mda.Universe(os.path.join(os.path.dirname(sys.argv[0]), file + '.pqr'))
     
