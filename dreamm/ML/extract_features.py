@@ -103,19 +103,19 @@ def featurizer(file, chains, database, processes):
          if resnm not in proteinResidues:
              mol.mutateResidue('resname ' + resnm,substitutions[resnm])
         
-    mol = proteinPrepare(mol, pH=7.0, returnDetails=False)
     mol.write(filename2)
     mol.renumberResidues()
     mol.write(filename)
     
     #For charges
-    command = "pdb2pqr30 --with-ph=7.0 --ff=PARSE --ffout=AMBER --neutraln --neutralc --whitespace " + filename + " " + os.path.join(os.path.dirname(sys.argv[0]), file + '.pqr')
+    command = "pdb2pqr30 --with-ph=7.0 --ff=PARSE --ffout=AMBER --neutraln --neutralc --whitespace --titration-state-method propka " + filename + " " + os.path.join(os.path.dirname(sys.argv[0]), file + '.pqr')
     os.system(command)
     u = mda.Universe(os.path.join(os.path.dirname(sys.argv[0]), file + '.pqr'))
     
     filename = filename2
     
     mol = Molecule(filename2)
+    mol = proteinPrepare(mol, pH=7.0, returnDetails=False)
     for resnm in mol.resname:
          if resnm not in proteinResidues:
              mol.resname[mol.resname == resnm] = substitutions[resnm]
